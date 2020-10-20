@@ -2,7 +2,6 @@
 using TMPro;
 using UnityEngine;
 using UnityEngine.EventSystems;
-using Saving_System;
 
 namespace Hud
 {
@@ -17,8 +16,6 @@ namespace Hud
         [SerializeField] int productionAmount;
         float _lastGoldIncrement;
 
- 
-
         public int GoldPressesOwned { get; set; }
 
         int GoldPressCost
@@ -30,35 +27,23 @@ namespace Hud
 
         void Start()
         {
-            GoldText();
             GoldPressText();
         }
 
         void Update()
         {
-            GoldText();
             GoldPressText();
 
             if (!GoldIncrementTimer)
             {
-                Gold += GoldPressesOwned + productionAmount;
+                GetComponent<Gold>().UpdateGold += GoldPressesOwned + productionAmount;
                 this._lastGoldIncrement = Time.time;
             }
 
             if (Input.GetMouseButtonDown(0))
             {
                 EventSystem.current.IsPointerOverGameObject();
-                Gold += 5;
-            }
-
-            if (Input.GetKeyDown(KeyCode.S))
-            {
-                Save();
-            }
-
-            if (Input.GetKeyDown(KeyCode.L))
-            {
-                Load();
+                GetComponent<Gold>().UpdateGold += 5;
             }
         }
 
@@ -74,23 +59,10 @@ namespace Hud
 
         public void GoldPress()
         {
-            if (Gold < GoldPressCost) return;
+            if (GetComponent<Gold>().UpdateGold < GoldPressCost) return;
 
             GoldPressesOwned += 1;
-            Gold -= GoldPressCost;
-        }
-
-       void Save()
-        {
-            SaveSystem.Save(this);
-        }
-
-      void Load()
-        {
-            PlayerData data = SaveSystem.Load();
-
-            Gold = data.gold;
-            GoldPressesOwned = data.goldPresses;
+            GetComponent<Gold>().UpdateGold -= GoldPressCost;
         }
     }
 }
