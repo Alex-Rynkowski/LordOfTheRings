@@ -8,7 +8,7 @@ namespace Hud
     {
         [Header("Name attributes")] 
         public TextMeshProUGUI nameText;
-        public string name;
+        public Names name;
         
         [Header("Cost attributes")]
         public TextMeshProUGUI costText;
@@ -21,5 +21,11 @@ namespace Hud
         [Header("Production Amount attribute")]
         public TextMeshProUGUI productionAmountText;
         public int productionAmount;
+    }
+
+    public enum Names
+    {
+        GoldPress,
+        WoodPress
     }
 }

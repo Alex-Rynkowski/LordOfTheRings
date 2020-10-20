@@ -8,7 +8,6 @@ namespace Hud
     {
         [SerializeField] TextMeshProUGUI goldPressText;
         [SerializeField] TextMeshProUGUI goldPressCostText;
-        [SerializeField] Product[] products;
         int _goldPressesOwned;
 
         public int GoldPressesOwned
@@ -25,7 +24,7 @@ namespace Hud
         void Start()
         {
             GoldPressesOwned = PlayerPrefs.GetInt("GoldPress", GoldPressesOwned);
-            goldPressCostText.text = $"Cost: {products[0].cost}";
+//            goldPressCostText.text = $"Cost: {products[0].cost}";
         }
 
         void OnDestroy()
@@ -33,12 +32,12 @@ namespace Hud
             PlayerPrefs.SetInt("GoldPress", GoldPressesOwned);
         }
 
-        public void GoldPressIncrement()
-        {
-            if (GetComponent<Gold>().UpdateGold < products[0].cost) return;
-
-            GoldPressesOwned += 1;
-            GetComponent<Gold>().UpdateGold -= products[0].cost;
-        }
+        // public void GoldPressIncrement()
+        // {
+        //     if (GetComponent<Gold>().UpdateGold < products[0].cost) return;
+        //
+        //     GoldPressesOwned += 1;
+        //     GetComponent<Gold>().UpdateGold -= products[0].cost;
+        // }
     }
 }
