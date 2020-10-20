@@ -10,6 +10,7 @@ namespace Hud
         [SerializeField] TextMeshProUGUI goldPressCostText;
         [SerializeField] int goldPressCost;
 
+        [SerializeField] Product[] products;
         int _goldPressesOwned;
 
         public int GoldPressesOwned

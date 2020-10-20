@@ -20,7 +20,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d41a565d-fe20-4d62-b58e-d94dc2c60b5e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Hud/Gold.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Hud/Gold.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Hud/GoldPress.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Hud/GoldPress.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -33,6 +32,7 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/../Mario Marcs Stuff/Assets/Scripts/TimeLimit.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Hud/Product.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../Mario Marcs Stuff/Assets/Scripts/PlayerServices.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../Mario Marcs Stuff/Assets/Scripts/Health.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../Mario Marcs Stuff/Assets/Scripts/Enemy.cs" root0="SKIP_HIGHLIGHTING" />
@@ -42,9 +42,11 @@
       <list>
         <option value="$PROJECT_DIR$/Assets/Scripts/Saving System/SaveSystem.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Saving System/PlayerData.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Hud/Hud.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Hud/GoldPress.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Hud/Gold.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Hud/Hud.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Hud/Products.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Hud/Product.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Hud/GoldPress.cs" />
       </list>
     </option>
   </component>
@@ -89,7 +91,7 @@
       <option name="presentableId" value="Default" />
       <updated>1603180691262</updated>
       <workItem from="1603180708073" duration="5135000" />
-      <workItem from="1603186131203" duration="5713000" />
+      <workItem from="1603186131203" duration="6173000" />
     </task>
     <task id="LOCAL−00001" summary="Code cleanup. Fixed errors etc.">
       <created>1603196634409</created>
@@ -109,7 +111,19 @@
       <option name="presentableId" value="LOCAL−00003" />
       <updated>1603198573404</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL−00004" summary="adds saving for Gold">
+      <created>1603198767320</created>
+      <option name="number" value="LOCAL−00004" />
+      <option name="presentableId" value="LOCAL−00004" />
+      <updated>1603198767320</updated>
+    </task>
+    <task id="LOCAL−00005" summary="Hud now required gold and goldpress compomnents">
+      <created>1603198899585</created>
+      <option name="number" value="LOCAL−00005" />
+      <option name="presentableId" value="LOCAL−00005" />
+      <updated>1603198899585</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -134,7 +148,9 @@
     <MESSAGE value="Code cleanup. Fixed errors etc." />
     <MESSAGE value="Moved goldpress to a separate component" />
     <MESSAGE value="adds saving for Gold presses" />
-    <option name="LAST_COMMIT_MESSAGE" value="adds saving for Gold presses" />
+    <MESSAGE value="adds saving for Gold" />
+    <MESSAGE value="Hud now required gold and goldpress compomnents" />
+    <option name="LAST_COMMIT_MESSAGE" value="Hud now required gold and goldpress compomnents" />
   </component>
   <component name="WindowStateProjectService">
     <state x="503" y="230" width="672" height="678" key="search.everywhere.popup" timestamp="1603183287063">
