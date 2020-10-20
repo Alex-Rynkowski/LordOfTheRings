@@ -1,3 +1,4 @@
+using System;
 using TMPro;
 using UnityEngine;
 
@@ -17,12 +18,21 @@ namespace Hud
             set
             {
                 _goldPressesOwned = value;
+                PlayerPrefs.SetInt("GoldPress", value);
                 goldPressText.text = $"Goldpresses owned: {value}";
             }
         }
+
         void Start()
         {
+            GoldPressesOwned = PlayerPrefs.GetInt("GoldPress", GoldPressesOwned);
             goldPressCostText.text = $"Cost: {goldPressCost}";
+            goldPressText.text = $"Goldpresses owned: {GoldPressesOwned}";
+        }
+
+        void OnDestroy()
+        {
+            PlayerPrefs.SetInt("GoldPress", GoldPressesOwned);
         }
 
         public void GoldPressIncrement()
