@@ -11,7 +11,7 @@ namespace Hud
 
         void Start()
         {
-            ProductInfo();
+            HudServices.ProductInfo();
         }
 
         void Update()
@@ -22,17 +22,6 @@ namespace Hud
                 {
                     HudServices.HideProductInfo();
                 }
-            }
-        }
-
-        public void ProductInfo()
-        {
-            foreach (var product in products)
-            {
-                product.nameText.text = product.name.ToString();
-                product.costText.text = $"Cost: {product.cost}$";
-                product.productionsTimeText.text = $"Production time: {product.productionTime}s";
-                product.productionAmountText.text = $"Production: {product.productionAmount}x";
             }
         }
     }

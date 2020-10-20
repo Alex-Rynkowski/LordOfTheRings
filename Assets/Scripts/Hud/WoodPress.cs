@@ -1,4 +1,5 @@
-﻿using TMPro;
+﻿using System;
+using TMPro;
 using UnityEngine;
 
 namespace Hud
@@ -37,10 +38,12 @@ namespace Hud
                 if (product.name != Names.WoodPress) continue;
 
                 HudServices.HideProductInfo();
-                if (GetComponent<Wood>().CurrentWood < product.cost) return;
+                if (GetComponent<Wood>().CurrentWood < product.Cost) return;
 
                 WoodPressesOwned += 1;
-                GetComponent<Wood>().CurrentWood -= product.cost;
+                GetComponent<Wood>().CurrentWood -= product.Cost;
+                product.Cost = Mathf.RoundToInt(product.Cost * 1.1f);
+                HudServices.ProductInfo();
             }
         }
     }

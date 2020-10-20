@@ -35,6 +35,7 @@ namespace Hud
             GetComponent<Wood>().CurrentWood += GetComponent<WoodPress>().WoodPressesOwned +
                                                 GetComponent<Hud>().products[1].productionAmount;
             _lastWoodIncrement = Time.time;
+
         }
     }
 }

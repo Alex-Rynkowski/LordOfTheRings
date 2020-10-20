@@ -12,10 +12,10 @@ namespace Hud
                 if (product.name != Names.GoldPress) continue;
 
                 HideInfoField();
-                if (FindObjectOfType<Gold>().CurrentGold < product.cost) return;
+                if (FindObjectOfType<Gold>().CurrentGold < product.Cost) return;
 
                 FindObjectOfType<GoldPress>().GoldPressesOwned += 1;
-                FindObjectOfType<Gold>().CurrentGold -= product.cost;
+                FindObjectOfType<Gold>().CurrentGold -= product.Cost;
             }
         }
 
