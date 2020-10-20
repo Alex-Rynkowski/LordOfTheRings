@@ -1,3 +1,4 @@
+using System;
 using TMPro;
 using UnityEngine;
 
@@ -7,20 +8,26 @@ namespace Hud
     {
         [SerializeField] TextMeshProUGUI goldText;
         [SerializeField] int startingGold;
-        
+
         public int UpdateGold
         {
             get => startingGold;
             set
             {
                 startingGold = value;
+                PlayerPrefs.SetInt("Gold", value);
                 goldText.text = $"Gold: {value}";
-            } 
+            }
         }
 
         void Start()
         {
-            UpdateGold = startingGold;
+            startingGold = PlayerPrefs.GetInt("Gold", UpdateGold);
+        }
+
+        void OnDestroy()
+        {
+            startingGold = UpdateGold;
         }
 
         void Update()

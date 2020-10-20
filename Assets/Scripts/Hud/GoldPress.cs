@@ -27,7 +27,6 @@ namespace Hud
         {
             GoldPressesOwned = PlayerPrefs.GetInt("GoldPress", GoldPressesOwned);
             goldPressCostText.text = $"Cost: {goldPressCost}";
-            goldPressText.text = $"Goldpresses owned: {GoldPressesOwned}";
         }
 
         void OnDestroy()
