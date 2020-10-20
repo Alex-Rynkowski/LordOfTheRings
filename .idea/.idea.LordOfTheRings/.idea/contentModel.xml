@@ -6,6 +6,7 @@
       <e p="Assets" t="Include">
         <e p="Scripts" t="Include">
           <e p="Hud" t="Include">
+            <e p="Gold.cs" t="Include" />
             <e p="Hud.cs" t="Include" />
           </e>
           <e p="Saving System" t="Include">
