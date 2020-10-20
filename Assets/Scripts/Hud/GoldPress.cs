@@ -9,8 +9,6 @@ namespace Hud
         [SerializeField] TextMeshProUGUI goldPressCostText;
         int _goldPressesOwned;
 
-        ShowProductInfo _showProductInfo;
-
         public int GoldPressesOwned
         {
             get => _goldPressesOwned;
@@ -24,7 +22,6 @@ namespace Hud
 
         void Start()
         {
-            _showProductInfo = FindObjectOfType<ShowProductInfo>();
             GoldPressesOwned = PlayerPrefs.GetInt("GoldPress", GoldPressesOwned);
         }
 
@@ -35,12 +32,11 @@ namespace Hud
 
         public void GoldPressIncrement()
         {
-            _showProductInfo.DoShowProductInfo = false;
             foreach (var product in GetComponent<Hud>().products)
             {
                 if (product.name != Names.GoldPress) continue;
 
-
+                HudServices.HideProductInfo();
                 if (GetComponent<Gold>().CurrentGold < product.cost) return;
 
                 GoldPressesOwned += 1;

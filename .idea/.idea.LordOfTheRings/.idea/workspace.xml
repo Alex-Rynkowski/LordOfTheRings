@@ -20,7 +20,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d41a565d-fe20-4d62-b58e-d94dc2c60b5e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Hud/HudServices.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Hud/HudServices.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.LordOfTheRings/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.LordOfTheRings/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.LordOfTheRings/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.LordOfTheRings/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Hud/GoldPress.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Hud/GoldPress.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Hud/Hud.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Hud/Hud.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Hud/ShowProductInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Hud/ShowProductInfo.cs" afterDir="false" />
     </list>
@@ -55,12 +59,13 @@
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Hud/PurchseProduct.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Hud/Product.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Hud/Gold.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Hud/ProduceGold.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Hud/GoldPress.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Hud/PurchaseProduct.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Hud/ShowProductInfo.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Hud/Gold.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Hud/Hud.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Hud/HudServices.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Hud/GoldPress.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Hud/ShowProductInfo.cs" />
       </list>
     </option>
   </component>
@@ -106,7 +111,7 @@
       <option name="presentableId" value="Default" />
       <updated>1603180691262</updated>
       <workItem from="1603180708073" duration="5135000" />
-      <workItem from="1603186131203" duration="17077000" />
+      <workItem from="1603186131203" duration="17989000" />
     </task>
     <task id="LOCAL−00001" summary="Code cleanup. Fixed errors etc.">
       <created>1603196634409</created>
@@ -198,7 +203,13 @@
       <option name="presentableId" value="LOCAL−00015" />
       <updated>1603218046876</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL−00016" summary="closes product info when clicking anywhere on the canvas">
+      <created>1603221905624</created>
+      <option name="number" value="LOCAL−00016" />
+      <option name="presentableId" value="LOCAL−00016" />
+      <updated>1603221905624</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -235,7 +246,8 @@
     <MESSAGE value="fixes so gold increment based on gold presses" />
     <MESSAGE value="code cleanup" />
     <MESSAGE value="closes field info upon purchase" />
-    <option name="LAST_COMMIT_MESSAGE" value="closes field info upon purchase" />
+    <MESSAGE value="closes product info when clicking anywhere on the canvas" />
+    <option name="LAST_COMMIT_MESSAGE" value="closes product info when clicking anywhere on the canvas" />
   </component>
   <component name="WindowStateProjectService">
     <state x="100" y="125" width="1480" height="747" key="VCS.FileHistoryDialog" timestamp="1603206199010">

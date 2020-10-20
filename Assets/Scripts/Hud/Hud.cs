@@ -20,10 +20,7 @@ namespace Hud
             {
                 if (!EventSystem.current.IsPointerOverGameObject())
                 {
-                    foreach (var showProductInfo in FindObjectsOfType<ShowProductInfo>())
-                    {
-                        showProductInfo.DoShowProductInfo = false;
-                    }
+                    HudServices.HideProductInfo();
                 }
             }
         }
