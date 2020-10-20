@@ -19,7 +19,7 @@ namespace Hud
             if (Input.GetMouseButtonDown(0))
             {
                 EventSystem.current.IsPointerOverGameObject();
-                GetComponent<Gold>().UpdateGold += 5;
+                GetComponent<Gold>().CurrentGold += 5;
             }
         }
 

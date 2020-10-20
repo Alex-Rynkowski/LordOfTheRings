@@ -14,7 +14,7 @@ namespace Hud
         {
             if (!GoldIncrementTimer)
             {
-                GetComponent<Gold>().UpdateGold += GetComponent<GoldPress>().GoldPressesOwned + productionAmount;
+                GetComponent<Gold>().CurrentGold += GetComponent<GoldPress>().GoldPressesOwned + productionAmount;
                 this._lastGoldIncrement = Time.time;
             }
         }

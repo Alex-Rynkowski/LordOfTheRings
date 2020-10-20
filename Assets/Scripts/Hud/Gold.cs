@@ -9,7 +9,7 @@ namespace Hud
         [SerializeField] TextMeshProUGUI goldText;
         [SerializeField] int startingGold;
 
-        public int UpdateGold
+        public int CurrentGold
         {
             get => startingGold;
             set
@@ -22,19 +22,19 @@ namespace Hud
 
         void Start()
         {
-            startingGold = PlayerPrefs.GetInt("Gold", UpdateGold);
+            startingGold = PlayerPrefs.GetInt("Gold", CurrentGold);
         }
 
         void OnDestroy()
         {
-            startingGold = UpdateGold;
+            startingGold = CurrentGold;
         }
 
         void Update()
         {
             if (Input.GetMouseButtonDown(0))
             {
-                UpdateGold += 5;
+                CurrentGold += 5;
             }
         }
     }

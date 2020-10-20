@@ -38,10 +38,10 @@ namespace Hud
             {
                 if (product.name == Names.GoldPress)
                 {
-                    if (GetComponent<Gold>().UpdateGold < product.cost) return;
+                    if (GetComponent<Gold>().CurrentGold < product.cost) return;
 
                     GoldPressesOwned += 1;
-                    GetComponent<Gold>().UpdateGold -= product.cost;
+                    GetComponent<Gold>().CurrentGold -= product.cost;
                 }
             }
         }
