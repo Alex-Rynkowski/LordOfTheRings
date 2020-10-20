@@ -19,15 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d41a565d-fe20-4d62-b58e-d94dc2c60b5e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Hud/HudServices.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Hud/HudServices.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.LordOfTheRings/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.LordOfTheRings/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.LordOfTheRings/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.LordOfTheRings/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Hud/GoldPress.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Hud/GoldPress.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Hud/Hud.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Hud/Hud.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Hud/ShowProductInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Hud/ShowProductInfo.cs" afterDir="false" />
-    </list>
+    <list default="true" id="d41a565d-fe20-4d62-b58e-d94dc2c60b5e" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -111,7 +103,7 @@
       <option name="presentableId" value="Default" />
       <updated>1603180691262</updated>
       <workItem from="1603180708073" duration="5135000" />
-      <workItem from="1603186131203" duration="17989000" />
+      <workItem from="1603186131203" duration="18651000" />
     </task>
     <task id="LOCAL−00001" summary="Code cleanup. Fixed errors etc.">
       <created>1603196634409</created>
@@ -209,7 +201,13 @@
       <option name="presentableId" value="LOCAL−00016" />
       <updated>1603221905624</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL−00017" summary="adds static helper class to the hud. To hide product information">
+      <created>1603223262871</created>
+      <option name="number" value="LOCAL−00017" />
+      <option name="presentableId" value="LOCAL−00017" />
+      <updated>1603223262871</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -247,7 +245,8 @@
     <MESSAGE value="code cleanup" />
     <MESSAGE value="closes field info upon purchase" />
     <MESSAGE value="closes product info when clicking anywhere on the canvas" />
-    <option name="LAST_COMMIT_MESSAGE" value="closes product info when clicking anywhere on the canvas" />
+    <MESSAGE value="adds static helper class to the hud. To hide product information" />
+    <option name="LAST_COMMIT_MESSAGE" value="adds static helper class to the hud. To hide product information" />
   </component>
   <component name="WindowStateProjectService">
     <state x="100" y="125" width="1480" height="747" key="VCS.FileHistoryDialog" timestamp="1603206199010">

@@ -1,6 +1,5 @@
 ﻿using UnityEngine;
 using UnityEngine.EventSystems;
-using UnityEngine.UI;
 
 namespace Hud
 {
@@ -27,10 +26,7 @@ namespace Hud
 
         public void OnPointerClick(PointerEventData eventData)
         {
-            if (_shouldShowInfoFields)
-            {
-                HudServices.HideProductInfo();
-            }
+            HudServices.HideProductInfo();
 
             DoShowProductInfo = true;
         }
