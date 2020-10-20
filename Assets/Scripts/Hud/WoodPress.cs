@@ -3,10 +3,10 @@ using UnityEngine;
 
 namespace Hud
 {
+    [RequireComponent(typeof(Wood))]
     public class WoodPress : MonoBehaviour
     {
         [SerializeField] TextMeshProUGUI woodPressText;
-        [SerializeField] TextMeshProUGUI woodPressCostText;
         int _woodPressesOwned;
 
         public int WoodPressesOwned
@@ -30,7 +30,7 @@ namespace Hud
             PlayerPrefs.SetInt("WoodPress", WoodPressesOwned);
         }
 
-        public void GoldPressIncrement()
+        public void WoodPressPurchase()
         {
             foreach (var product in GetComponent<Hud>().products)
             {

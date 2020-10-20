@@ -10,10 +10,12 @@
             <e p="GoldPress.cs" t="Include" />
             <e p="Hud.cs" t="Include" />
             <e p="HudServices.cs" t="Include" />
-            <e p="ProduceGold.cs" t="Include" />
+            <e p="ProduceResources.cs" t="Include" />
             <e p="Product.cs" t="Include" />
             <e p="PurchaseProduct.cs" t="Include" />
             <e p="ShowProductInfo.cs" t="Include" />
+            <e p="Wood.cs" t="Include" />
+            <e p="WoodPress.cs" t="Include" />
           </e>
         </e>
         <e p="TextMesh Pro" t="Include">

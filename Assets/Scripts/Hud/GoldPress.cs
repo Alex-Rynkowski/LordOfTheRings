@@ -6,7 +6,6 @@ namespace Hud
     public class GoldPress : MonoBehaviour
     {
         [SerializeField] TextMeshProUGUI goldPressText;
-        [SerializeField] TextMeshProUGUI goldPressCostText;
         int _goldPressesOwned;
 
         public int GoldPressesOwned
@@ -30,7 +29,7 @@ namespace Hud
             PlayerPrefs.SetInt("GoldPress", GoldPressesOwned);
         }
 
-        public void GoldPressIncrement()
+        public void GoldPressPurchase()
         {
             foreach (var product in GetComponent<Hud>().products)
             {
