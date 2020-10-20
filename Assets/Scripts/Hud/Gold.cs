@@ -29,13 +29,5 @@ namespace Hud
         {
             startingGold = CurrentGold;
         }
-
-        void Update()
-        {
-            if (Input.GetMouseButtonDown(0))
-            {
-                CurrentGold += 5;
-            }
-        }
     }
 }

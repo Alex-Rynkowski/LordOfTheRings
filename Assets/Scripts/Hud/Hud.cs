@@ -18,8 +18,13 @@ namespace Hud
         {
             if (Input.GetMouseButtonDown(0))
             {
-                EventSystem.current.IsPointerOverGameObject();
-                GetComponent<Gold>().CurrentGold += 5;
+                if (!EventSystem.current.IsPointerOverGameObject())
+                {
+                    foreach (var showProductInfo in FindObjectsOfType<ShowProductInfo>())
+                    {
+                        showProductInfo.DoShowProductInfo = false;
+                    }
+                }
             }
         }
 

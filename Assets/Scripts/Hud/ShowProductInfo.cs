@@ -8,7 +8,7 @@ namespace Hud
     {
         [SerializeField] GameObject infoField;
 
-        public bool _shouldShowInfoFields;
+        bool _shouldShowInfoFields;
 
         public bool DoShowProductInfo
         {

@@ -21,8 +21,7 @@
   <component name="ChangeListManager">
     <list default="true" id="d41a565d-fe20-4d62-b58e-d94dc2c60b5e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.LordOfTheRings/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.LordOfTheRings/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Hud/GoldPress.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Hud/GoldPress.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Hud/PurchaseProduct.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Hud/PurchaseProduct.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Hud/Hud.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Hud/Hud.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Hud/ShowProductInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Hud/ShowProductInfo.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -56,12 +55,12 @@
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Hud/PurchseProduct.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Hud/Product.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Hud/Hud.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Hud/Gold.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Hud/ProduceGold.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Hud/GoldPress.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Hud/ShowProductInfo.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Hud/PurchaseProduct.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Hud/ShowProductInfo.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Hud/Hud.cs" />
       </list>
     </option>
   </component>
@@ -107,7 +106,7 @@
       <option name="presentableId" value="Default" />
       <updated>1603180691262</updated>
       <workItem from="1603180708073" duration="5135000" />
-      <workItem from="1603186131203" duration="16200000" />
+      <workItem from="1603186131203" duration="17077000" />
     </task>
     <task id="LOCAL−00001" summary="Code cleanup. Fixed errors etc.">
       <created>1603196634409</created>
@@ -193,7 +192,13 @@
       <option name="presentableId" value="LOCAL−00014" />
       <updated>1603216098061</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL−00015" summary="closes field info upon purchase">
+      <created>1603218046876</created>
+      <option name="number" value="LOCAL−00015" />
+      <option name="presentableId" value="LOCAL−00015" />
+      <updated>1603218046876</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -229,7 +234,8 @@
     <MESSAGE value="renames UpdateGold --&gt; CurrentGold" />
     <MESSAGE value="fixes so gold increment based on gold presses" />
     <MESSAGE value="code cleanup" />
-    <option name="LAST_COMMIT_MESSAGE" value="code cleanup" />
+    <MESSAGE value="closes field info upon purchase" />
+    <option name="LAST_COMMIT_MESSAGE" value="closes field info upon purchase" />
   </component>
   <component name="WindowStateProjectService">
     <state x="100" y="125" width="1480" height="747" key="VCS.FileHistoryDialog" timestamp="1603206199010">
