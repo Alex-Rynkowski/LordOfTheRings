@@ -8,20 +8,16 @@ namespace Hud
 {
     public class Hud : MonoBehaviour
     {
-        [SerializeField] TextMeshProUGUI goldText;
+        
         [SerializeField] TextMeshProUGUI goldPressText;
-        [SerializeField] int playerGold;
+        
         [SerializeField] TextMeshProUGUI goldPressCostText;
         [SerializeField] int goldPressCost;
         [SerializeField] float productionTime;
         [SerializeField] int productionAmount;
         float _lastGoldIncrement;
 
-        public int Gold
-        {
-            get => playerGold;
-            set => playerGold = value;
-        }
+ 
 
         public int GoldPressesOwned { get; set; }
 
@@ -66,11 +62,6 @@ namespace Hud
             }
         }
 
-        void GoldText()
-        {
-            goldText.text = $"Gold: {Gold}";
-        }
-
         void GoldPressText()
         {
             goldPressText.text = $"Goldpresses owned: {GoldPressesOwned}";
@@ -89,12 +80,12 @@ namespace Hud
             Gold -= GoldPressCost;
         }
 
-        public void Save()
+       void Save()
         {
             SaveSystem.Save(this);
         }
 
-        public void Load()
+      void Load()
         {
             PlayerData data = SaveSystem.Load();
 
