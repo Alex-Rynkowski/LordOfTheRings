@@ -1,6 +1,8 @@
 ﻿using System;
 using TMPro;
 using UnityEngine;
+using UnityEngine.EventSystems;
+using Saving_System;
 
 namespace Hud
 {
@@ -9,7 +11,7 @@ namespace Hud
         [SerializeField] TextMeshProUGUI goldText;
         [SerializeField] int playerGold;
 
-        int Gold
+        public int Gold
         {
             get => playerGold;
             set => playerGold = value;
@@ -20,15 +22,42 @@ namespace Hud
             GoldText();
         }
 
+        void Update()
+        {
+            GoldText();
+            if (Input.GetMouseButtonDown(0))
+            {
+                EventSystem.current.IsPointerOverGameObject();
+                Gold += 5;
+                GoldText();
+            }
+
+            if (Input.GetKeyDown(KeyCode.S))
+            {
+                Save();
+            }
+
+            if (Input.GetKeyDown(KeyCode.L))
+            {
+                Load();
+            }
+        }
+
         void GoldText()
         {
             goldText.text = $"Gold: {Gold}";
         }
 
-        public void IncrementGold(int goldToIncrement)
+        public void Save()
         {
-            Gold += 5;
-            GoldText();
+            SaveSystem.Save(this);
+        }
+
+        public void Load()
+        {
+            PlayerData data = SaveSystem.Load();
+
+            Gold = data._gold;
         }
     }
 }
