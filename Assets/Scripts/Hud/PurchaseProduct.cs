@@ -7,7 +7,24 @@ namespace Hud
     {
         public void OnPointerClick(PointerEventData eventData)
         {
-            
+            foreach (var product in FindObjectOfType<Hud>().products)
+            {
+                if (product.name != Names.GoldPress) continue;
+
+                HideInfoField();
+                if (FindObjectOfType<Gold>().CurrentGold < product.cost) return;
+
+                FindObjectOfType<GoldPress>().GoldPressesOwned += 1;
+                FindObjectOfType<Gold>().CurrentGold -= product.cost;
+            }
+        }
+
+        static void HideInfoField()
+        {
+            foreach (var showProductInfo in FindObjectsOfType<ShowProductInfo>())
+            {
+                showProductInfo.DoShowProductInfo = false;
+            }
         }
     }
 }
