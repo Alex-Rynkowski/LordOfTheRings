@@ -1,4 +1,3 @@
-using System;
 using TMPro;
 using UnityEngine;
 
@@ -24,7 +23,6 @@ namespace Hud
         void Start()
         {
             GoldPressesOwned = PlayerPrefs.GetInt("GoldPress", GoldPressesOwned);
-//            goldPressCostText.text = $"Cost: {products[0].cost}";
         }
 
         void OnDestroy()

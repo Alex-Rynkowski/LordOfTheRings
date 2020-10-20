@@ -4,17 +4,15 @@ namespace Hud
 {
     public class ProduceGold : MonoBehaviour
     {
-        [SerializeField] float productionTime;
-        [SerializeField] int productionAmount;
-
         float _lastGoldIncrement;
-        bool GoldIncrementTimer => Time.time - this._lastGoldIncrement < productionTime;
+        bool GoldIncrementTimer => Time.time - this._lastGoldIncrement < GetComponent<Hud>().products[0].productionTime;
 
         void Update()
         {
             if (!GoldIncrementTimer)
             {
-                GetComponent<Gold>().CurrentGold += GetComponent<GoldPress>().GoldPressesOwned + productionAmount;
+                GetComponent<Gold>().CurrentGold += GetComponent<GoldPress>().GoldPressesOwned +
+                                                    GetComponent<Hud>().products[0].productionAmount;
                 this._lastGoldIncrement = Time.time;
             }
         }
