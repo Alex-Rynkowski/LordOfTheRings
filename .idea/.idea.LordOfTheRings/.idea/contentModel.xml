@@ -11,6 +11,7 @@
             <e p="Hud.cs" t="Include" />
             <e p="ProduceGold.cs" t="Include" />
             <e p="Product.cs" t="Include" />
+            <e p="PurchaseProduct.cs" t="Include" />
             <e p="ShowProductInfo.cs" t="Include" />
           </e>
         </e>
