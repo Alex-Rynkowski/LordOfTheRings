@@ -9,7 +9,9 @@
             <e p="Gold.cs" t="Include" />
             <e p="GoldPress.cs" t="Include" />
             <e p="Hud.cs" t="Include" />
+            <e p="ProduceGold.cs" t="Include" />
             <e p="Product.cs" t="Include" />
+            <e p="ShowProductInfo.cs" t="Include" />
           </e>
         </e>
         <e p="TextMesh Pro" t="Include">
