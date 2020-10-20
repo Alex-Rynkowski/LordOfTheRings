@@ -7,7 +7,7 @@ namespace Hud
     [RequireComponent(typeof(Gold)), RequireComponent(typeof(GoldPress))]
     public class Hud : MonoBehaviour
     {
-        [SerializeField] Product[] products;
+        public Product[] products;
 
         void Start()
         {

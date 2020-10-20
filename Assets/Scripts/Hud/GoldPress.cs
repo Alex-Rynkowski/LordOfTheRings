@@ -32,12 +32,18 @@ namespace Hud
             PlayerPrefs.SetInt("GoldPress", GoldPressesOwned);
         }
 
-        // public void GoldPressIncrement()
-        // {
-        //     if (GetComponent<Gold>().UpdateGold < products[0].cost) return;
-        //
-        //     GoldPressesOwned += 1;
-        //     GetComponent<Gold>().UpdateGold -= products[0].cost;
-        // }
+        public void GoldPressIncrement()
+        {
+            foreach (var product in GetComponent<Hud>().products)
+            {
+                if (product.name == Names.GoldPress)
+                {
+                    if (GetComponent<Gold>().UpdateGold < product.cost) return;
+
+                    GoldPressesOwned += 1;
+                    GetComponent<Gold>().UpdateGold -= product.cost;
+                }
+            }
+        }
     }
 }
