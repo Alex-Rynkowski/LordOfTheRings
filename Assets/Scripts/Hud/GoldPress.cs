@@ -16,7 +16,7 @@ namespace Hud
             {
                 _goldPressesOwned = value;
                 PlayerPrefs.SetInt("GoldPress", value);
-                goldPressText.text = $"Goldpresses owned: {value}";
+                goldPressText.text = $"GD owned: {value}";
             }
         }
 
