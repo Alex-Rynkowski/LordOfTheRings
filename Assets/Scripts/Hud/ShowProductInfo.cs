@@ -8,22 +8,32 @@ namespace Hud
     {
         [SerializeField] GameObject infoField;
 
-       public bool DoShowProductInfo { private get; set; }
+        bool _shouldShowInfoFields;
+
+        public bool DoShowProductInfo
+        {
+            private get => _shouldShowInfoFields;
+            set
+            {
+                _shouldShowInfoFields = value;
+                infoField.SetActive(value);
+            }
+        }
 
         void Start()
         {
-            infoField.SetActive(DoShowProductInfo = false);
+            DoShowProductInfo = false;
         }
 
         public void OnPointerClick(PointerEventData eventData)
         {
             if (DoShowProductInfo)
             {
-                infoField.SetActive(DoShowProductInfo = false);
+                DoShowProductInfo = false;
                 return;
             }
 
-            infoField.SetActive(DoShowProductInfo = true);
+            DoShowProductInfo = true;
         }
     }
 }
