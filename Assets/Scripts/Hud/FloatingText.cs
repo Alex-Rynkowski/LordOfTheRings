@@ -9,7 +9,7 @@ namespace Hud
         [SerializeField] float textLenght = 2;
         [SerializeField] float textFloatSpeed = 2;
         [SerializeField] TextMeshProUGUI floatingText;
-
+        
         [Tooltip("Where should the text move from?")] [SerializeField]
         Transform goldTextStartPosition;
 
@@ -18,7 +18,7 @@ namespace Hud
 
         void Update()
         {
-            if (!FindObjectOfType<ProduceResources>().GoldProduceTimer)
+            if (!FindObjectOfType<ProduceResources>().GoldProduceTimer && FindObjectOfType<AvailableProducts>().products[0].name == Names.GoldPress)
             {
                 StartCoroutine(FloatingResourceText(textLenght, goldTextStartPosition, goldTextTargetPosition));
             }

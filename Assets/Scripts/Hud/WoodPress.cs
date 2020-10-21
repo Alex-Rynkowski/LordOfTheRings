@@ -33,7 +33,7 @@ namespace Hud
 
         public void WoodPressPurchase()
         {
-            foreach (var product in GetComponent<Hud>().products)
+            foreach (var product in FindObjectOfType<AvailableProducts>().products)
             {
                 if (product.name != Names.WoodPress) continue;
 

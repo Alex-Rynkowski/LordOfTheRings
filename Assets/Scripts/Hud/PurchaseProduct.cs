@@ -7,7 +7,7 @@ namespace Hud
     {
         public void OnPointerClick(PointerEventData eventData)
         {
-            foreach (var product in FindObjectOfType<Hud>().products)
+            foreach (var product in FindObjectOfType<AvailableProducts>().products)
             {
                 if (product.name != Names.GoldPress) continue;
 

@@ -31,7 +31,7 @@ namespace Hud
 
         public void GoldPressPurchase()
         {
-            foreach (var product in GetComponent<Hud>().products)
+            foreach (var product in FindObjectOfType<AvailableProducts>().products)
             {
                 if (product.name != Names.GoldPress) continue;
 
