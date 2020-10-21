@@ -19,21 +19,21 @@ namespace Hud
 
         void Update()
         {
-            if (!GetComponent<ProduceResources>().GoldProduceTimer)
+            if (!FindObjectOfType<ProduceResources>().GoldProduceTimer)
             {
-                StartCoroutine(FloatingResourceText(goldTextStartPosition, goldTextTargetPosition));
+                StartCoroutine(FloatingResourceText(textLenght, goldTextStartPosition, goldTextTargetPosition));
             }
         }
 
-        IEnumerator FloatingResourceText(Transform startPosition, Transform targetPosition)
+        IEnumerator FloatingResourceText(float lenght, Transform startPosition, Transform targetPosition)
         {
             var floatText = Instantiate(floatingGoldText, startPosition.position, Quaternion.identity);
             floatText.transform.parent = FindObjectOfType<Hud>().transform;
             floatText.transform.position = startPosition.position;
 
-            while (this.textLenght > 0)
+            while (lenght > 0)
             {
-                this.textLenght -= Time.deltaTime;
+                lenght -= Time.deltaTime;
 
                 var velocity = Vector3.zero;
                 var target =

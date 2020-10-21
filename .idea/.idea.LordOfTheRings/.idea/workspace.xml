@@ -37,6 +37,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Hud/ProduceResources.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="mock:///Users/alexrynkowski/Documents/LordOfTheRings/Assets/Scripts/Hud/GoldPress.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Hud/FloatingText.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock:///Users/alexrynkowski/Documents/LordOfTheRings/Assets/Scripts/Hud/FloatingText.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Hud/PurchaseProduct.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../Mario Marcs Stuff/Assets/Scripts/Health.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Hud/ShowProductInfo.cs" root0="FORCE_HIGHLIGHTING" />
@@ -117,7 +118,7 @@
       <option name="presentableId" value="Default" />
       <updated>1603180691262</updated>
       <workItem from="1603180708073" duration="5135000" />
-      <workItem from="1603186131203" duration="42868000" />
+      <workItem from="1603186131203" duration="43506000" />
     </task>
     <task id="LOCAL−00001" summary="Code cleanup. Fixed errors etc.">
       <created>1603196634409</created>
@@ -263,7 +264,13 @@
       <option name="presentableId" value="LOCAL−00024" />
       <updated>1603284361772</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL−00025" summary="adds customizable floating text">
+      <created>1603294111194</created>
+      <option name="number" value="LOCAL−00025" />
+      <option name="presentableId" value="LOCAL−00025" />
+      <updated>1603294111194</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -309,7 +316,8 @@
     <MESSAGE value="adds higher wood press cost for each purchase." />
     <MESSAGE value="adds floating text for Gold" />
     <MESSAGE value="fixes smooth floating text" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixes smooth floating text" />
+    <MESSAGE value="adds customizable floating text" />
+    <option name="LAST_COMMIT_MESSAGE" value="adds customizable floating text" />
   </component>
   <component name="WindowStateProjectService">
     <state x="100" y="125" width="1480" height="747" key="VCS.FileHistoryDialog" timestamp="1603206199010">
