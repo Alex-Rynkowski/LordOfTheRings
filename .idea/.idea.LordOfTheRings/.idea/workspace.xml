@@ -21,6 +21,7 @@
   <component name="ChangeListManager">
     <list default="true" id="d41a565d-fe20-4d62-b58e-d94dc2c60b5e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.LordOfTheRings/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.LordOfTheRings/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Hud/FloatingText.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Hud/FloatingText.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -116,7 +117,7 @@
       <option name="presentableId" value="Default" />
       <updated>1603180691262</updated>
       <workItem from="1603180708073" duration="5135000" />
-      <workItem from="1603186131203" duration="40343000" />
+      <workItem from="1603186131203" duration="42868000" />
     </task>
     <task id="LOCAL−00001" summary="Code cleanup. Fixed errors etc.">
       <created>1603196634409</created>
@@ -256,7 +257,13 @@
       <option name="presentableId" value="LOCAL−00023" />
       <updated>1603270208618</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL−00024" summary="fixes smooth floating text">
+      <created>1603284361772</created>
+      <option name="number" value="LOCAL−00024" />
+      <option name="presentableId" value="LOCAL−00024" />
+      <updated>1603284361772</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -301,7 +308,8 @@
     <MESSAGE value="fixes wood &amp; WoodPress.cs. Should now work correctly" />
     <MESSAGE value="adds higher wood press cost for each purchase." />
     <MESSAGE value="adds floating text for Gold" />
-    <option name="LAST_COMMIT_MESSAGE" value="adds floating text for Gold" />
+    <MESSAGE value="fixes smooth floating text" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixes smooth floating text" />
   </component>
   <component name="WindowStateProjectService">
     <state x="100" y="125" width="1480" height="747" key="VCS.FileHistoryDialog" timestamp="1603206199010">

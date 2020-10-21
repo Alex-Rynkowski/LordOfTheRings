@@ -1,6 +1,4 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections;
 using TMPro;
 using UnityEngine;
 
@@ -8,42 +6,49 @@ namespace Hud
 {
     public class FloatingText : MonoBehaviour
     {
+        [SerializeField] float textLenght = 2;
+        [SerializeField] float textFloatSpeed = 2;
         [SerializeField] TextMeshProUGUI floatingGoldText;
         [SerializeField] TextMeshProUGUI floatingWoodText;
+
+        [Tooltip("Where should the text move from?")] [SerializeField]
+        Transform goldTextStartPosition;
+
+        [Tooltip("Where should the text float towards?")] [SerializeField]
+        Transform goldTextTargetPosition;
 
         void Update()
         {
             if (!GetComponent<ProduceResources>().GoldProduceTimer)
             {
-                StartCoroutine(FloatingGold(2f));
+                StartCoroutine(FloatingResourceText(goldTextStartPosition, goldTextTargetPosition));
             }
         }
 
-
-        IEnumerator FloatingGold(float floatTimer)
+        IEnumerator FloatingResourceText(Transform startPosition, Transform targetPosition)
         {
-            var floatText = Instantiate(floatingGoldText, transform.position, Quaternion.identity);
+            var floatText = Instantiate(floatingGoldText, startPosition.position, Quaternion.identity);
             floatText.transform.parent = FindObjectOfType<Hud>().transform;
-            floatText.transform.position = floatingGoldText.transform.position;
+            floatText.transform.position = startPosition.position;
 
-            while (floatTimer > 0)
+            while (this.textLenght > 0)
             {
-                floatTimer -= Time.deltaTime;
+                this.textLenght -= Time.deltaTime;
+
                 var velocity = Vector3.zero;
-                floatText.transform.position = Vector3.SmoothDamp(floatText.transform.position,
-                    new Vector3(floatText.transform.position.x, floatText.transform.position.y * 70, 0), ref velocity,
-                    2);
+                var target =
+                    new Vector3(floatText.transform.position.x * (targetPosition.position.x - startPosition.position.x),
+                        floatText.transform.position.y * (targetPosition.position.y - startPosition.position.y), 0);
+
+                floatText.transform.position = Vector3.SmoothDamp(floatText.transform.position, target, ref velocity,
+                    this.textFloatSpeed);
 
                 floatText.GetComponent<TextMeshProUGUI>().alpha -= Time.deltaTime;
-                
+
                 yield return null;
             }
 
             Destroy(floatText.gameObject);
-        }
-
-        void FloatingWoodText()
-        {
         }
     }
 }
