@@ -20,7 +20,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d41a565d-fe20-4d62-b58e-d94dc2c60b5e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.LordOfTheRings/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.LordOfTheRings/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Hud/FloatingText.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Hud/FloatingText.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -118,7 +117,7 @@
       <option name="presentableId" value="Default" />
       <updated>1603180691262</updated>
       <workItem from="1603180708073" duration="5135000" />
-      <workItem from="1603186131203" duration="43506000" />
+      <workItem from="1603186131203" duration="43909000" />
     </task>
     <task id="LOCAL−00001" summary="Code cleanup. Fixed errors etc.">
       <created>1603196634409</created>
@@ -270,7 +269,13 @@
       <option name="presentableId" value="LOCAL−00025" />
       <updated>1603294111194</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL−00026" summary="fixes few bugs with customizable floating text">
+      <created>1603294610591</created>
+      <option name="number" value="LOCAL−00026" />
+      <option name="presentableId" value="LOCAL−00026" />
+      <updated>1603294610591</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -292,7 +297,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="Code cleanup. Fixed errors etc." />
     <MESSAGE value="Moved goldpress to a separate component" />
     <MESSAGE value="adds saving for Gold presses" />
     <MESSAGE value="adds saving for Gold" />
@@ -317,7 +321,8 @@
     <MESSAGE value="adds floating text for Gold" />
     <MESSAGE value="fixes smooth floating text" />
     <MESSAGE value="adds customizable floating text" />
-    <option name="LAST_COMMIT_MESSAGE" value="adds customizable floating text" />
+    <MESSAGE value="fixes few bugs with customizable floating text" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixes few bugs with customizable floating text" />
   </component>
   <component name="WindowStateProjectService">
     <state x="100" y="125" width="1480" height="747" key="VCS.FileHistoryDialog" timestamp="1603206199010">

@@ -8,8 +8,7 @@ namespace Hud
     {
         [SerializeField] float textLenght = 2;
         [SerializeField] float textFloatSpeed = 2;
-        [SerializeField] TextMeshProUGUI floatingGoldText;
-        [SerializeField] TextMeshProUGUI floatingWoodText;
+        [SerializeField] TextMeshProUGUI floatingText;
 
         [Tooltip("Where should the text move from?")] [SerializeField]
         Transform goldTextStartPosition;
@@ -27,7 +26,7 @@ namespace Hud
 
         IEnumerator FloatingResourceText(float lenght, Transform startPosition, Transform targetPosition)
         {
-            var floatText = Instantiate(floatingGoldText, startPosition.position, Quaternion.identity);
+            var floatText = Instantiate(floatingText, startPosition.position, Quaternion.identity);
             floatText.transform.parent = FindObjectOfType<Hud>().transform;
             floatText.transform.position = startPosition.position;
 
