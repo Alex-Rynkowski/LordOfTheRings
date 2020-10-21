@@ -11,7 +11,7 @@ namespace Hud
 
         void Start()
         {
-            HudServices.ProductInfo();
+            HudServices.UpdateProductInfo();
         }
 
         void Update()

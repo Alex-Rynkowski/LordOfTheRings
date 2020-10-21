@@ -20,14 +20,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d41a565d-fe20-4d62-b58e-d94dc2c60b5e" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.LordOfTheRings/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.LordOfTheRings/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.LordOfTheRings/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.LordOfTheRings/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main Scene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Main Scene.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Hud/GoldPress.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Hud/GoldPress.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Hud/Hud.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Hud/Hud.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Hud/HudServices.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Hud/HudServices.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Hud/ProduceResources.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Hud/ProduceResources.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Hud/Product.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Hud/Product.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Hud/PurchaseProduct.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Hud/PurchaseProduct.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Hud/WoodPress.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Hud/WoodPress.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,6 +42,7 @@
     <setting file="file://$PROJECT_DIR$/../Mario Marcs Stuff/Assets/Scripts/TimeLimit.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Hud/ProduceResources.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="mock:///Users/alexrynkowski/Documents/LordOfTheRings/Assets/Scripts/Hud/GoldPress.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Hud/FloatingText.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Hud/PurchaseProduct.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../Mario Marcs Stuff/Assets/Scripts/Health.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Hud/ShowProductInfo.cs" root0="FORCE_HIGHLIGHTING" />
@@ -67,13 +69,14 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Hud/Gold.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Hud/ShowProductInfo.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Hud/Wood.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Hud/ProduceResources.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Hud/Hud.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Hud/GoldPress.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Hud/HudServices.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Hud/PurchaseProduct.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Hud/Product.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Hud/WoodPress.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Hud/ProduceResources.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Hud/HudServices.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Hud/GoldPress.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Hud/FloatingText.cs" />
       </list>
     </option>
   </component>
@@ -119,7 +122,7 @@
       <option name="presentableId" value="Default" />
       <updated>1603180691262</updated>
       <workItem from="1603180708073" duration="5135000" />
-      <workItem from="1603186131203" duration="22583000" />
+      <workItem from="1603186131203" duration="29984000" />
     </task>
     <task id="LOCAL−00001" summary="Code cleanup. Fixed errors etc.">
       <created>1603196634409</created>
@@ -247,7 +250,13 @@
       <option name="presentableId" value="LOCAL−00021" />
       <updated>1603225959426</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL−00022" summary="adds higher wood press cost for each purchase.">
+      <created>1603227685379</created>
+      <option name="number" value="LOCAL−00022" />
+      <option name="presentableId" value="LOCAL−00022" />
+      <updated>1603227685379</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -290,16 +299,18 @@
     <MESSAGE value="adds wood press component" />
     <MESSAGE value="adds wood component" />
     <MESSAGE value="fixes wood &amp; WoodPress.cs. Should now work correctly" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixes wood &amp; WoodPress.cs. Should now work correctly" />
+    <MESSAGE value="adds higher wood press cost for each purchase." />
+    <option name="LAST_COMMIT_MESSAGE" value="adds higher wood press cost for each purchase." />
   </component>
   <component name="WindowStateProjectService">
     <state x="100" y="125" width="1480" height="747" key="VCS.FileHistoryDialog" timestamp="1603206199010">
       <screen x="0" y="23" width="1680" height="947" />
     </state>
     <state x="100" y="125" width="1480" height="747" key="VCS.FileHistoryDialog/0.23.1680.947@0.23.1680.947" timestamp="1603206199010" />
-    <state x="503" y="230" width="672" height="678" key="search.everywhere.popup" timestamp="1603183287063">
-      <screen x="0" y="23" width="1680" height="949" />
+    <state x="503" y="230" width="672" height="677" key="search.everywhere.popup" timestamp="1603228175306">
+      <screen x="0" y="23" width="1680" height="947" />
     </state>
+    <state x="503" y="230" width="672" height="677" key="search.everywhere.popup/0.23.1680.947@0.23.1680.947" timestamp="1603228175306" />
     <state x="503" y="230" width="672" height="678" key="search.everywhere.popup/0.23.1680.949@0.23.1680.949" timestamp="1603183287063" />
   </component>
 </project>

@@ -42,8 +42,7 @@ namespace Hud
 
                 WoodPressesOwned += 1;
                 GetComponent<Wood>().CurrentWood -= product.Cost;
-                product.Cost = Mathf.RoundToInt(product.Cost * 1.1f);
-                HudServices.ProductInfo();
+                HudServices.UpdateProductInfo(1, 1.1f);
             }
         }
     }

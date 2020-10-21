@@ -13,7 +13,7 @@ namespace Hud
             }
         }
 
-        public static void ProductInfo()
+        public static void UpdateProductInfo()
         {
             foreach (var product in Object.FindObjectOfType<Hud>().products)
             {
@@ -23,5 +23,14 @@ namespace Hud
                 product.productionAmountText.text = $"Production: {product.productionAmount}x";
             }
         }
+
+        public static void UpdateProductInfo(int arrayPosition, float increaseCostBy)
+        {
+            var product = Object.FindObjectOfType<Hud>();
+            product.products[arrayPosition].Cost =
+                Mathf.RoundToInt(product.products[arrayPosition].Cost * increaseCostBy);
+            product.products[arrayPosition].costText.text = $"Cost: {product.products[arrayPosition].Cost}$";
+        }
+        
     }
 }

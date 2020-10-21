@@ -6,31 +6,31 @@ namespace Hud
     {
         float _lastGoldIncrement;
         float _lastWoodIncrement;
-        bool GoldIncrementTimer => Time.time - _lastGoldIncrement < GetComponent<Hud>().products[0].productionTime;
+        public bool GoldProduceTimer => Time.time - _lastGoldIncrement < GetComponent<Hud>().products[0].productionTime;
 
-        bool WoodIncrementTimer => Time.time - _lastWoodIncrement < GetComponent<Hud>().products[1].productionTime;
+        bool WoodProduceTimer => Time.time - _lastWoodIncrement < GetComponent<Hud>().products[1].productionTime;
 
         void Update()
         {
-            if (!GoldIncrementTimer)
+            if (!GoldProduceTimer)
             {
-                IncrementGold();
+                ProduceGold();
             }
 
-            if (!WoodIncrementTimer)
+            if (!WoodProduceTimer)
             {
-                IncrementWood();
+                ProduceWood();
             }
         }
 
-        void IncrementGold()
+        void ProduceGold()
         {
             GetComponent<Gold>().CurrentGold += GetComponent<GoldPress>().GoldPressesOwned +
                                                 GetComponent<Hud>().products[0].productionAmount;
             _lastGoldIncrement = Time.time;
         }
 
-        void IncrementWood()
+        void ProduceWood()
         {
             GetComponent<Wood>().CurrentWood += GetComponent<WoodPress>().WoodPressesOwned +
                                                 GetComponent<Hud>().products[1].productionAmount;
