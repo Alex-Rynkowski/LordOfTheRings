@@ -42,7 +42,7 @@ namespace Hud
 
                 WoodPressesOwned += 1;
                 GetComponent<Wood>().CurrentWood -= product.Cost;
-                HudServices.UpdateProductInfo(1, 1.1f);
+                FindObjectOfType<AvailableProducts>().UpdateProductInfo(1, 1.1f);
             }
         }
     }

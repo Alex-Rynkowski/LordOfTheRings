@@ -40,7 +40,7 @@ namespace Hud
 
                 GoldPressesOwned += 1;
                 GetComponent<Gold>().CurrentGold -= product.Cost;
-                HudServices.UpdateProductInfo(0, 2f);
+                FindObjectOfType<AvailableProducts>().UpdateProductInfo(0, 2f);
             }
         }
     }

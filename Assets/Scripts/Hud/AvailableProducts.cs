@@ -23,5 +23,19 @@ namespace Hud
                 product.productionAmountText.text = $"Production: {product.productionAmount}x";
             }
         }
+
+        public void UpdateProductInfo(int arrayPosition, float increaseCostBy)
+        {
+            for (int i = 0; i < products.Length; i++)
+            {
+                if (i == arrayPosition)
+                {
+                    products[i].Cost =
+                        Mathf.RoundToInt(products[i].Cost * increaseCostBy);
+                    products[i].costText.text = $"Cost: {products[i].Cost}$";
+                    break;
+                }
+            }
+        }
     }
 }
