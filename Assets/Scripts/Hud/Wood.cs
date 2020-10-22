@@ -8,7 +8,7 @@ namespace Hud
     {
         [SerializeField] TextMeshProUGUI woodText;
         [SerializeField] int startingWood;
-
+        [SerializeField] RType rType;
         public int CurrentWood
         {
             get => startingWood;
@@ -22,13 +22,13 @@ namespace Hud
 
         void Awake()
         {
-            startingWood = PlayerPrefs.GetInt("Wood", CurrentWood);
+            //CurrentWood = PlayerPrefs.GetInt("Wood", CurrentWood);
         }
         
 
         void OnDestroy()
         {
-            startingWood = CurrentWood;
+            //startingWood = CurrentWood;
         }
     }
 }

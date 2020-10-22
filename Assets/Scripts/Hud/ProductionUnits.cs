@@ -6,11 +6,11 @@ namespace Hud
     [System.Serializable]
     public class ProductionUnits
     {
-        public UnitType unitType;
+        public RType rType;
         
         [Header("Name attributes")] 
         public TextMeshProUGUI nameText;
-        public Names name;
+        public UnitName unitName;
         
         [Header("Cost attributes")] 
         public TextMeshProUGUI costText;
@@ -18,11 +18,11 @@ namespace Hud
 
         public int Cost
         {
-            get => PlayerPrefs.GetInt(name + "1", cost);
+            get => PlayerPrefs.GetInt(unitName + "1", cost);
             set
             {
                 cost = value;
-                PlayerPrefs.SetInt(name + "1", value);
+                PlayerPrefs.SetInt(unitName + "1", value);
             }
         }
 
@@ -31,11 +31,11 @@ namespace Hud
 
         public int UnitsOwned
         {
-            get => PlayerPrefs.GetInt(name.ToString(), _unitsOwned);
+            get => PlayerPrefs.GetInt(unitName.ToString(), _unitsOwned);
             set
             {
                 _unitsOwned = value;
-                PlayerPrefs.SetInt(name.ToString(), value);
+                PlayerPrefs.SetInt(unitName.ToString(), value);
             }
         }
 
@@ -46,17 +46,7 @@ namespace Hud
         [Header("Production Amount attribute")]
         public TextMeshProUGUI productionAmountText;
         public int productionAmount;
-    }
 
-    public enum Names
-    {
-        GoldPress,
-        WoodPress
-    }
-
-    public enum UnitType
-    {
-        Gold,
-        Wood
+        public ResourceType resourceType;
     }
 }

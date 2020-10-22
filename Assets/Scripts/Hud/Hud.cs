@@ -4,7 +4,6 @@ using UnityEngine.EventSystems;
 
 namespace Hud
 {
-    [RequireComponent(typeof(Gold)), RequireComponent(typeof(GoldPress))]
     public class Hud : MonoBehaviour
     {
         void Update()

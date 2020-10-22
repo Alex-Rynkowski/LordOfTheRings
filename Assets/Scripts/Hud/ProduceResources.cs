@@ -6,9 +6,12 @@ namespace Hud
     {
         float _lastGoldIncrement;
         float _lastWoodIncrement;
-        public bool GoldProduceTimer => Time.time - _lastGoldIncrement < FindObjectOfType<AvailableProducts>().products[0].productionTime;
 
-        bool WoodProduceTimer => Time.time - _lastWoodIncrement < FindObjectOfType<AvailableProducts>().products[1].productionTime;
+        public bool GoldProduceTimer =>
+            Time.time - _lastGoldIncrement < FindObjectOfType<Products>().products[0].productionTime;
+
+        bool WoodProduceTimer =>
+            Time.time - _lastWoodIncrement < FindObjectOfType<Products>().products[1].productionTime;
 
         void Update()
         {
@@ -25,24 +28,28 @@ namespace Hud
 
         void ProduceGold()
         {
-            foreach (var product in FindObjectOfType<AvailableProducts>().products)
+            foreach (var product in FindObjectOfType<Products>().products)
             {
-                if (product.unitType == UnitType.Gold && product.UnitsOwned > 0)
+                if (product.rType == RType.Gold && product.UnitsOwned > 0)
                 {
-                    GetComponent<Gold>().CurrentGold += product.UnitsOwned * product.productionAmount;
+                    product.resourceType.CurrentResource += product.UnitsOwned * product.productionAmount;
                 }
             }
-            // GetComponent<Gold>().CurrentGold += GetComponent<GoldPress>().GoldPressesOwned +
-            //                                     FindObjectOfType<AvailableProducts>().products[0].productionAmount;
+
             _lastGoldIncrement = Time.time;
         }
 
         void ProduceWood()
         {
-            GetComponent<Wood>().CurrentWood += GetComponent<WoodPress>().WoodPressesOwned +
-                                                FindObjectOfType<AvailableProducts>().products[1].productionAmount;
-            _lastWoodIncrement = Time.time;
+            foreach (var product in FindObjectOfType<Products>().products)
+            {
+                if (product.rType == RType.Wood && product.UnitsOwned > 0)
+                {
+                    product.resourceType.CurrentResource += product.UnitsOwned * product.productionAmount;
+                }
+            }
 
+            _lastWoodIncrement = Time.time;
         }
     }
 }

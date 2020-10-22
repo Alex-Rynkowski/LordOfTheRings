@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace Hud
 {
-    public class AvailableProducts : MonoBehaviour
+    public class Products : MonoBehaviour
     {
         public ProductionUnits[] products;
 
@@ -13,22 +13,22 @@ namespace Hud
             UpdateProductInfo();
         }
 
-        public void UpdateProductInfo()
+       void UpdateProductInfo()
         {
             foreach (var product in products)
             {
-                product.nameText.text = product.name.ToString();
+                product.nameText.text = product.unitName.ToString();
                 product.costText.text = $"Cost: {product.Cost}$";
                 product.productionTimeText.text = $"Production time: {product.productionTime}s";
                 product.productionAmountText.text = $"Production: {product.productionAmount}x";
             }
         }
 
-        public void UpdateProductInfo(Names productionUnitName, float increaseCostBy)
+        public void UpdateProductInfo(UnitName productionUnitUnitName, float increaseCostBy)
         {
             foreach (var product in products)
             {
-                if (product.name == productionUnitName && product.UnitsOwned > 0)
+                if (product.unitName == productionUnitUnitName && product.UnitsOwned > 0)
                 {
                     product.Cost = Mathf.RoundToInt(product.Cost * increaseCostBy);
                     product.costText.text = $"Cost: {product.Cost}$";

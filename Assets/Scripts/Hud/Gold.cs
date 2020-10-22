@@ -8,7 +8,7 @@ namespace Hud
     {
         [SerializeField] TextMeshProUGUI goldText;
         [SerializeField] int startingGold;
-
+        [SerializeField] RType rType;
         public int CurrentGold
         {
             get => startingGold;
@@ -22,12 +22,12 @@ namespace Hud
 
         void Awake()
         {
-            CurrentGold = PlayerPrefs.GetInt("Gold", CurrentGold);
+            //CurrentGold = PlayerPrefs.GetInt("Gold", CurrentGold);
         }
 
         void OnDestroy()
         {
-            startingGold = CurrentGold;
+            //startingGold = CurrentGold;
         }
     }
 }

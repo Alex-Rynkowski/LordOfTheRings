@@ -10,25 +10,13 @@ namespace Hud
 
         void Start()
         {
-            HudServices.UpdateTextInfo(goldPressText, $"GD owned:", Names.GoldPress);
+            HudServices.UpdateTextInfo(goldPressText, $"GD owned:", UnitName.GoldPress);
         }
         
         public void GoldPressPurchase()
         {
-            foreach (var product in FindObjectOfType<AvailableProducts>().products)
-            {
-                if (product.name != Names.GoldPress) continue;
-
-                HudServices.HideProductInfo();
-                if (GetComponent<Gold>().CurrentGold < product.Cost) return;
-
-                product.UnitsOwned += 1;
-                //goldPressText.text = $"GD owned: {product.UnitsOwned}";
-                //GoldPressesOwned += 1;
-                GetComponent<Gold>().CurrentGold -= product.Cost;
-                FindObjectOfType<AvailableProducts>().UpdateProductInfo(Names.GoldPress, 2f);
-                HudServices.UpdateTextInfo(goldPressText, $"GD owned:", Names.GoldPress);
-            }
+            HudServices.PurchaseUnit(UnitName.GoldPress, 2, RType.Gold);
+            HudServices.UpdateTextInfo(goldPressText, $"GD owned:", UnitName.GoldPress);
         }
     }
 }

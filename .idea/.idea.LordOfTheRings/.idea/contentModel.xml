@@ -6,7 +6,6 @@
       <e p="Assets" t="Include">
         <e p="Scripts" t="Include">
           <e p="Hud" t="Include">
-            <e p="AvailableProducts.cs" t="Include" />
             <e p="FloatingText.cs" t="Include" />
             <e p="Gold.cs" t="Include" />
             <e p="GoldPress.cs" t="Include" />
@@ -14,8 +13,11 @@
             <e p="HudServices.cs" t="Include" />
             <e p="ProduceResources.cs" t="Include" />
             <e p="ProductionUnits.cs" t="Include" />
-            <e p="PurchaseProduct.cs" t="Include" />
+            <e p="Products.cs" t="Include" />
+            <e p="ResourceType.cs" t="Include" />
+            <e p="RType.cs" t="Include" />
             <e p="ShowProductInfo.cs" t="Include" />
+            <e p="UnitName.cs" t="Include" />
             <e p="Wood.cs" t="Include" />
             <e p="WoodPress.cs" t="Include" />
           </e>

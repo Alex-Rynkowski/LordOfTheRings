@@ -18,7 +18,7 @@ namespace Hud
 
         void Update()
         {
-            if (!FindObjectOfType<ProduceResources>().GoldProduceTimer && FindObjectOfType<AvailableProducts>().products[0].name == Names.GoldPress)
+            if (!FindObjectOfType<ProduceResources>().GoldProduceTimer && FindObjectOfType<Products>().products[0].unitName == UnitName.GoldPress)
             {
                 StartCoroutine(FloatingResourceText(textLenght, goldTextStartPosition, goldTextTargetPosition));
             }
