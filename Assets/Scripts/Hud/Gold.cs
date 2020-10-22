@@ -20,9 +20,9 @@ namespace Hud
             }
         }
 
-        void Start()
+        void Awake()
         {
-            startingGold = PlayerPrefs.GetInt("Gold", CurrentGold);
+            CurrentGold = PlayerPrefs.GetInt("Gold", CurrentGold);
         }
 
         void OnDestroy()

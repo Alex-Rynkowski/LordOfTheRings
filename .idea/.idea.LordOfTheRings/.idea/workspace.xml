@@ -20,14 +20,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d41a565d-fe20-4d62-b58e-d94dc2c60b5e" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.LordOfTheRings/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.LordOfTheRings/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.LordOfTheRings/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.LordOfTheRings/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main Scene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Main Scene.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Hud/AvailableProducts.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Hud/AvailableProducts.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Hud/Product.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Hud/ProductUnits.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Hud/Product.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Hud/ProductUnits.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/PackageManagerSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/PackageManagerSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Hud/Gold.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Hud/Gold.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Hud/GoldPress.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Hud/GoldPress.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Hud/ProduceResources.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Hud/ProduceResources.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Hud/ProductUnits.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Hud/ProductionUnits.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Hud/ProductUnits.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Hud/ProductionUnits.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Hud/PurchaseProduct.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Hud/PurchaseProduct.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Hud/Wood.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Hud/Wood.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Hud/WoodPress.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Hud/WoodPress.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,16 +44,21 @@
     <setting file="file://$PROJECT_DIR$/../Mario Marcs Stuff/Assets/Scripts/Trap.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../Mario Marcs Stuff/Assets/Scripts/TimeLimit.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Hud/ProduceResources.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/7CD321F2-2A98-4E1E-B513-F00B987C648C/d2/f8ac97cf/PlayerPrefs.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Hud/FloatingText.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/7CD321F2-2A98-4E1E-B513-F00B987C648C/17/88600250/Display.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Hud/PurchaseProduct.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../Mario Marcs Stuff/Assets/Scripts/Health.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Hud/ShowProductInfo.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/4BE223AC-3748-4E44-B85A-077F9B461EF8/25/131d2707/SendMouseEvents.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/BE267507-AD83-46AD-B731-FFD760AB1C1C/6f/e51ccbf9/IPointerClickHandler.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Hud/WoodPress.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Hud/ProductUnits.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/8E889372-00DC-4962-B5C6-3133D2365761/44/7eba965b/NativeInputSystem.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Hud/ProductionUnits.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/IL/BE267507-AD83-46AD-B731-FFD760AB1C1C/60/071c0e07/02000057.il" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/7CD321F2-2A98-4E1E-B513-F00B987C648C/2d/6358ae84/Vector3.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../Mario Marcs Stuff/Assets/Scripts/PlayerServices.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/FB001E01-371B-4ADC-A200-13E0AC763896/c1/5afcf3c0/IntPtr.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../Mario Marcs Stuff/Assets/Scripts/Enemy.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
@@ -62,21 +70,22 @@
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Hud/PurchseProduct.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Hud/ProduceGold.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Hud/Gold.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Hud/ShowProductInfo.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Hud/Wood.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Hud/PurchaseAbleProducts.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Hud/PurchaseableProducts.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Hud/Hud.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Hud/PurchaseProduct.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Hud/Product.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Hud/FloatingText.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Hud/ProduceResources.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Hud/HudServices.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Hud/AvailableProducts.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Hud/GoldPress.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Hud/WoodPress.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Hud/ProductUnits.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Hud/ProductionUnits.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Hud/ProduceResources.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Hud/PurchaseProduct.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Hud/WoodPress.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Hud/GoldPress.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Hud/AvailableProducts.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Hud/Wood.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Hud/Gold.cs" />
       </list>
     </option>
   </component>
@@ -88,6 +97,8 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="DebuggerViewTab_PTCS_FirstProportionKey" value="0.34971997" />
+    <property name="DebuggerViewTab_PTCS_LastProportionKey" value="0.29993778" />
     <property name="Discover.Launch.Via.Unity" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -103,10 +114,10 @@
       </option>
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="38988">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" />
+      <option name="pid" value="38988" />
       <option name="selectedOptions">
         <set />
       </option>
@@ -123,7 +134,7 @@
       <updated>1603180691262</updated>
       <workItem from="1603180708073" duration="5135000" />
       <workItem from="1603186131203" duration="45543000" />
-      <workItem from="1603304470295" duration="3412000" />
+      <workItem from="1603304470295" duration="9822000" />
     </task>
     <task id="LOCAL−00001" summary="Code cleanup. Fixed errors etc.">
       <created>1603196634409</created>
@@ -305,7 +316,13 @@
       <option name="presentableId" value="LOCAL−00030" />
       <updated>1603307083514</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL−00031" summary="adds a customizable unit type">
+      <created>1603355922625</created>
+      <option name="number" value="LOCAL−00031" />
+      <option name="presentableId" value="LOCAL−00031" />
+      <updated>1603355922625</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -327,7 +344,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="Hud now required gold and goldpress compomnents" />
     <MESSAGE value="adds configurable Products" />
     <MESSAGE value="moves produce gold to a separate component" />
     <MESSAGE value="adds show / hide product info" />
@@ -352,9 +368,74 @@
     <MESSAGE value="cleans up code and heirarchy" />
     <MESSAGE value="moves &quot;Available products&quot; to a separate component. Also alot of code cleanup" />
     <MESSAGE value="fixes the price cost on the products is no increased correctly" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixes the price cost on the products is no increased correctly" />
+    <MESSAGE value="adds a customizable unit type" />
+    <option name="LAST_COMMIT_MESSAGE" value="adds a customizable unit type" />
   </component>
   <component name="WindowStateProjectService">
+    <state width="1638" height="341" key="GridCell.Tab.0.bottom" timestamp="1603361681692">
+      <screen x="0" y="23" width="1680" height="947" />
+    </state>
+    <state width="1638" height="341" key="GridCell.Tab.0.bottom/0.23.1680.947@0.23.1680.947" timestamp="1603361681692" />
+    <state width="1638" height="341" key="GridCell.Tab.0.center" timestamp="1603361681691">
+      <screen x="0" y="23" width="1680" height="947" />
+    </state>
+    <state width="1638" height="341" key="GridCell.Tab.0.center/0.23.1680.947@0.23.1680.947" timestamp="1603361681691" />
+    <state width="1638" height="341" key="GridCell.Tab.0.left" timestamp="1603361681691">
+      <screen x="0" y="23" width="1680" height="947" />
+    </state>
+    <state width="1638" height="341" key="GridCell.Tab.0.left/0.23.1680.947@0.23.1680.947" timestamp="1603361681691" />
+    <state width="1638" height="341" key="GridCell.Tab.0.right" timestamp="1603361681692">
+      <screen x="0" y="23" width="1680" height="947" />
+    </state>
+    <state width="1638" height="341" key="GridCell.Tab.0.right/0.23.1680.947@0.23.1680.947" timestamp="1603361681692" />
+    <state width="1638" height="341" key="GridCell.Tab.1.bottom" timestamp="1603361681693">
+      <screen x="0" y="23" width="1680" height="947" />
+    </state>
+    <state width="1638" height="341" key="GridCell.Tab.1.bottom/0.23.1680.947@0.23.1680.947" timestamp="1603361681693" />
+    <state width="1638" height="341" key="GridCell.Tab.1.center" timestamp="1603361681693">
+      <screen x="0" y="23" width="1680" height="947" />
+    </state>
+    <state width="1638" height="341" key="GridCell.Tab.1.center/0.23.1680.947@0.23.1680.947" timestamp="1603361681693" />
+    <state width="1638" height="341" key="GridCell.Tab.1.left" timestamp="1603361681693">
+      <screen x="0" y="23" width="1680" height="947" />
+    </state>
+    <state width="1638" height="341" key="GridCell.Tab.1.left/0.23.1680.947@0.23.1680.947" timestamp="1603361681692" />
+    <state width="1638" height="341" key="GridCell.Tab.1.right" timestamp="1603361681693">
+      <screen x="0" y="23" width="1680" height="947" />
+    </state>
+    <state width="1638" height="341" key="GridCell.Tab.1.right/0.23.1680.947@0.23.1680.947" timestamp="1603361681693" />
+    <state width="1638" height="341" key="GridCell.Tab.2.bottom" timestamp="1603361681695">
+      <screen x="0" y="23" width="1680" height="947" />
+    </state>
+    <state width="1638" height="341" key="GridCell.Tab.2.bottom/0.23.1680.947@0.23.1680.947" timestamp="1603361681695" />
+    <state width="1638" height="341" key="GridCell.Tab.2.center" timestamp="1603361681694">
+      <screen x="0" y="23" width="1680" height="947" />
+    </state>
+    <state width="1638" height="341" key="GridCell.Tab.2.center/0.23.1680.947@0.23.1680.947" timestamp="1603361681694" />
+    <state width="1638" height="341" key="GridCell.Tab.2.left" timestamp="1603361681694">
+      <screen x="0" y="23" width="1680" height="947" />
+    </state>
+    <state width="1638" height="341" key="GridCell.Tab.2.left/0.23.1680.947@0.23.1680.947" timestamp="1603361681694" />
+    <state width="1638" height="341" key="GridCell.Tab.2.right" timestamp="1603361681694">
+      <screen x="0" y="23" width="1680" height="947" />
+    </state>
+    <state width="1638" height="341" key="GridCell.Tab.2.right/0.23.1680.947@0.23.1680.947" timestamp="1603361681694" />
+    <state width="1638" height="341" key="GridCell.Tab.3.bottom" timestamp="1603361681695">
+      <screen x="0" y="23" width="1680" height="947" />
+    </state>
+    <state width="1638" height="341" key="GridCell.Tab.3.bottom/0.23.1680.947@0.23.1680.947" timestamp="1603361681695" />
+    <state width="1638" height="341" key="GridCell.Tab.3.center" timestamp="1603361681695">
+      <screen x="0" y="23" width="1680" height="947" />
+    </state>
+    <state width="1638" height="341" key="GridCell.Tab.3.center/0.23.1680.947@0.23.1680.947" timestamp="1603361681695" />
+    <state width="1638" height="341" key="GridCell.Tab.3.left" timestamp="1603361681695">
+      <screen x="0" y="23" width="1680" height="947" />
+    </state>
+    <state width="1638" height="341" key="GridCell.Tab.3.left/0.23.1680.947@0.23.1680.947" timestamp="1603361681695" />
+    <state width="1638" height="341" key="GridCell.Tab.3.right" timestamp="1603361681695">
+      <screen x="0" y="23" width="1680" height="947" />
+    </state>
+    <state width="1638" height="341" key="GridCell.Tab.3.right/0.23.1680.947@0.23.1680.947" timestamp="1603361681695" />
     <state x="100" y="125" width="1480" height="749" key="VCS.FileHistoryDialog" timestamp="1603306173621">
       <screen x="0" y="23" width="1680" height="949" />
     </state>

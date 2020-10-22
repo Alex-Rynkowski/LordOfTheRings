@@ -24,7 +24,7 @@ namespace Hud
         void Start()
         {
             WoodPressesOwned = PlayerPrefs.GetInt("WoodPress", WoodPressesOwned);
-        }
+        }   
 
         void OnDestroy()
         {
@@ -42,7 +42,7 @@ namespace Hud
 
                 WoodPressesOwned += 1;
                 GetComponent<Wood>().CurrentWood -= product.Cost;
-                FindObjectOfType<AvailableProducts>().UpdateProductInfo(1, 1.1f);
+                FindObjectOfType<AvailableProducts>().UpdateProductInfo(Names.WoodPress, 1.1f);
             }
         }
     }

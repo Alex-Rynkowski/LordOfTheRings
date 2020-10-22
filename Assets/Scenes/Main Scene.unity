@@ -201,18 +201,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   products:
-  - nameText: {fileID: 1941813431}
+  - unitType: 0
+    nameText: {fileID: 1941813431}
     name: 0
     costText: {fileID: 1164110460}
-    _cost: 100
+    cost: 100
+    _unitsOwned: 0
     productionTimeText: {fileID: 1465045453}
     productionTime: 1
     productionAmountText: {fileID: 991817846}
     productionAmount: 1
-  - nameText: {fileID: 1544499483}
+  - unitType: 1
+    nameText: {fileID: 1544499483}
     name: 1
     costText: {fileID: 1093371836}
-    _cost: 100
+    cost: 100
+    _unitsOwned: 0
     productionTimeText: {fileID: 1573469269}
     productionTime: 2
     productionAmountText: {fileID: 448009180}

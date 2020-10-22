@@ -38,9 +38,10 @@ namespace Hud
                 HudServices.HideProductInfo();
                 if (GetComponent<Gold>().CurrentGold < product.Cost) return;
 
-                GoldPressesOwned += 1;
+                product.UnitsOwned += 1;
+                //GoldPressesOwned += 1;
                 GetComponent<Gold>().CurrentGold -= product.Cost;
-                FindObjectOfType<AvailableProducts>().UpdateProductInfo(0, 2f);
+                FindObjectOfType<AvailableProducts>().UpdateProductInfo(Names.GoldPress, 2f);
             }
         }
     }

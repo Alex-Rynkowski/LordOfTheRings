@@ -1,3 +1,4 @@
+using System;
 using TMPro;
 using UnityEngine;
 
@@ -19,10 +20,11 @@ namespace Hud
             }
         }
 
-        void Start()
+        void Awake()
         {
             startingWood = PlayerPrefs.GetInt("Wood", CurrentWood);
         }
+        
 
         void OnDestroy()
         {

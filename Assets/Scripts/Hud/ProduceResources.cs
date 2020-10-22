@@ -25,8 +25,15 @@ namespace Hud
 
         void ProduceGold()
         {
-            GetComponent<Gold>().CurrentGold += GetComponent<GoldPress>().GoldPressesOwned +
-                                                FindObjectOfType<AvailableProducts>().products[0].productionAmount;
+            foreach (var product in FindObjectOfType<AvailableProducts>().products)
+            {
+                if (product.unitType == UnitType.Gold && product.UnitsOwned > 0)
+                {
+                    GetComponent<Gold>().CurrentGold += product.UnitsOwned * product.productionAmount;
+                }
+            }
+            // GetComponent<Gold>().CurrentGold += GetComponent<GoldPress>().GoldPressesOwned +
+            //                                     FindObjectOfType<AvailableProducts>().products[0].productionAmount;
             _lastGoldIncrement = Time.time;
         }
 

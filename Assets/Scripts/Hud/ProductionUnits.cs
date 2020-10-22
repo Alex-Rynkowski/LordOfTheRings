@@ -4,14 +4,14 @@ using UnityEngine;
 namespace Hud
 {
     [System.Serializable]
-    public class ProductUnits
+    public class ProductionUnits
     {
         public UnitType unitType;
         
         [Header("Name attributes")] 
         public TextMeshProUGUI nameText;
         public Names name;
-                          
+        
         [Header("Cost attributes")] 
         public TextMeshProUGUI costText;
         [SerializeField] int cost;
@@ -23,6 +23,18 @@ namespace Hud
             {
                 cost = value;
                 PlayerPrefs.SetInt("Cost", value);
+            }
+        }
+
+        public int _unitsOwned; //temporarily public to monitor values
+
+        public int UnitsOwned
+        {
+            get => _unitsOwned;
+            set
+            {
+                _unitsOwned = value;
+                PlayerPrefs.SetInt(name.ToString(), value);
             }
         }
 

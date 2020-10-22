@@ -5,7 +5,7 @@ namespace Hud
 {
     public class AvailableProducts : MonoBehaviour
     {
-        public ProductUnits[] products;
+        public ProductionUnits[] products;
 
 
         void Start()
@@ -24,17 +24,15 @@ namespace Hud
             }
         }
 
-        public void UpdateProductInfo(int arrayPosition, float increaseCostBy)
+        public void UpdateProductInfo(Names productionUnitName, float increaseCostBy)
         {
-            for (int i = 0; i < products.Length; i++)
+            foreach (var product in products)
             {
-                if (i == arrayPosition)
-                {
-                    products[i].Cost =
-                        Mathf.RoundToInt(products[i].Cost * increaseCostBy);
-                    products[i].costText.text = $"Cost: {products[i].Cost}$";
-                    break;
-                }
+                if (product.name != productionUnitName || product.UnitsOwned <= 0) continue;
+
+                product.Cost = Mathf.RoundToInt(product.Cost * increaseCostBy);
+                product.costText.text = $"Cost: {product.Cost}$";
+                break;
             }
         }
     }
