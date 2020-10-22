@@ -201,26 +201,26 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   products:
-  - unitType: 0
+  - rType: 0
     nameText: {fileID: 1941813431}
-    name: 0
+    unitName: 0
     costText: {fileID: 1164110460}
     cost: 100
-    _unitsOwned: 0
     productionTimeText: {fileID: 1465045453}
     productionTime: 1
     productionAmountText: {fileID: 991817846}
     productionAmount: 1
-  - unitType: 1
+    resourceType: {fileID: 880597421}
+  - rType: 1
     nameText: {fileID: 1544499483}
-    name: 1
+    unitName: 1
     costText: {fileID: 1093371836}
     cost: 100
-    _unitsOwned: 0
     productionTimeText: {fileID: 1573469269}
     productionTime: 2
     productionAmountText: {fileID: 448009180}
     productionAmount: 5
+    resourceType: {fileID: 500874644}
 --- !u!1 &78643217
 GameObject:
   m_ObjectHideFlags: 0
@@ -440,6 +440,7 @@ GameObject:
   - component: {fileID: 500874643}
   - component: {fileID: 500874642}
   - component: {fileID: 500874641}
+  - component: {fileID: 500874644}
   m_Layer: 5
   m_Name: Wood
   m_TagString: Untagged
@@ -563,6 +564,21 @@ RectTransform:
   m_AnchoredPosition: {x: 51.5, y: -67.25}
   m_SizeDelta: {x: 303, y: 75.75}
   m_Pivot: {x: 1.5, y: 1.5}
+--- !u!114 &500874644
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 500874640}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bdce96acfa984a9a9affa54ae7c96c8d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  resourceText: {fileID: 500874641}
+  resourceType: 1
+  startingResourceAmount: 100
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -657,6 +673,7 @@ GameObject:
   - component: {fileID: 880597420}
   - component: {fileID: 880597419}
   - component: {fileID: 880597418}
+  - component: {fileID: 880597421}
   m_Layer: 5
   m_Name: Gold
   m_TagString: Untagged
@@ -780,6 +797,21 @@ RectTransform:
   m_AnchoredPosition: {x: 51.5, y: 12.875}
   m_SizeDelta: {x: 303, y: 75.75}
   m_Pivot: {x: 1.5, y: 1.5}
+--- !u!114 &880597421
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 880597417}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bdce96acfa984a9a9affa54ae7c96c8d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  resourceText: {fileID: 880597418}
+  resourceType: 0
+  startingResourceAmount: 100
 --- !u!114 &991817846 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 5443677785728933444, guid: 97d18987cd9d34f28b61398e99af2239, type: 3}
@@ -1304,10 +1336,8 @@ GameObject:
   - component: {fileID: 2098605018}
   - component: {fileID: 2098605017}
   - component: {fileID: 2098605016}
-  - component: {fileID: 2098605022}
   - component: {fileID: 2098605021}
   - component: {fileID: 2098605023}
-  - component: {fileID: 2098605025}
   - component: {fileID: 2098605024}
   m_Layer: 5
   m_Name: Hud
@@ -1426,20 +1456,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   goldPressText: {fileID: 1967772172}
---- !u!114 &2098605022
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2098605015}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cb6dc44fadfb498481f19bcdd65b5222, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  goldText: {fileID: 880597418}
-  startingGold: 100
 --- !u!114 &2098605023
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1465,20 +1481,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   woodPressText: {fileID: 1864163188}
---- !u!114 &2098605025
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2098605015}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ba477738afab4f90bb4366816ef4bfd8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  woodText: {fileID: 500874641}
-  startingWood: 100
 --- !u!1001 &2010183145198709238
 PrefabInstance:
   m_ObjectHideFlags: 0
