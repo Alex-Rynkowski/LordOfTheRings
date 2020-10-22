@@ -8,27 +8,11 @@ namespace Hud
         [SerializeField] TextMeshProUGUI goldPressText;
         int _goldPressesOwned;
 
-        public int GoldPressesOwned
-        {
-            get => _goldPressesOwned;
-            set
-            {
-                _goldPressesOwned = value;
-                PlayerPrefs.SetInt("GoldPress", value);
-                goldPressText.text = $"GD owned: {value}";
-            }
-        }
-
         void Start()
         {
-            GoldPressesOwned = PlayerPrefs.GetInt("GoldPress", GoldPressesOwned);
+            HudServices.UpdateTextInfo(goldPressText, $"GD owned:", Names.GoldPress);
         }
-
-        void OnDestroy()
-        {
-            PlayerPrefs.SetInt("GoldPress", GoldPressesOwned);
-        }
-
+        
         public void GoldPressPurchase()
         {
             foreach (var product in FindObjectOfType<AvailableProducts>().products)
@@ -39,9 +23,11 @@ namespace Hud
                 if (GetComponent<Gold>().CurrentGold < product.Cost) return;
 
                 product.UnitsOwned += 1;
+                //goldPressText.text = $"GD owned: {product.UnitsOwned}";
                 //GoldPressesOwned += 1;
                 GetComponent<Gold>().CurrentGold -= product.Cost;
                 FindObjectOfType<AvailableProducts>().UpdateProductInfo(Names.GoldPress, 2f);
+                HudServices.UpdateTextInfo(goldPressText, $"GD owned:", Names.GoldPress);
             }
         }
     }

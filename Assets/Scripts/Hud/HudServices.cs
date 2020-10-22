@@ -1,3 +1,4 @@
+using TMPro;
 using UnityEngine;
 
 namespace Hud
@@ -12,9 +13,17 @@ namespace Hud
             }
         }
 
-        
-
-
-        
+        public static void UpdateTextInfo(TextMeshProUGUI textToUpdate, string text, Names names)
+        {
+            foreach (var product in Object.FindObjectOfType<AvailableProducts>().products)
+            {
+                if (product.name == names)
+                {
+                    //PlayerPrefs.GetInt(product.name.ToString(), product.UnitsOwned);
+                    textToUpdate.text = $"{text} {product.UnitsOwned}";
+                }
+            }
+            
+        }
     }
 }

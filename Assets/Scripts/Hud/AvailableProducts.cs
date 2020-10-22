@@ -28,11 +28,12 @@ namespace Hud
         {
             foreach (var product in products)
             {
-                if (product.name != productionUnitName || product.UnitsOwned <= 0) continue;
-
-                product.Cost = Mathf.RoundToInt(product.Cost * increaseCostBy);
-                product.costText.text = $"Cost: {product.Cost}$";
-                break;
+                if (product.name == productionUnitName && product.UnitsOwned > 0)
+                {
+                    product.Cost = Mathf.RoundToInt(product.Cost * increaseCostBy);
+                    product.costText.text = $"Cost: {product.Cost}$";
+                    break;    
+                }
             }
         }
     }

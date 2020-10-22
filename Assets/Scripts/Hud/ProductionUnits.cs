@@ -18,19 +18,20 @@ namespace Hud
 
         public int Cost
         {
-            get => PlayerPrefs.GetInt("Cost", cost);
+            get => PlayerPrefs.GetInt(name + "1", cost);
             set
             {
                 cost = value;
-                PlayerPrefs.SetInt("Cost", value);
+                PlayerPrefs.SetInt(name + "1", value);
             }
         }
 
-        public int _unitsOwned; //temporarily public to monitor values
+        [Header("Units Owned")]
+        int _unitsOwned;
 
         public int UnitsOwned
         {
-            get => _unitsOwned;
+            get => PlayerPrefs.GetInt(name.ToString(), _unitsOwned);
             set
             {
                 _unitsOwned = value;
