@@ -4,8 +4,9 @@ using UnityEngine;
 namespace Hud
 {
     [System.Serializable]
-    public class Product
+    public class ProductUnits
     {
+        public UnitType unitType;
         
         [Header("Name attributes")] 
         public TextMeshProUGUI nameText;
@@ -13,14 +14,14 @@ namespace Hud
                           
         [Header("Cost attributes")] 
         public TextMeshProUGUI costText;
-        [SerializeField] int _cost;
+        [SerializeField] int cost;
 
         public int Cost
         {
-            get => PlayerPrefs.GetInt("Cost", _cost);
+            get => PlayerPrefs.GetInt("Cost", cost);
             set
             {
-                _cost = value;
+                cost = value;
                 PlayerPrefs.SetInt("Cost", value);
             }
         }
@@ -38,5 +39,11 @@ namespace Hud
     {
         GoldPress,
         WoodPress
+    }
+
+    public enum UnitType
+    {
+        Gold,
+        Wood
     }
 }

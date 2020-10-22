@@ -19,7 +19,16 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d41a565d-fe20-4d62-b58e-d94dc2c60b5e" name="Default Changelist" comment="" />
+    <list default="true" id="d41a565d-fe20-4d62-b58e-d94dc2c60b5e" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.LordOfTheRings/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.LordOfTheRings/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main Scene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Main Scene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Hud/AvailableProducts.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Hud/AvailableProducts.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Hud/Product.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Hud/ProductUnits.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Hud/Product.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Hud/ProductUnits.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/PackageManagerSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/PackageManagerSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -38,7 +47,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Hud/ShowProductInfo.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/BE267507-AD83-46AD-B731-FFD760AB1C1C/6f/e51ccbf9/IPointerClickHandler.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Hud/WoodPress.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Hud/Product.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Hud/ProductUnits.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/IL/BE267507-AD83-46AD-B731-FFD760AB1C1C/60/071c0e07/02000057.il" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/7CD321F2-2A98-4E1E-B513-F00B987C648C/2d/6358ae84/Vector3.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../Mario Marcs Stuff/Assets/Scripts/PlayerServices.cs" root0="SKIP_HIGHLIGHTING" />
@@ -58,15 +67,16 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Hud/Wood.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Hud/PurchaseAbleProducts.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Hud/PurchaseableProducts.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Hud/HudServices.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Hud/AvailableProducts.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Hud/Hud.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Hud/PurchaseProduct.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Hud/Product.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Hud/FloatingText.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Hud/ProduceResources.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Hud/HudServices.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Hud/AvailableProducts.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Hud/GoldPress.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Hud/WoodPress.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Hud/ProductUnits.cs" />
       </list>
     </option>
   </component>
@@ -113,7 +123,7 @@
       <updated>1603180691262</updated>
       <workItem from="1603180708073" duration="5135000" />
       <workItem from="1603186131203" duration="45543000" />
-      <workItem from="1603304470295" duration="2089000" />
+      <workItem from="1603304470295" duration="3412000" />
     </task>
     <task id="LOCAL−00001" summary="Code cleanup. Fixed errors etc.">
       <created>1603196634409</created>
@@ -289,7 +299,13 @@
       <option name="presentableId" value="LOCAL−00029" />
       <updated>1603306699452</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL−00030" summary="fixes the price cost on the products is no increased correctly">
+      <created>1603307083514</created>
+      <option name="number" value="LOCAL−00030" />
+      <option name="presentableId" value="LOCAL−00030" />
+      <updated>1603307083514</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -311,7 +327,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="adds saving for Gold" />
     <MESSAGE value="Hud now required gold and goldpress compomnents" />
     <MESSAGE value="adds configurable Products" />
     <MESSAGE value="moves produce gold to a separate component" />
@@ -336,7 +351,8 @@
     <MESSAGE value="fixes few bugs with customizable floating text" />
     <MESSAGE value="cleans up code and heirarchy" />
     <MESSAGE value="moves &quot;Available products&quot; to a separate component. Also alot of code cleanup" />
-    <option name="LAST_COMMIT_MESSAGE" value="moves &quot;Available products&quot; to a separate component. Also alot of code cleanup" />
+    <MESSAGE value="fixes the price cost on the products is no increased correctly" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixes the price cost on the products is no increased correctly" />
   </component>
   <component name="WindowStateProjectService">
     <state x="100" y="125" width="1480" height="749" key="VCS.FileHistoryDialog" timestamp="1603306173621">

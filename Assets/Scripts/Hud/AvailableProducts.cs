@@ -5,7 +5,7 @@ namespace Hud
 {
     public class AvailableProducts : MonoBehaviour
     {
-        public Product[] products;
+        public ProductUnits[] products;
 
 
         void Start()
