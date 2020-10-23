@@ -1,19 +1,17 @@
-﻿using TMPro;
+﻿using Hud;
+using TMPro;
+using Units;
 using UnityEngine;
 
-namespace Hud
+namespace Production
 {
     [System.Serializable]
     public class ProductionUnits
     {
         public RType rType;
-        
-        [Header("Name attributes")] 
-        public TextMeshProUGUI nameText;
         public UnitName unitName;
+        public ResourceType resourceType;
         
-        [Header("Cost attributes")] 
-        public TextMeshProUGUI costText;
         [SerializeField] int cost;
 
         public int Cost
@@ -39,14 +37,12 @@ namespace Hud
             }
         }
 
-        [Header("Production Time attribute")] 
-        public TextMeshProUGUI productionTimeText;
         public float productionTime;
-
-        [Header("Production Amount attribute")]
-        public TextMeshProUGUI productionAmountText;
         public int productionAmount;
 
-        public ResourceType resourceType;
+        public TextMeshProUGUI nameText;
+        public TextMeshProUGUI costText;
+        public TextMeshProUGUI productionTimeText;
+        public TextMeshProUGUI productionAmountText;
     }
 }

@@ -91,7 +91,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &2010183145030029849
 RectTransform:
   m_ObjectHideFlags: 0
@@ -126,6 +126,7 @@ GameObject:
   - component: {fileID: 2010183145311173160}
   - component: {fileID: 2010183145311173163}
   - component: {fileID: 2010183145311173162}
+  - component: {fileID: 5722572424036203722}
   m_Layer: 5
   m_Name: production amount text
   m_TagString: Untagged
@@ -180,7 +181,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Prod amount: 1s'
+  m_text: 'Production: 5'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -249,6 +250,18 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!114 &5722572424036203722
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2010183145311173165}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 91bb323651eb7429591c967822437039, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2010183146074389928
 GameObject:
   m_ObjectHideFlags: 0
@@ -470,6 +483,7 @@ GameObject:
   - component: {fileID: 2010183146257018444}
   - component: {fileID: 2010183146257018445}
   - component: {fileID: 2010183146257018442}
+  - component: {fileID: 5970613593772839179}
   m_Layer: 5
   m_Name: cost text
   m_TagString: Untagged
@@ -524,7 +538,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Cost: 100'
+  m_text: 'Cost: 146$'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -593,6 +607,18 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!114 &5970613593772839179
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2010183146257018447}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dec8e716cffbc4ff4aa3176d8705f1cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2010183146334770596
 GameObject:
   m_ObjectHideFlags: 0
@@ -604,6 +630,7 @@ GameObject:
   - component: {fileID: 2010183146334770597}
   - component: {fileID: 2010183146334770594}
   - component: {fileID: 2010183146334770595}
+  - component: {fileID: 9211852874688952350}
   m_Layer: 5
   m_Name: Production time text
   m_TagString: Untagged
@@ -658,7 +685,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Prod Time: 1s'
+  m_text: 'Production time: 2s'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -685,7 +712,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 22
+  m_fontSize: 19.85
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -727,6 +754,18 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!114 &9211852874688952350
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2010183146334770596}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9bdd80c03e344c32b7b5b6dc8d1170e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2010183146339096814
 GameObject:
   m_ObjectHideFlags: 0
@@ -738,6 +777,7 @@ GameObject:
   - component: {fileID: 2010183146339096815}
   - component: {fileID: 2010183146339096812}
   - component: {fileID: 2010183146339096813}
+  - component: {fileID: 3026602217474364811}
   m_Layer: 5
   m_Name: Name Text
   m_TagString: Untagged
@@ -792,7 +832,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Wood press
+  m_text: WoodPress
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -819,7 +859,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 40.65
+  m_fontSize: 42.45
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -861,6 +901,18 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!114 &3026602217474364811
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2010183146339096814}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d3fd7bd12a354686b7ad85103a58144, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2010183146453283509
 GameObject:
   m_ObjectHideFlags: 0
@@ -950,6 +1002,7 @@ GameObject:
   - component: {fileID: 2010183146697946433}
   - component: {fileID: 2010183146697946432}
   - component: {fileID: 2010183146697946435}
+  - component: {fileID: 4289168804003804714}
   m_Layer: 5
   m_Name: Wood Press
   m_TagString: Untagged
@@ -964,7 +1017,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2010183146697946437}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -1072,6 +1125,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   infoField: {fileID: 2010183145030029848}
+--- !u!114 &4289168804003804714
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2010183146697946437}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f9ac5d6f5bba04054bcfaaf615f14411, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  woodPressText: {fileID: 3072162181877206562, guid: aa68c1f538db44eb286ac00e77743bb1, type: 3}
 --- !u!1 &2010183146975006583
 GameObject:
   m_ObjectHideFlags: 0
@@ -1192,8 +1258,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: Hud.WoodPress, Assembly-CSharp
+      - m_Target: {fileID: 4289168804003804714}
+        m_TargetAssemblyTypeName: Units.WoodPress, Assembly-CSharp
         m_MethodName: WoodPressPurchase
         m_Mode: 1
         m_Arguments:

@@ -1,8 +1,8 @@
-using System;
+using Hud;
 using TMPro;
 using UnityEngine;
 
-namespace Hud
+namespace Production
 {
     public class ResourceType : MonoBehaviour
     {

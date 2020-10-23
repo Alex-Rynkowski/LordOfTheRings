@@ -164,7 +164,6 @@ GameObject:
   - component: {fileID: 5443677785521809097}
   - component: {fileID: 5443677785521809096}
   - component: {fileID: 5443677785521809099}
-  - component: {fileID: 5443677785521809102}
   m_Layer: 5
   m_Name: Purchase btn
   m_TagString: Untagged
@@ -273,8 +272,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: Hud.GoldPress, Assembly-CSharp
+      - m_Target: {fileID: 7942917886871976500}
+        m_TargetAssemblyTypeName: Units.GoldPress, Assembly-CSharp
         m_MethodName: GoldPressPurchase
         m_Mode: 1
         m_Arguments:
@@ -285,18 +284,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &5443677785521809102
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5443677785521809093}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 88fcc6784813c4e76880109cff259b9a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &5443677785710022970
 GameObject:
   m_ObjectHideFlags: 0
@@ -384,8 +371,9 @@ GameObject:
   - component: {fileID: 5443677785728933447}
   - component: {fileID: 5443677785728933445}
   - component: {fileID: 5443677785728933444}
+  - component: {fileID: 8094768288800532402}
   m_Layer: 5
-  m_Name: Production Amount
+  m_Name: Production Amount text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -507,6 +495,19 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!114 &8094768288800532402
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5443677785728933446}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dec8e716cffbc4ff4aa3176d8705f1cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  componentName: 2
 --- !u!1 &5443677785741854719
 GameObject:
   m_ObjectHideFlags: 0
@@ -523,7 +524,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &5443677785741854716
 RectTransform:
   m_ObjectHideFlags: 0
@@ -582,8 +583,9 @@ GameObject:
   - component: {fileID: 5443677786171622473}
   - component: {fileID: 5443677786171622479}
   - component: {fileID: 5443677786171622478}
+  - component: {fileID: 6232225303667016884}
   m_Layer: 5
-  m_Name: Cost
+  m_Name: Cost text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -705,6 +707,19 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!114 &6232225303667016884
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5443677786171622472}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dec8e716cffbc4ff4aa3176d8705f1cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  componentName: 0
 --- !u!1 &5443677786261183521
 GameObject:
   m_ObjectHideFlags: 0
@@ -718,6 +733,7 @@ GameObject:
   - component: {fileID: 5443677786261183525}
   - component: {fileID: 5443677786261183524}
   - component: {fileID: 5443677786261183527}
+  - component: {fileID: 7942917886871976500}
   m_Layer: 5
   m_Name: Gold Press
   m_TagString: Untagged
@@ -840,6 +856,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   infoField: {fileID: 5443677785741854719}
+--- !u!114 &7942917886871976500
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5443677786261183521}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a8f30527c804c6eb2afa7167a2550f3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  goldPressText: {fileID: 1882930140127417041, guid: 4e49d3ad8d1064b85aa703d6b66c27bb, type: 3}
 --- !u!1 &5443677786470481913
 GameObject:
   m_ObjectHideFlags: 0
@@ -851,8 +880,9 @@ GameObject:
   - component: {fileID: 5443677786470481918}
   - component: {fileID: 5443677786470481916}
   - component: {fileID: 5443677786470481919}
+  - component: {fileID: 2582264681911204458}
   m_Layer: 5
-  m_Name: Production Time
+  m_Name: Production Time text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -974,6 +1004,19 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!114 &2582264681911204458
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5443677786470481913}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dec8e716cffbc4ff4aa3176d8705f1cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  componentName: 1
 --- !u!1 &5443677786947360391
 GameObject:
   m_ObjectHideFlags: 0
@@ -985,8 +1028,9 @@ GameObject:
   - component: {fileID: 5443677786947360388}
   - component: {fileID: 5443677786947360394}
   - component: {fileID: 5443677786947360389}
+  - component: {fileID: 5037087531286504332}
   m_Layer: 5
-  m_Name: Name
+  m_Name: Name text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1108,6 +1152,19 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!114 &5037087531286504332
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5443677786947360391}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dec8e716cffbc4ff4aa3176d8705f1cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  componentName: 3
 --- !u!1 &5443677787007256134
 GameObject:
   m_ObjectHideFlags: 0

@@ -1,4 +1,6 @@
+using Production;
 using TMPro;
+using Units;
 using UnityEngine;
 
 namespace Hud
@@ -29,16 +31,18 @@ namespace Hud
             foreach (var product in Object.FindObjectOfType<Products>().products)
             {
                 if (product.unitName != productionUnitName) continue;
-                if(product.rType != resourceType) continue;
-                HideProductInfo();
+                if (product.rType != resourceType) continue;
+
 
                 if (product.resourceType.CurrentResource < product.Cost) return;
 
                 product.UnitsOwned += 1;
                 product.resourceType.CurrentResource -= product.Cost;
-                //Object.FindObjectOfType<ResourceType>().CurrentResource -= product.Cost;
+
                 Object.FindObjectOfType<Products>().UpdateProductInfo(productionUnitName, increaseCost);
             }
+
+            HideProductInfo();
         }
     }
 }

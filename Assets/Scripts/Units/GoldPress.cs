@@ -1,7 +1,11 @@
+using System;
+using Hud;
+using Production;
 using TMPro;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
-namespace Hud
+namespace Units
 {
     public class GoldPress : MonoBehaviour
     {
@@ -12,7 +16,7 @@ namespace Hud
         {
             HudServices.UpdateTextInfo(goldPressText, $"GD owned:", UnitName.GoldPress);
         }
-        
+
         public void GoldPressPurchase()
         {
             HudServices.PurchaseUnit(UnitName.GoldPress, 2, RType.Gold);

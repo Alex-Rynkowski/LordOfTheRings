@@ -1,4 +1,4 @@
-namespace Hud
+namespace Units
 {
     public enum UnitName
     {

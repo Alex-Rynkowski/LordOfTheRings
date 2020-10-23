@@ -1,38 +1,37 @@
-using System;
+using Units;
 using UnityEngine;
 
-namespace Hud
+namespace Production
 {
     public class Products : MonoBehaviour
     {
         public ProductionUnits[] products;
-
 
         void Start()
         {
             UpdateProductInfo();
         }
 
-       void UpdateProductInfo()
+        public void UpdateProductInfo()
         {
             foreach (var product in products)
             {
                 product.nameText.text = product.unitName.ToString();
-                product.costText.text = $"Cost: {product.Cost}$";
+                product.costText.text = $"Cost: {product.Cost.ToString()}";
                 product.productionTimeText.text = $"Production time: {product.productionTime}s";
-                product.productionAmountText.text = $"Production: {product.productionAmount}x";
+                product.productionAmountText.text = $"Production: {product.productionAmount}";
             }
         }
 
-        public void UpdateProductInfo(UnitName productionUnitUnitName, float increaseCostBy)
+        public void UpdateProductInfo(UnitName productionUnitName, float increaseCostBy)
         {
             foreach (var product in products)
             {
-                if (product.unitName == productionUnitUnitName && product.UnitsOwned > 0)
+                if (product.unitName == productionUnitName && product.UnitsOwned > 0)
                 {
                     product.Cost = Mathf.RoundToInt(product.Cost * increaseCostBy);
-                    product.costText.text = $"Cost: {product.Cost}$";
-                    break;    
+                    product.costText.text = $"Cost: {product.Cost.ToString()}$";
+                    break;
                 }
             }
         }

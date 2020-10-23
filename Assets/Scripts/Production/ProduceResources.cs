@@ -1,6 +1,7 @@
+using Hud;
 using UnityEngine;
 
-namespace Hud
+namespace Production
 {
     public class ProduceResources : MonoBehaviour
     {

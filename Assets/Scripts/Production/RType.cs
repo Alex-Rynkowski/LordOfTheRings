@@ -1,6 +1,4 @@
-using UnityEngine;
-
-namespace Hud
+namespace Production
 {
     public enum RType
     {
