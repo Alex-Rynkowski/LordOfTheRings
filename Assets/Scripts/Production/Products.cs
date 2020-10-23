@@ -11,15 +11,14 @@ namespace Production
         {
             UpdateProductInfo();
         }
-
-        public void UpdateProductInfo()
+        void UpdateProductInfo()
         {
             foreach (var product in products)
             {
                 product.nameText.text = product.unitName.ToString();
-                product.costText.text = $"Cost: {product.Cost.ToString()}";
-                product.productionTimeText.text = $"Production time: {product.productionTime}s";
-                product.productionAmountText.text = $"Production: {product.productionAmount}";
+                product.costText.text = $"Cost: {product.Cost.ToString()}$";
+                product.productionTimeText.text = $"Prod time: {product.productionTime}s";
+                product.productionAmountText.text = $"Prod amount: {product.productionAmount}x";
             }
         }
 

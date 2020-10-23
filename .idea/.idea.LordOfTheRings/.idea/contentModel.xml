@@ -11,19 +11,16 @@
             <e p="HudServices.cs" t="Include" />
             <e p="ShowProductInfo.cs" t="Include" />
           </e>
-          <e p="Misc" t="Include">
-            <e p="ComponentName.cs" t="Include" />
-            <e p="ComponentNames.cs" t="Include" />
-            <e p="Name.cs" t="Include" />
-            <e p="ProductionAmount.cs" t="Include" />
-            <e p="ProductionTime.cs" t="Include" />
-          </e>
           <e p="Production" t="Include">
             <e p="ProduceResources.cs" t="Include" />
             <e p="ProductionUnits.cs" t="Include" />
             <e p="Products.cs" t="Include" />
             <e p="ResourceType.cs" t="Include" />
             <e p="RType.cs" t="Include" />
+          </e>
+          <e p="tseting" t="Include">
+            <e p="Inst.cs" t="Include" />
+            <e p="UID.cs" t="Include" />
           </e>
           <e p="Units" t="Include">
             <e p="GoldPress.cs" t="Include" />
