@@ -21,4 +21,22 @@ namespace HeroVS
             }
         }
     }
+
+    public class Enemy : MonoBehaviour
+    {
+        [SerializeField] int enemyDamage = 3;
+        [SerializeField] int enemyHealth = 40;
+        
+        float _lastAttack;
+        bool CanAttack => Time.time - _lastAttack > .6f;
+
+        void Update()
+        {
+            if (CanAttack)
+            {
+                print("Enemy is attacking!");
+                _lastAttack = Time.time;
+            }
+        }
+    }
 }
