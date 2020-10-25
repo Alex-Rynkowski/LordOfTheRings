@@ -22,10 +22,17 @@
     <list default="true" id="d41a565d-fe20-4d62-b58e-d94dc2c60b5e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.LordOfTheRings/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.LordOfTheRings/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.LordOfTheRings/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.LordOfTheRings/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Hud/FloatingText.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Hud/FloatingText.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Production/ProduceResources.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Production/ProduceResources.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Production/Products.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Production/Products.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Units/GoldPress.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Units/GoldPress.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main Scene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Main Scene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Hud/HudServices.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Hud/HudServices.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/tseting.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/tseting/GameObject.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/tseting/GameObject.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/tseting/UID.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/tseting/UID.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/tseting/inst.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/tseting/inst.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/tseting/test objct.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/tseting/test objct.prefab.meta" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,9 +45,9 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/../Mario Marcs Stuff/Assets/Scripts/Trap.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../Mario Marcs Stuff/Assets/Scripts/TimeLimit.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/HeroVS/Hero.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/7CD321F2-2A98-4E1E-B513-F00B987C648C/d2/f8ac97cf/PlayerPrefs.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Hud/FloatingText.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/tseting/UID.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/7CD321F2-2A98-4E1E-B513-F00B987C648C/17/88600250/Display.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../Mario Marcs Stuff/Assets/Scripts/Health.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Hud/ShowProductInfo.cs" root0="FORCE_HIGHLIGHTING" />
@@ -90,7 +97,6 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Misc/Cost.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Misc/ComponentNames.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Misc/ComponentName.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Hud/HudServices.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Production/ProductionUnits.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Units/GoldPress.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Inst.cs" />
@@ -100,6 +106,8 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Production/ProduceResources.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Hud/FloatingText.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Production/Products.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Hud/HudServices.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/HeroVS/Hero.cs" />
       </list>
     </option>
   </component>
@@ -151,7 +159,7 @@
       <workItem from="1603304470295" duration="25819000" />
       <workItem from="1603397294394" duration="14995000" />
       <workItem from="1603445620668" duration="4479000" />
-      <workItem from="1603451581303" duration="1065000" />
+      <workItem from="1603451581303" duration="2968000" />
     </task>
     <task id="LOCAL−00001" summary="Code cleanup. Fixed errors etc.">
       <created>1603196634409</created>
@@ -387,7 +395,13 @@
       <option name="presentableId" value="LOCAL−00039" />
       <updated>1603445669858</updated>
     </task>
-    <option name="localTasksCounter" value="40" />
+    <task id="LOCAL−00040" summary="mostly code cleanup">
+      <created>1603454913601</created>
+      <option name="number" value="LOCAL−00040" />
+      <option name="presentableId" value="LOCAL−00040" />
+      <updated>1603454913601</updated>
+    </task>
+    <option name="localTasksCounter" value="41" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -409,7 +423,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="updates gold correctly when purchasing a gold press" />
     <MESSAGE value="renames UpdateGold --&gt; CurrentGold" />
     <MESSAGE value="fixes so gold increment based on gold presses" />
     <MESSAGE value="code cleanup" />
@@ -434,7 +447,8 @@
     <MESSAGE value="adds more flexible system for adding new productions units. Needs a lot of code clean up though!" />
     <MESSAGE value="reorganizes files" />
     <MESSAGE value="reverses a lot of code. Mainly removes the automatic instantiation. The designer modifies the UI in the editor instead." />
-    <option name="LAST_COMMIT_MESSAGE" value="reverses a lot of code. Mainly removes the automatic instantiation. The designer modifies the UI in the editor instead." />
+    <MESSAGE value="mostly code cleanup" />
+    <option name="LAST_COMMIT_MESSAGE" value="mostly code cleanup" />
   </component>
   <component name="WindowStateProjectService">
     <state width="501" height="464" key="DebuggerActiveHint" timestamp="1603434727229">
