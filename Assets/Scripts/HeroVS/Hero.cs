@@ -5,6 +5,8 @@ namespace HeroVS
 {
     public class Hero : MonoBehaviour
     {
+        [SerializeField] int heroDamage = 5;
+        [SerializeField] int heroLife = 100;
         float _lastAttack;
         bool CanAttack => Time.time - _lastAttack > .6f;
 
