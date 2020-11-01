@@ -1,9 +1,8 @@
-﻿using System;
 using UnityEngine;
 
 namespace HeroVS
 {
-    public class Hero : Unit
+    public class Enemy : Unit
     {
         
     }
