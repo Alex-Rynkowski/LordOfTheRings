@@ -46,4 +46,4 @@ MonoBehaviour:
   damage: 2
   health: 40
   attackSpeed: 1.2
-  target: {fileID: 0}
+  goldReward: 7

@@ -20,9 +20,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d41a565d-fe20-4d62-b58e-d94dc2c60b5e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/HeroVS/PlayerGold.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/HeroVS/PlayerGold.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.LordOfTheRings/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.LordOfTheRings/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.LordOfTheRings/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.LordOfTheRings/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/HeroVS/Enemy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/HeroVS/Enemy.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/HeroVS/Hero.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/HeroVS/Hero.cs" afterDir="false" />
@@ -55,6 +52,7 @@
     <setting file="file://$PROJECT_DIR$/../Mario Marcs Stuff/Assets/Scripts/PlayerServices.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/FB001E01-371B-4ADC-A200-13E0AC763896/c1/5afcf3c0/IntPtr.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../Mario Marcs Stuff/Assets/Scripts/Enemy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/alexrynkowski/Documents/LordOfTheRings/Assets/Scripts/HeroVS/Hero.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -104,8 +102,8 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Hud/HudServices.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/HeroVS/PlayerGold.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/HeroVS/Unit.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/HeroVS/Enemy.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/HeroVS/Hero.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/HeroVS/Enemy.cs" />
       </list>
     </option>
   </component>
@@ -158,7 +156,7 @@
       <workItem from="1603397294394" duration="14995000" />
       <workItem from="1603445620668" duration="4479000" />
       <workItem from="1603451581303" duration="2968000" />
-      <workItem from="1604249904914" duration="3010000" />
+      <workItem from="1604249904914" duration="4252000" />
     </task>
     <task id="LOCAL−00001" summary="Code cleanup. Fixed errors etc.">
       <created>1603196634409</created>
@@ -412,7 +410,13 @@
       <option name="presentableId" value="LOCAL−00042" />
       <updated>1604251391953</updated>
     </task>
-    <option name="localTasksCounter" value="43" />
+    <task id="LOCAL−00043" summary="adds gold to player whenever the enemy dies">
+      <created>1604253206839</created>
+      <option name="number" value="LOCAL−00043" />
+      <option name="presentableId" value="LOCAL−00043" />
+      <updated>1604253206839</updated>
+    </task>
+    <option name="localTasksCounter" value="44" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -434,7 +438,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="code cleanup" />
     <MESSAGE value="closes field info upon purchase" />
     <MESSAGE value="closes product info when clicking anywhere on the canvas" />
     <MESSAGE value="adds static helper class to the hud. To hide product information" />
@@ -459,7 +462,8 @@
     <MESSAGE value="mostly code cleanup" />
     <MESSAGE value="Created an abstract class &quot;Unit&quot; which Hero and Enemy inherits from." />
     <MESSAGE value="adds target and DealDamage.cs" />
-    <option name="LAST_COMMIT_MESSAGE" value="adds target and DealDamage.cs" />
+    <MESSAGE value="adds gold to player whenever the enemy dies" />
+    <option name="LAST_COMMIT_MESSAGE" value="adds gold to player whenever the enemy dies" />
   </component>
   <component name="WindowStateProjectService">
     <state width="501" height="464" key="DebuggerActiveHint" timestamp="1603434727229">

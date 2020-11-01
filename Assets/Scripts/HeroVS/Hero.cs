@@ -12,5 +12,20 @@ namespace HeroVS
         }
 
         protected override GameObject Target { get; set; }
+
+        void Update()
+        {
+            UpdateTarget();
+            if (IsDead)
+            {
+                Destroy(gameObject);
+            }
+
+            if (!CanAttack || IsDead || Target == null) return;
+            DealDamage();
+            print($"{this.name} is attacking dealing {damage} damage with {Health} hp left");
+
+            LastAttack = Time.time;
+        }
     }
 }
