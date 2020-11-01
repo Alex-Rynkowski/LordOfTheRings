@@ -21,6 +21,7 @@
   <component name="ChangeListManager">
     <list default="true" id="d41a565d-fe20-4d62-b58e-d94dc2c60b5e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.LordOfTheRings/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.LordOfTheRings/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/HeroVS/Enemy.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/HeroVS/Enemy.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/HeroVS/Enemy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/HeroVS/Enemy.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/HeroVS/Hero.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/HeroVS/Hero.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/HeroVS/Unit.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/HeroVS/Unit.cs" afterDir="false" />
@@ -39,9 +40,13 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/HeroVS/Hero.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/7CD321F2-2A98-4E1E-B513-F00B987C648C/d2/f8ac97cf/PlayerPrefs.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Hud/FloatingText.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock:///Users/alexrynkowski/Documents/LordOfTheRings/Assets/Scripts/HeroVS/Enemy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/alexrynkowski/Documents/LordOfTheRings/Assets/Scripts/HeroVS/Hero.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/7CD321F2-2A98-4E1E-B513-F00B987C648C/17/88600250/Display.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/alexrynkowski/Documents/LordOfTheRings/Assets/Scripts/HeroVS/Unit.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../Mario Marcs Stuff/Assets/Scripts/Health.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock:///Users/alexrynkowski/Documents/LordOfTheRings/Assets/Scripts/HeroVS/Enemy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/alexrynkowski/Documents/LordOfTheRings/Assets/Prefabs/HeroVS/Enemy.prefab" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Hud/ShowProductInfo.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/4BE223AC-3748-4E44-B85A-077F9B461EF8/25/131d2707/SendMouseEvents.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/BE267507-AD83-46AD-B731-FFD760AB1C1C/6f/e51ccbf9/IPointerClickHandler.cs" root0="SKIP_HIGHLIGHTING" />
@@ -101,9 +106,9 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Production/Products.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Hud/HudServices.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/HeroVS/PlayerGold.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/HeroVS/Enemy.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/HeroVS/Unit.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/HeroVS/Hero.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/HeroVS/Enemy.cs" />
       </list>
     </option>
   </component>
@@ -156,7 +161,7 @@
       <workItem from="1603397294394" duration="14995000" />
       <workItem from="1603445620668" duration="4479000" />
       <workItem from="1603451581303" duration="2968000" />
-      <workItem from="1604249904914" duration="4252000" />
+      <workItem from="1604249904914" duration="6093000" />
     </task>
     <task id="LOCAL−00001" summary="Code cleanup. Fixed errors etc.">
       <created>1603196634409</created>
@@ -416,7 +421,13 @@
       <option name="presentableId" value="LOCAL−00043" />
       <updated>1604253206839</updated>
     </task>
-    <option name="localTasksCounter" value="44" />
+    <task id="LOCAL−00044" summary="moves update logic out from the Unit class into respective unit">
+      <created>1604254361624</created>
+      <option name="number" value="LOCAL−00044" />
+      <option name="presentableId" value="LOCAL−00044" />
+      <updated>1604254361624</updated>
+    </task>
+    <option name="localTasksCounter" value="45" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -438,7 +449,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="closes field info upon purchase" />
     <MESSAGE value="closes product info when clicking anywhere on the canvas" />
     <MESSAGE value="adds static helper class to the hud. To hide product information" />
     <MESSAGE value="fixes hide info bug" />
@@ -463,7 +473,8 @@
     <MESSAGE value="Created an abstract class &quot;Unit&quot; which Hero and Enemy inherits from." />
     <MESSAGE value="adds target and DealDamage.cs" />
     <MESSAGE value="adds gold to player whenever the enemy dies" />
-    <option name="LAST_COMMIT_MESSAGE" value="adds gold to player whenever the enemy dies" />
+    <MESSAGE value="moves update logic out from the Unit class into respective unit" />
+    <option name="LAST_COMMIT_MESSAGE" value="moves update logic out from the Unit class into respective unit" />
   </component>
   <component name="WindowStateProjectService">
     <state width="501" height="464" key="DebuggerActiveHint" timestamp="1603434727229">

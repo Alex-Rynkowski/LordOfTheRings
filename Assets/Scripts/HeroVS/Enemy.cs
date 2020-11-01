@@ -17,6 +17,7 @@ namespace HeroVS
         void Start()
         {
             UpdateTarget();
+            Health = MaxHealth;
         }
 
         void Update()
@@ -29,7 +30,7 @@ namespace HeroVS
 
             if (!CanAttack || IsDead || Target == null) return;
             DealDamage();
-            print($"{this.name} is attacking dealing {damage} damage with {Health} hp left");
+            print($"{this.name} is attacking dealing {Damage} damage with {Health} hp left");
 
             LastAttack = Time.time;
         }

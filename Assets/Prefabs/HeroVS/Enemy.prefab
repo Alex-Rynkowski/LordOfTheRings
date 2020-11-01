@@ -44,6 +44,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 2
-  health: 40
+  maxHealth: 40
   attackSpeed: 1.2
-  goldReward: 7
+  goldReward: 30
