@@ -20,13 +20,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d41a565d-fe20-4d62-b58e-d94dc2c60b5e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/HeroVS/Enemy.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/HeroVS/Enemy.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/HeroVS/Unit.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/HeroVS/Unit.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.LordOfTheRings/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.LordOfTheRings/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.LordOfTheRings/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.LordOfTheRings/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/HeroVS/Enemy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/HeroVS/Enemy.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/HeroVS/Hero.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/HeroVS/Hero.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/HeroVS/Unit.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/HeroVS/Unit.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -101,8 +98,8 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Hud/FloatingText.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Production/Products.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Hud/HudServices.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/HeroVS/Hero.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/HeroVS/Enemy.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/HeroVS/Hero.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/HeroVS/Unit.cs" />
       </list>
     </option>
@@ -156,7 +153,7 @@
       <workItem from="1603397294394" duration="14995000" />
       <workItem from="1603445620668" duration="4479000" />
       <workItem from="1603451581303" duration="2968000" />
-      <workItem from="1604249904914" duration="710000" />
+      <workItem from="1604249904914" duration="1370000" />
     </task>
     <task id="LOCAL−00001" summary="Code cleanup. Fixed errors etc.">
       <created>1603196634409</created>
@@ -398,7 +395,13 @@
       <option name="presentableId" value="LOCAL−00040" />
       <updated>1603454913601</updated>
     </task>
-    <option name="localTasksCounter" value="41" />
+    <task id="LOCAL−00041" summary="Created an abstract class &quot;Unit&quot; which Hero and Enemy inherits from.">
+      <created>1604250669154</created>
+      <option name="number" value="LOCAL−00041" />
+      <option name="presentableId" value="LOCAL−00041" />
+      <updated>1604250669154</updated>
+    </task>
+    <option name="localTasksCounter" value="42" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -420,7 +423,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="renames UpdateGold --&gt; CurrentGold" />
     <MESSAGE value="fixes so gold increment based on gold presses" />
     <MESSAGE value="code cleanup" />
     <MESSAGE value="closes field info upon purchase" />
@@ -445,7 +447,8 @@
     <MESSAGE value="reorganizes files" />
     <MESSAGE value="reverses a lot of code. Mainly removes the automatic instantiation. The designer modifies the UI in the editor instead." />
     <MESSAGE value="mostly code cleanup" />
-    <option name="LAST_COMMIT_MESSAGE" value="mostly code cleanup" />
+    <MESSAGE value="Created an abstract class &quot;Unit&quot; which Hero and Enemy inherits from." />
+    <option name="LAST_COMMIT_MESSAGE" value="Created an abstract class &quot;Unit&quot; which Hero and Enemy inherits from." />
   </component>
   <component name="WindowStateProjectService">
     <state width="501" height="464" key="DebuggerActiveHint" timestamp="1603434727229">
