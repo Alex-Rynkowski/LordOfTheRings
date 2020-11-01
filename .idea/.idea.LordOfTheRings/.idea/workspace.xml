@@ -20,6 +20,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d41a565d-fe20-4d62-b58e-d94dc2c60b5e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/HeroVS/PlayerGold.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/HeroVS/PlayerGold.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.LordOfTheRings/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.LordOfTheRings/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.LordOfTheRings/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.LordOfTheRings/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/HeroVS/Enemy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/HeroVS/Enemy.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/HeroVS/Hero.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/HeroVS/Hero.cs" afterDir="false" />
@@ -41,6 +44,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Hud/FloatingText.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/7CD321F2-2A98-4E1E-B513-F00B987C648C/17/88600250/Display.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../Mario Marcs Stuff/Assets/Scripts/Health.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/alexrynkowski/Documents/LordOfTheRings/Assets/Scripts/HeroVS/Enemy.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Hud/ShowProductInfo.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/4BE223AC-3748-4E44-B85A-077F9B461EF8/25/131d2707/SendMouseEvents.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/BE267507-AD83-46AD-B731-FFD760AB1C1C/6f/e51ccbf9/IPointerClickHandler.cs" root0="SKIP_HIGHLIGHTING" />
@@ -98,9 +102,10 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Hud/FloatingText.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Production/Products.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Hud/HudServices.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/HeroVS/PlayerGold.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/HeroVS/Unit.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/HeroVS/Enemy.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/HeroVS/Hero.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/HeroVS/Unit.cs" />
       </list>
     </option>
   </component>
@@ -153,7 +158,7 @@
       <workItem from="1603397294394" duration="14995000" />
       <workItem from="1603445620668" duration="4479000" />
       <workItem from="1603451581303" duration="2968000" />
-      <workItem from="1604249904914" duration="1370000" />
+      <workItem from="1604249904914" duration="3010000" />
     </task>
     <task id="LOCAL−00001" summary="Code cleanup. Fixed errors etc.">
       <created>1603196634409</created>
@@ -401,7 +406,13 @@
       <option name="presentableId" value="LOCAL−00041" />
       <updated>1604250669154</updated>
     </task>
-    <option name="localTasksCounter" value="42" />
+    <task id="LOCAL−00042" summary="adds target and DealDamage.cs">
+      <created>1604251391953</created>
+      <option name="number" value="LOCAL−00042" />
+      <option name="presentableId" value="LOCAL−00042" />
+      <updated>1604251391953</updated>
+    </task>
+    <option name="localTasksCounter" value="43" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -423,7 +434,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="fixes so gold increment based on gold presses" />
     <MESSAGE value="code cleanup" />
     <MESSAGE value="closes field info upon purchase" />
     <MESSAGE value="closes product info when clicking anywhere on the canvas" />
@@ -448,7 +458,8 @@
     <MESSAGE value="reverses a lot of code. Mainly removes the automatic instantiation. The designer modifies the UI in the editor instead." />
     <MESSAGE value="mostly code cleanup" />
     <MESSAGE value="Created an abstract class &quot;Unit&quot; which Hero and Enemy inherits from." />
-    <option name="LAST_COMMIT_MESSAGE" value="Created an abstract class &quot;Unit&quot; which Hero and Enemy inherits from." />
+    <MESSAGE value="adds target and DealDamage.cs" />
+    <option name="LAST_COMMIT_MESSAGE" value="adds target and DealDamage.cs" />
   </component>
   <component name="WindowStateProjectService">
     <state width="501" height="464" key="DebuggerActiveHint" timestamp="1603434727229">

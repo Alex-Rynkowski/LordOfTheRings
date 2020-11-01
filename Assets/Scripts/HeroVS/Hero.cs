@@ -5,11 +5,12 @@ namespace HeroVS
 {
     public class Hero : Unit
     {
-        protected override GameObject Target { get; set; }
-
-        void Awake()
+        protected override void UpdateTarget()
         {
+            if (FindObjectOfType<Enemy>() == null) return;
             Target = FindObjectOfType<Enemy>().gameObject;
         }
+
+        protected override GameObject Target { get; set; }
     }
 }

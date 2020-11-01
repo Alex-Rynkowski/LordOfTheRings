@@ -9,10 +9,12 @@ namespace HeroVS
         [SerializeField] protected int health = 100;
         [SerializeField] protected float attackSpeed;
         [SerializeField] GameObject target;
+        float _lastAttack;
+        protected abstract void UpdateTarget();
 
         protected abstract GameObject Target { get; set; }
-        float _lastAttack;
         bool CanAttack => Time.time - _lastAttack > attackSpeed;
+        bool TargetHasDied => Health <= 0;
 
         int Health
         {
@@ -22,12 +24,19 @@ namespace HeroVS
 
         void Start()
         {
-            target = Target;
+            UpdateTarget();
         }
 
         void Update()
         {
-            if (!CanAttack) return;
+            UpdateTarget();
+            if (TargetHasDied)
+            {
+                Reward();
+                Destroy(gameObject);
+            }
+
+            if (!CanAttack || TargetHasDied || Target == null) return;
             DealDamage();
             print($"{this.name} is attacking dealing {damage} damage with {Health} hp left");
 
@@ -37,6 +46,14 @@ namespace HeroVS
         void DealDamage()
         {
             Target.GetComponent<Unit>().Health -= damage;
+        }
+
+        void Reward()
+        {
+            if (TargetHasDied)
+            {
+                FindObjectOfType<PlayerGold>().Gold += 7;
+            }
         }
     }
 }
