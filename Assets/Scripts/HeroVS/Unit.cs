@@ -1,4 +1,3 @@
-using System;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -20,9 +19,11 @@ namespace HeroVS
         int _health;
         protected float LastAttack;
         protected bool WaitingForPlayerAction;
-        
+
         protected abstract void UpdateTarget();
         protected abstract GameObject Target { get; set; }
+
+        protected abstract void UnitSetup();
 
         protected bool CanAttack
         {

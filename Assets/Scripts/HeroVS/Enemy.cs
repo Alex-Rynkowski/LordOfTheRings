@@ -1,6 +1,4 @@
-using System;
 using UnityEngine;
-using UnityEngine.UI;
 
 namespace HeroVS
 {
@@ -8,40 +6,10 @@ namespace HeroVS
     {
         [SerializeField] int goldReward;
 
-        protected override void UpdateTarget()
-        {
-            Target = FindObjectOfType<Hero>().gameObject;
-        }
-
-        protected override GameObject Target { get; set; }
-
-        protected override int MaxHealth
-        {
-            get => PlayerPrefs.GetInt("EnemyMaxHealth", maxHealth);
-            set
-            {
-                PlayerPrefs.SetInt("EnemyMaxHealth", value);
-                maxHealth = value;
-            }
-        }
-
-        protected override int Damage
-        {
-            get => PlayerPrefs.GetInt("EnemyDamage", damage + weapon.weaponDamage);
-            set
-            {
-                PlayerPrefs.SetInt("EnemyDamage", value);
-                damage = value;
-            }
-        }
-
         void Start()
         {
-            maxHealth = MaxHealth; //just for the visual aspect
-            
-            unitName.text = this.name;
+            UnitSetup();
             UpdateTarget();
-            Health = MaxHealth;
         }
 
         void Update()
@@ -66,6 +34,40 @@ namespace HeroVS
         public void DamageOnTap(int dmg)
         {
             Health -= dmg;
+        }
+
+        protected override void UpdateTarget()
+        {
+            Target = FindObjectOfType<Hero>().gameObject;
+        }
+
+        protected override GameObject Target { get; set; }
+
+        protected override void UnitSetup()
+        {
+            maxHealth = MaxHealth; //just for the visual aspect
+            Health = MaxHealth;
+            unitName.text = this.name;
+        }
+
+        protected override int MaxHealth
+        {
+            get => PlayerPrefs.GetInt("EnemyMaxHealth", maxHealth);
+            set
+            {
+                PlayerPrefs.SetInt("EnemyMaxHealth", value);
+                maxHealth = value;
+            }
+        }
+
+        protected override int Damage
+        {
+            get => PlayerPrefs.GetInt("EnemyDamage", damage + weapon.weaponDamage);
+            set
+            {
+                PlayerPrefs.SetInt("EnemyDamage", value);
+                damage = value;
+            }
         }
     }
 }

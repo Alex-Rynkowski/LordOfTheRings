@@ -1,6 +1,4 @@
-﻿using System;
-using UnityEngine;
-using UnityEngine.UI;
+﻿using UnityEngine;
 
 namespace HeroVS
 {
@@ -8,41 +6,10 @@ namespace HeroVS
     {
         PlayerGold _playerGold;
 
-        protected override void UpdateTarget()
-        {
-            if (FindObjectOfType<Enemy>() == null) return;
-            Target = FindObjectOfType<Enemy>().gameObject;
-        }
-
-        protected override GameObject Target { get; set; }
-
-        protected override int MaxHealth
-        {
-            get => PlayerPrefs.GetInt("MaxHealth", maxHealth);
-            set
-            {
-                PlayerPrefs.SetInt("MaxHealth", value);
-                maxHealth = value;
-            }
-        }
-
-        protected override int Damage
-        {
-            get => PlayerPrefs.GetInt("Damage", damage + weapon.weaponDamage);
-            set
-            {
-                PlayerPrefs.SetInt("Damage", value);
-                damage = value;
-            }
-        }
-        
         void Start()
         {
-            unitName.text = this.name;
-            maxHealth = MaxHealth;
-            damage = Damage;
             _playerGold = FindObjectOfType<PlayerGold>();
-            Health = MaxHealth;
+            UnitSetup();
         }
 
         void Update()
@@ -86,6 +53,42 @@ namespace HeroVS
             WaitingForPlayerAction = false;
             DealDamage();
             LastAttack = Time.time;
+        }
+
+        protected override void UpdateTarget()
+        {
+            if (FindObjectOfType<Enemy>() == null) return;
+            Target = FindObjectOfType<Enemy>().gameObject;
+        }
+
+        protected override GameObject Target { get; set; }
+
+        protected override void UnitSetup()
+        {
+            unitName.text = this.name;
+            maxHealth = MaxHealth;
+            damage = Damage;
+            Health = MaxHealth;
+        }
+
+        protected override int MaxHealth
+        {
+            get => PlayerPrefs.GetInt("MaxHealth", maxHealth);
+            set
+            {
+                PlayerPrefs.SetInt("MaxHealth", value);
+                maxHealth = value;
+            }
+        }
+
+        protected override int Damage
+        {
+            get => PlayerPrefs.GetInt("Damage", damage + weapon.weaponDamage);
+            set
+            {
+                PlayerPrefs.SetInt("Damage", value);
+                damage = value;
+            }
         }
     }
 }
