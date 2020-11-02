@@ -20,8 +20,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d41a565d-fe20-4d62-b58e-d94dc2c60b5e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.LordOfTheRings/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.LordOfTheRings/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/HeroVS/Enemy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/HeroVS/Enemy.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/HeroVS/Hero.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/HeroVS/Hero.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/HeroVS/Unit.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/HeroVS/Unit.cs" afterDir="false" />
     </list>
@@ -161,7 +159,7 @@
       <workItem from="1603445620668" duration="4479000" />
       <workItem from="1603451581303" duration="2968000" />
       <workItem from="1604249904914" duration="9641000" />
-      <workItem from="1604304752796" duration="7387000" />
+      <workItem from="1604304752796" duration="7831000" />
     </task>
     <task id="LOCAL−00001" summary="Code cleanup. Fixed errors etc.">
       <created>1603196634409</created>
@@ -445,7 +443,13 @@
       <option name="presentableId" value="LOCAL−00047" />
       <updated>1604308210970</updated>
     </task>
-    <option name="localTasksCounter" value="48" />
+    <task id="LOCAL−00048" summary="adds an atb gauge">
+      <created>1604317966864</created>
+      <option name="number" value="LOCAL−00048" />
+      <option name="presentableId" value="LOCAL−00048" />
+      <updated>1604317966864</updated>
+    </task>
+    <option name="localTasksCounter" value="49" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -467,7 +471,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="adds wood press component" />
     <MESSAGE value="adds wood component" />
     <MESSAGE value="fixes wood &amp; WoodPress.cs. Should now work correctly" />
     <MESSAGE value="adds higher wood press cost for each purchase." />
@@ -492,7 +495,8 @@
     <MESSAGE value="upgrades maxhealth whenever the player has 50 gold" />
     <MESSAGE value="adds scriptable object &quot;Weapon&quot; which needs to be assigned to the unit. Damage calculation count base unit damage + weapon damage." />
     <MESSAGE value="adds unit name above the health bar" />
-    <option name="LAST_COMMIT_MESSAGE" value="adds unit name above the health bar" />
+    <MESSAGE value="adds an atb gauge" />
+    <option name="LAST_COMMIT_MESSAGE" value="adds an atb gauge" />
   </component>
   <component name="WindowStateProjectService">
     <state width="501" height="464" key="DebuggerActiveHint" timestamp="1603434727229">

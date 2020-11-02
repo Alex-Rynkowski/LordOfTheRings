@@ -35,7 +35,7 @@ namespace HeroVS
         {
             get
             {
-                if (WaitingForPlayerAction) return !WaitingForPlayerAction;
+                if (FindObjectOfType<Hero>()._waitingForPlayerAction) return false;
                 print(_waitingForPlayerAction);
                 aTBGauge.fillAmount = (Time.time - LastAttack) / weapon.weaponAttackSpeed;
                 return Time.time - LastAttack > weapon.weaponAttackSpeed;

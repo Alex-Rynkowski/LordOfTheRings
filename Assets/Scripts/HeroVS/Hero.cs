@@ -61,11 +61,11 @@ namespace HeroVS
             }
 
             if (!CanAttack || IsDead || Target == null) return;
+            _waitingForPlayerAction = true;
 
-            DealDamage();
             //print($"{this.name} is dealing {Damage} damage");
 
-            LastAttack = Time.time;
+            //LastAttack = Time.time;
         }
 
         public void UpgradeHealth()
@@ -87,9 +87,11 @@ namespace HeroVS
             }
         }
 
-        // public void Attack()
-        // {
-        //     WaitingForPlayerAction = false;
-        // }
+        public void Attack()
+        {
+            _waitingForPlayerAction = false;
+            DealDamage();
+            LastAttack = Time.time;
+        }
     }
 }
