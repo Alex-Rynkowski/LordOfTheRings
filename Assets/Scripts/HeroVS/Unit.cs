@@ -1,13 +1,16 @@
 using System;
 using UnityEngine;
+using UnityEngine.UI;
 
 namespace HeroVS
 {
     public abstract class Unit : MonoBehaviour
     {
-        [SerializeField] int damage = 5;
-        [SerializeField] int maxHealth = 100;
+        [SerializeField] protected int damage = 5;
+        [SerializeField] protected int maxHealth = 100;
         [SerializeField] float attackSpeed;
+
+        [SerializeField] Image healthImage;
         int _health;
         protected float LastAttack;
         protected abstract void UpdateTarget();
@@ -15,17 +18,9 @@ namespace HeroVS
         protected bool CanAttack => Time.time - LastAttack > attackSpeed;
         protected bool IsDead => Health <= 0;
 
-        protected int MaxHealth
-        {
-            get => maxHealth;
-            set => maxHealth = value;
-        }
+        protected virtual int MaxHealth { get; set; }
 
-        public int Damage
-        {
-            get => damage;
-            set => damage = value;
-        }
+        protected virtual int Damage { get; set; }
 
         protected int Health
         {
@@ -36,6 +31,12 @@ namespace HeroVS
         protected void DealDamage()
         {
             Target.GetComponent<Unit>().Health -= Damage;
+        }
+
+        protected void UpdateHealthImage()
+        {
+            print((float) Health / MaxHealth + Health);
+            healthImage.fillAmount = (float) Health / MaxHealth;
         }
     }
 }

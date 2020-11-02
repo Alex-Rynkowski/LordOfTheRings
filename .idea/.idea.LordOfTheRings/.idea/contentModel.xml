@@ -6,6 +6,7 @@
       <e p="Assets" t="Include">
         <e p="Scripts" t="Include">
           <e p="HeroVS" t="Include">
+            <e p="EmptyGraphic.cs" t="Include" />
             <e p="Enemy.cs" t="Include" />
             <e p="Hero.cs" t="Include" />
             <e p="PlayerGold.cs" t="Include" />

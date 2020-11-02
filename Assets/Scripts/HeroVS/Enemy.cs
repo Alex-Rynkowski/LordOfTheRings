@@ -14,14 +14,40 @@ namespace HeroVS
 
         protected override GameObject Target { get; set; }
 
+        protected override int MaxHealth
+        {
+            get => PlayerPrefs.GetInt("EnemyMaxHealth", maxHealth);
+            set
+            {
+                PlayerPrefs.SetInt("EnemyMaxHealth", value);
+                maxHealth = value;
+            }
+        }
+
+        protected override int Damage
+        {
+            get
+            {
+                PlayerPrefs.GetInt("EnemyDamage", damage);
+                return damage;
+            }
+            set
+            {
+                PlayerPrefs.SetInt("EnemyDamage", value);
+                damage = value;
+            }
+        }
+
         void Start()
         {
+            maxHealth = MaxHealth;
             UpdateTarget();
             Health = MaxHealth;
         }
 
         void Update()
         {
+            UpdateHealthImage();
             if (IsDead)
             {
                 Reward();
@@ -30,7 +56,6 @@ namespace HeroVS
 
             if (!CanAttack || IsDead || Target == null) return;
             DealDamage();
-            print($"{this.name} is attacking dealing {Damage} damage with {Health} hp left");
 
             LastAttack = Time.time;
         }
@@ -38,6 +63,11 @@ namespace HeroVS
         void Reward()
         {
             FindObjectOfType<PlayerGold>().Gold += goldReward;
+        }
+
+        public void DamageOnTap(int dmg)
+        {
+            Health -= dmg;
         }
     }
 }
