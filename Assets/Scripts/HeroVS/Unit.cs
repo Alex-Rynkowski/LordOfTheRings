@@ -4,7 +4,7 @@ using UnityEngine.UI;
 
 namespace HeroVS
 {
-    public abstract class Unit : MonoBehaviour
+    public abstract class Unit : MonoBehaviour, IWaitForPlayerAction
     {
         [Header("Stats")]
         [SerializeField] protected Weapon weapon;
@@ -16,8 +16,10 @@ namespace HeroVS
         [SerializeField] Image healthImage;
 
         [SerializeField] protected Text unitName;
+        [SerializeField] protected Image aTBGauge;
         int _health;
         protected float LastAttack;
+        protected bool _waitingForPlayerAction;
         protected abstract void UpdateTarget();
         protected abstract GameObject Target { get; set; }
 
@@ -27,7 +29,19 @@ namespace HeroVS
             set => unitName = value;
         }
 
-        protected bool CanAttack => Time.time - LastAttack > weapon.weaponAttackSpeed;
+        
+
+        protected bool CanAttack
+        {
+            get
+            {
+                if (WaitingForPlayerAction) return !WaitingForPlayerAction;
+                print(_waitingForPlayerAction);
+                aTBGauge.fillAmount = (Time.time - LastAttack) / weapon.weaponAttackSpeed;
+                return Time.time - LastAttack > weapon.weaponAttackSpeed;
+            }
+        }
+
         protected bool IsDead => Health <= 0;
 
         protected virtual int MaxHealth { get; set; }
@@ -49,5 +63,7 @@ namespace HeroVS
         {
             healthImage.fillAmount = (float) Health / MaxHealth;
         }
+
+        public bool WaitingForPlayerAction { get; set; }
     }
 }

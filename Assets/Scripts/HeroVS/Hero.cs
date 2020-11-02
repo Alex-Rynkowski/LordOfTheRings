@@ -61,8 +61,9 @@ namespace HeroVS
             }
 
             if (!CanAttack || IsDead || Target == null) return;
+
             DealDamage();
-            print($"{this.name} is dealing {Damage} damage");
+            //print($"{this.name} is dealing {Damage} damage");
 
             LastAttack = Time.time;
         }
@@ -85,5 +86,10 @@ namespace HeroVS
                 Damage = (int) (Damage * 1.1f);
             }
         }
+
+        // public void Attack()
+        // {
+        //     WaitingForPlayerAction = false;
+        // }
     }
 }

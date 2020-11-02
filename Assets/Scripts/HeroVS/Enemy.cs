@@ -59,7 +59,7 @@ namespace HeroVS
 
             if (!CanAttack || IsDead || Target == null) return;
             DealDamage();
-            print($"{this.name} is dealing {Damage} damage");
+            //print($"{this.name} is dealing {Damage} damage");
 
             LastAttack = Time.time;
         }

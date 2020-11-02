@@ -45,6 +45,7 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/4BE223AC-3748-4E44-B85A-077F9B461EF8/25/131d2707/SendMouseEvents.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/BE267507-AD83-46AD-B731-FFD760AB1C1C/6f/e51ccbf9/IPointerClickHandler.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/8E889372-00DC-4962-B5C6-3133D2365761/44/7eba965b/NativeInputSystem.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/HeroVS/IWaitForPlayerAction.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Units/UnitName.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/IL/BE267507-AD83-46AD-B731-FFD760AB1C1C/60/071c0e07/02000057.il" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/7CD321F2-2A98-4E1E-B513-F00B987C648C/2d/6358ae84/Vector3.cs" root0="SKIP_HIGHLIGHTING" />
@@ -56,7 +57,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Hud/PurchseProduct.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Hud/ProduceGold.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Hud/PurchaseAbleProducts.cs" />
@@ -104,9 +104,10 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/HeroVS/EmptyGraphic.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/HeroVS/Weapon.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/HeroVS/EnemyHud.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/HeroVS/Enemy.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/HeroVS/IWaitForPlayerAction.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/HeroVS/Unit.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/HeroVS/Hero.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/HeroVS/Enemy.cs" />
       </list>
     </option>
   </component>
@@ -160,7 +161,7 @@
       <workItem from="1603445620668" duration="4479000" />
       <workItem from="1603451581303" duration="2968000" />
       <workItem from="1604249904914" duration="9641000" />
-      <workItem from="1604304752796" duration="3049000" />
+      <workItem from="1604304752796" duration="7387000" />
     </task>
     <task id="LOCAL−00001" summary="Code cleanup. Fixed errors etc.">
       <created>1603196634409</created>
@@ -438,7 +439,13 @@
       <option name="presentableId" value="LOCAL−00046" />
       <updated>1604306452757</updated>
     </task>
-    <option name="localTasksCounter" value="47" />
+    <task id="LOCAL−00047" summary="adds unit name above the health bar">
+      <created>1604308210970</created>
+      <option name="number" value="LOCAL−00047" />
+      <option name="presentableId" value="LOCAL−00047" />
+      <updated>1604308210970</updated>
+    </task>
+    <option name="localTasksCounter" value="48" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -460,7 +467,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="fixes hide info bug" />
     <MESSAGE value="adds wood press component" />
     <MESSAGE value="adds wood component" />
     <MESSAGE value="fixes wood &amp; WoodPress.cs. Should now work correctly" />
@@ -485,7 +491,8 @@
     <MESSAGE value="moves update logic out from the Unit class into respective unit" />
     <MESSAGE value="upgrades maxhealth whenever the player has 50 gold" />
     <MESSAGE value="adds scriptable object &quot;Weapon&quot; which needs to be assigned to the unit. Damage calculation count base unit damage + weapon damage." />
-    <option name="LAST_COMMIT_MESSAGE" value="adds scriptable object &quot;Weapon&quot; which needs to be assigned to the unit. Damage calculation count base unit damage + weapon damage." />
+    <MESSAGE value="adds unit name above the health bar" />
+    <option name="LAST_COMMIT_MESSAGE" value="adds unit name above the health bar" />
   </component>
   <component name="WindowStateProjectService">
     <state width="501" height="464" key="DebuggerActiveHint" timestamp="1603434727229">
