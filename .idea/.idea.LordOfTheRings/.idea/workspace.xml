@@ -20,15 +20,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d41a565d-fe20-4d62-b58e-d94dc2c60b5e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/HeroVS/IEnemy.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/HeroVS/IEnemy.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/HeroVS/MageSkeleton.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/HeroVS/MageSkeleton.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.LordOfTheRings/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.LordOfTheRings/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.LordOfTheRings/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.LordOfTheRings/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/HeroVS/Enemy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/HeroVS/Goblin.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/HeroVS/Enemy.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/HeroVS/Goblin.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/HeroVS/Enemy.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/HeroVS/Enemy.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/HeroVS/Goblin.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/HeroVS/Goblin.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/HeroVS/Hero.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/HeroVS/Hero.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/HeroVS/MageSkeleton.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/HeroVS/MageSkeleton.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/HeroVS/Unit.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/HeroVS/Unit.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/HeroVS/Weapon.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/HeroVS/Weapon.cs" afterDir="false" />
     </list>
@@ -115,14 +113,14 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/HeroVS/IStats.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/HeroVS/Upgrades.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/HeroVS/ShowUpgrades.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/HeroVS/Weapon.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/HeroVS/Enemy.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/HeroVS/Weapons/MageSkeleton.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/HeroVS/Unit.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/HeroVS/IEnemy.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/HeroVS/Weapon.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/HeroVS/Unit.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/HeroVS/Hero.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/HeroVS/MageSkeleton.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/HeroVS/Goblin.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/HeroVS/Hero.cs" />
       </list>
     </option>
   </component>
@@ -176,13 +174,7 @@
       <workItem from="1603445620668" duration="4479000" />
       <workItem from="1603451581303" duration="2968000" />
       <workItem from="1604249904914" duration="9641000" />
-      <workItem from="1604304752796" duration="24318000" />
-    </task>
-    <task id="LOCAL−00006" summary="adds configurable Products">
-      <created>1603199402989</created>
-      <option name="number" value="LOCAL−00006" />
-      <option name="presentableId" value="LOCAL−00006" />
-      <updated>1603199402989</updated>
+      <workItem from="1604304752796" duration="25998000" />
     </task>
     <task id="LOCAL−00007" summary="moves produce gold to a separate component">
       <created>1603202316170</created>
@@ -472,7 +464,13 @@
       <option name="presentableId" value="LOCAL−00054" />
       <updated>1604341805776</updated>
     </task>
-    <option name="localTasksCounter" value="55" />
+    <task id="LOCAL−00055" summary="adds new enemy and moves reward to an interface. The interface is called each time the player attacks. Only when enemy dies the player is rewarded.">
+      <created>1604343899942</created>
+      <option name="number" value="LOCAL−00055" />
+      <option name="presentableId" value="LOCAL−00055" />
+      <updated>1604343899942</updated>
+    </task>
+    <option name="localTasksCounter" value="56" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -494,7 +492,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="adds customizable floating text" />
     <MESSAGE value="fixes few bugs with customizable floating text" />
     <MESSAGE value="cleans up code and heirarchy" />
     <MESSAGE value="moves &quot;Available products&quot; to a separate component. Also alot of code cleanup" />
@@ -519,7 +516,8 @@
     <MESSAGE value="fixes atb gauge" />
     <MESSAGE value="adds various stats (vitality, strength, intelligence). Upgrades moved to a separate scripts and uses an interface to increase the stats on the hero" />
     <MESSAGE value="code cleanup" />
-    <option name="LAST_COMMIT_MESSAGE" value="code cleanup" />
+    <MESSAGE value="adds new enemy and moves reward to an interface. The interface is called each time the player attacks. Only when enemy dies the player is rewarded." />
+    <option name="LAST_COMMIT_MESSAGE" value="adds new enemy and moves reward to an interface. The interface is called each time the player attacks. Only when enemy dies the player is rewarded." />
   </component>
   <component name="WindowStateProjectService">
     <state width="501" height="464" key="DebuggerActiveHint" timestamp="1603434727229">

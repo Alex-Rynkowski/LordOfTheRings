@@ -30,6 +30,17 @@ namespace HeroVS
         protected abstract int Damage { get; }
         protected abstract int SpellDamage { get; }
         protected abstract void UnitSetup();
+        protected bool IsDead => Health <= 0;
+
+        protected int Health
+        {
+            get => _health;
+            set
+            {
+                _health = Mathf.Clamp(value, 0, MaxHealth);
+                unitName.text = $"{name} {Health}/{MaxHealth}";
+            }
+        }
 
         protected virtual void Start()
         {
@@ -37,20 +48,11 @@ namespace HeroVS
             UpdateTarget();
         }
 
-        protected bool IsDead => Health <= 0;
-
-        protected int Health
-        {
-            get => _health;
-            set => _health = Mathf.Clamp(value, 0, MaxHealth);
-        }
-
         protected virtual void Update()
         {
             UpdateHealthImage();
             if (IsDead)
             {
-                //Reward();
                 Destroy(gameObject);
             }
 

@@ -5,10 +5,6 @@ namespace HeroVS
 {
     public class Goblin : Unit, IEnemy
     {
-        [SerializeField] int goldReward;
-        
-       
-
         public void DamageOnTap(int dmg)
         {
             Health -= dmg;
@@ -19,24 +15,20 @@ namespace HeroVS
             Target = FindObjectOfType<Hero>().gameObject;
         }
 
-        protected override GameObject Target { get; set; }
-
-
         protected override void UnitSetup()
         {
             maxHealth = MaxHealth;
             Health = MaxHealth;
-            unitName.text = name;
         }
 
+        protected override GameObject Target { get; set; }
         protected override int SpellDamage => baseSpellDamage;
         protected override int MaxHealth => maxHealth;
-
         protected override int Damage => baseDamage + weapon.weaponDamage;
+
         public void Reward()
         {
-            if(!IsDead) return;
-            print("Here!");
+            if (!IsDead) return;
             FindObjectOfType<PlayerGold>().Gold += 7;
         }
     }

@@ -40,13 +40,18 @@ namespace HeroVS
 
         protected override void UpdateTarget()
         {
-            if (FindObjectOfType<Goblin>() == null) return;
-            Target = FindObjectOfType<Goblin>().gameObject;
+            foreach (var enemy in FindObjectsOfType<MonoBehaviour>())
+            {
+                if (enemy is IEnemy e)
+                {
+                    Target = enemy.gameObject;
+                    break;
+                }
+            }
         }
 
         protected override void UnitSetup()
         {
-            unitName.text = this.name;
             maxHealth = MaxHealth;
             baseDamage = Damage;
             Health = MaxHealth;

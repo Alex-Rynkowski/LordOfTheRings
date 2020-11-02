@@ -17,7 +17,6 @@ namespace HeroVS
         {
             maxHealth = MaxHealth;
             Health = MaxHealth;
-            unitName.text = name;
         }
 
         public void Reward()

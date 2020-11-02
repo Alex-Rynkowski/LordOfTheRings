@@ -17,6 +17,7 @@ namespace HeroVS
         Sword,
         Axe,
         Hammer,
-        Fists
+        Fists,
+        Fireball
     }
 }
