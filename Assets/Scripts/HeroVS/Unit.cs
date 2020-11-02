@@ -6,16 +6,16 @@ namespace HeroVS
 {
     public abstract class Unit : MonoBehaviour
     {
+        [SerializeField] protected Weapon weapon;
         [SerializeField] protected int damage = 5;
         [SerializeField] protected int maxHealth = 100;
-        [SerializeField] float attackSpeed;
 
         [SerializeField] Image healthImage;
         int _health;
         protected float LastAttack;
         protected abstract void UpdateTarget();
         protected abstract GameObject Target { get; set; }
-        protected bool CanAttack => Time.time - LastAttack > attackSpeed;
+        protected bool CanAttack => Time.time - LastAttack > weapon.weaponAttackSpeed;
         protected bool IsDead => Health <= 0;
 
         protected virtual int MaxHealth { get; set; }
@@ -35,7 +35,6 @@ namespace HeroVS
 
         protected void UpdateHealthImage()
         {
-            print((float) Health / MaxHealth + Health);
             healthImage.fillAmount = (float) Health / MaxHealth;
         }
     }

@@ -27,7 +27,7 @@ namespace HeroVS
 
         protected override int Damage
         {
-            get => PlayerPrefs.GetInt("Damage", damage);
+            get => PlayerPrefs.GetInt("Damage", damage + weapon.weaponDamage);
             set
             {
                 PlayerPrefs.SetInt("Damage", value);
@@ -54,6 +54,7 @@ namespace HeroVS
 
             if (!CanAttack || IsDead || Target == null) return;
             DealDamage();
+            print($"{this.name} is dealing {Damage} damage");
 
             LastAttack = Time.time;
         }
@@ -73,7 +74,7 @@ namespace HeroVS
             if (_playerGold.Gold >= 50)
             {
                 _playerGold.Gold -= 50;
-                Damage = (int) (Damage * 2);
+                Damage = (int) (Damage * 1.1f);
             }
         }
     }

@@ -11,6 +11,7 @@
             <e p="Hero.cs" t="Include" />
             <e p="PlayerGold.cs" t="Include" />
             <e p="Unit.cs" t="Include" />
+            <e p="Weapon.cs" t="Include" />
           </e>
           <e p="Hud" t="Include">
             <e p="FloatingText.cs" t="Include" />

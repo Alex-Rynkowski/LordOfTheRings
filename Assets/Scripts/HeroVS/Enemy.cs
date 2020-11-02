@@ -26,11 +26,7 @@ namespace HeroVS
 
         protected override int Damage
         {
-            get
-            {
-                PlayerPrefs.GetInt("EnemyDamage", damage);
-                return damage;
-            }
+            get => PlayerPrefs.GetInt("EnemyDamage", damage + weapon.weaponDamage);
             set
             {
                 PlayerPrefs.SetInt("EnemyDamage", value);
@@ -56,6 +52,7 @@ namespace HeroVS
 
             if (!CanAttack || IsDead || Target == null) return;
             DealDamage();
+            print($"{this.name} is dealing {Damage} damage");
 
             LastAttack = Time.time;
         }
