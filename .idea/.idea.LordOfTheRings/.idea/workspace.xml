@@ -21,11 +21,9 @@
   <component name="ChangeListManager">
     <list default="true" id="d41a565d-fe20-4d62-b58e-d94dc2c60b5e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.LordOfTheRings/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.LordOfTheRings/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/HeroVS/Goblin.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/HeroVS/Goblin.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/HeroVS/Hero.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/HeroVS/Hero.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/HeroVS/MageSkeleton.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/HeroVS/MageSkeleton.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/HeroVS/Unit.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/HeroVS/Unit.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/HeroVS/Weapon.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/HeroVS/Weapon.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/HeroVS/PlayerGold.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/HeroVS/PlayerGold.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/HeroVS/Upgrades.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/HeroVS/Upgrades.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -103,7 +101,6 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Hud/FloatingText.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Production/Products.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Hud/HudServices.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/HeroVS/PlayerGold.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Hud/ScriptableStuff.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Hud/Weapon.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/HeroVS/ClickingStuff.cs" />
@@ -114,7 +111,6 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/HeroVS/LoadUpgrades.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/HeroVS/Weapons/Upgrades.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/HeroVS/IStats.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/HeroVS/Upgrades.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/HeroVS/Enemy.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/HeroVS/Weapons/MageSkeleton.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/HeroVS/IEnemy.cs" />
@@ -124,6 +120,8 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/HeroVS/Unit.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/HeroVS/Goblin.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/HeroVS/MageSkeleton.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/HeroVS/PlayerGold.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/HeroVS/Upgrades.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/HeroVS/Hero.cs" />
       </list>
     </option>
@@ -178,13 +176,7 @@
       <workItem from="1603445620668" duration="4479000" />
       <workItem from="1603451581303" duration="2968000" />
       <workItem from="1604249904914" duration="9641000" />
-      <workItem from="1604304752796" duration="29690000" />
-    </task>
-    <task id="LOCAL−00010" summary="adds an enum to the Product component">
-      <created>1603206905467</created>
-      <option name="number" value="LOCAL−00010" />
-      <option name="presentableId" value="LOCAL−00010" />
-      <updated>1603206905467</updated>
+      <workItem from="1604304752796" duration="30702000" />
     </task>
     <task id="LOCAL−00011" summary="updates gold correctly when purchasing a gold press">
       <created>1603207486950</created>
@@ -474,7 +466,13 @@
       <option name="presentableId" value="LOCAL−00058" />
       <updated>1604350455671</updated>
     </task>
-    <option name="localTasksCounter" value="59" />
+    <task id="LOCAL−00059" summary="adds new weapon type (Physical + magical)">
+      <created>1604350853816</created>
+      <option name="number" value="LOCAL−00059" />
+      <option name="presentableId" value="LOCAL−00059" />
+      <updated>1604350853817</updated>
+    </task>
+    <option name="localTasksCounter" value="60" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -496,7 +494,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="moves &quot;Available products&quot; to a separate component. Also alot of code cleanup" />
     <MESSAGE value="fixes the price cost on the products is no increased correctly" />
     <MESSAGE value="adds a customizable unit type" />
     <MESSAGE value="adds more flexible productionunits system and some code cleanup" />
@@ -521,7 +518,8 @@
     <MESSAGE value="adds new enemy and moves reward to an interface. The interface is called each time the player attacks. Only when enemy dies the player is rewarded." />
     <MESSAGE value="correctly targets a new enemy upon enemy kill" />
     <MESSAGE value="adds skill type (magic &amp; physical), skill type is then used when dealing damage. Damage is calculated by skill type damage and your base stats.&#10;&#10;also adds Damage Taken text, whenever a Unit takes damage." />
-    <option name="LAST_COMMIT_MESSAGE" value="adds skill type (magic &amp; physical), skill type is then used when dealing damage. Damage is calculated by skill type damage and your base stats.&#10;&#10;also adds Damage Taken text, whenever a Unit takes damage." />
+    <MESSAGE value="adds new weapon type (Physical + magical)" />
+    <option name="LAST_COMMIT_MESSAGE" value="adds new weapon type (Physical + magical)" />
   </component>
   <component name="WindowStateProjectService">
     <state width="501" height="464" key="DebuggerActiveHint" timestamp="1603434727229">

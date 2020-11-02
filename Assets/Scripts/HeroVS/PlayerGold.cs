@@ -6,18 +6,22 @@ namespace HeroVS
 {
     public class PlayerGold : MonoBehaviour
     {
-        [SerializeField] int gold;
         [SerializeField] Text goldText;
+        int _gold;
 
         public int Gold
         {
-            get => gold;
-            set => gold = value;
+            get => PlayerPrefs.GetInt("Gold", _gold);
+            set
+            {
+                PlayerPrefs.SetInt("Gold", value);
+                goldText.text = Gold.ToString();
+            }
         }
 
-        void Update()
+        void Start()
         {
-            goldText.text = gold.ToString();
+            goldText.text = Gold.ToString();
         }
     }
 }

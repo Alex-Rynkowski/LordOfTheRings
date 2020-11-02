@@ -11,8 +11,11 @@ namespace HeroVS
         [SerializeField] Text strengthText;
         [SerializeField] Text intelligenceText;
         readonly HashSet<IStats> _stats = new HashSet<IStats>();
+        PlayerGold _playerGold;
+
         void Start()
         {
+            _playerGold = FindObjectOfType<PlayerGold>();
             SetupText();
             foreach (var mono in FindObjectsOfType<MonoBehaviour>())
             {
@@ -32,6 +35,8 @@ namespace HeroVS
 
         public void IncreaseVitality()
         {
+            if (_playerGold.Gold < 50) return;
+            _playerGold.Gold -= 50;
             foreach (var stat in _stats)
             {
                 stat.Vitality += 10;
@@ -40,6 +45,8 @@ namespace HeroVS
 
         public void IncreaseStrength()
         {
+            if (_playerGold.Gold < 50) return;
+            _playerGold.Gold -= 50;
             foreach (var stat in _stats)
             {
                 stat.Strength += 10;
@@ -48,6 +55,8 @@ namespace HeroVS
 
         public void IncreaseIntelligence()
         {
+            if (_playerGold.Gold < 50) return;
+            _playerGold.Gold -= 50;
             foreach (var stat in _stats)
             {
                 stat.Strength += 10;

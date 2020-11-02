@@ -87,7 +87,11 @@ namespace HeroVS
         public int Vitality
         {
             get => PlayerPrefs.GetInt("Vitality", _vitality);
-            set => PlayerPrefs.SetInt("Vitality", value);
+            set
+            {
+                PlayerPrefs.SetInt("Vitality", value);
+                Health = MaxHealth;
+            }
         }
 
         public int Intelligence
