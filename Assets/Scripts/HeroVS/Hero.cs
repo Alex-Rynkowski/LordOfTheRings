@@ -1,5 +1,6 @@
 ﻿using System;
 using UnityEngine;
+using UnityEngine.UI;
 
 namespace HeroVS
 {
@@ -35,8 +36,15 @@ namespace HeroVS
             }
         }
 
+        protected override Text UnitName
+        {
+            get => unitName;
+            set => unitName.text = value.ToString();
+        }
+
         void Start()
         {
+            UnitName.text = this.name;
             maxHealth = MaxHealth;
             damage = Damage;
             _playerGold = FindObjectOfType<PlayerGold>();

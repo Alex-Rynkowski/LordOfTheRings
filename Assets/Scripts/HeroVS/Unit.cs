@@ -6,15 +6,27 @@ namespace HeroVS
 {
     public abstract class Unit : MonoBehaviour
     {
+        [Header("Stats")]
         [SerializeField] protected Weapon weapon;
+
         [SerializeField] protected int damage = 5;
         [SerializeField] protected int maxHealth = 100;
 
+        [Header("UI")]
         [SerializeField] Image healthImage;
+
+        [SerializeField] protected Text unitName;
         int _health;
         protected float LastAttack;
         protected abstract void UpdateTarget();
         protected abstract GameObject Target { get; set; }
+
+        protected virtual Text UnitName
+        {
+            get => unitName;
+            set => unitName = value;
+        }
+
         protected bool CanAttack => Time.time - LastAttack > weapon.weaponAttackSpeed;
         protected bool IsDead => Health <= 0;
 

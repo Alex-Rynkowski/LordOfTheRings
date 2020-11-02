@@ -1,5 +1,6 @@
 using System;
 using UnityEngine;
+using UnityEngine.UI;
 
 namespace HeroVS
 {
@@ -33,10 +34,16 @@ namespace HeroVS
                 damage = value;
             }
         }
+        protected override Text UnitName
+        {
+            get => unitName;
+            set => unitName.text = value.ToString();
+        }
 
         void Start()
         {
             maxHealth = MaxHealth;
+            UnitName.text = this.name;
             UpdateTarget();
             Health = MaxHealth;
         }
