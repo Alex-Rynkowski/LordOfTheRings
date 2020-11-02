@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74d45750b80b543f0b1c980d46177a5f, type: 3}
   m_Name: ExeStoppedWorking
   m_EditorClassIdentifier: 
-  weaponType: 0
-  weaponName: 
-  weaponDamage: 0
-  weaponAttackSpeed: 0
-  description: 
+  weaponType: 1
+  weaponName: Exe Stopped Working
+  weaponDamage: 2
+  weaponAttackSpeed: 1
+  description: Bad axe

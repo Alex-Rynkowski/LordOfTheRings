@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -16,25 +17,16 @@ namespace HeroVS
 
         [SerializeField] protected Text unitName;
         [SerializeField] protected Image aTBGauge;
+
         int _health;
-        protected float LastAttack;
+        float _timeSinceLastAttack;
+
         protected bool WaitingForPlayerAction;
 
         protected abstract void UpdateTarget();
         protected abstract GameObject Target { get; set; }
 
         protected abstract void UnitSetup();
-
-        protected bool CanAttack
-        {
-            get
-            {
-                if (FindObjectOfType<Hero>().WaitingForPlayerAction) return false;
-                print(WaitingForPlayerAction);
-                aTBGauge.fillAmount = (Time.time - LastAttack) / weapon.weaponAttackSpeed;
-                return Time.time - LastAttack > weapon.weaponAttackSpeed;
-            }
-        }
 
         protected bool IsDead => Health <= 0;
 
@@ -46,6 +38,24 @@ namespace HeroVS
         {
             get => _health;
             set => _health = Mathf.Clamp(value, 0, MaxHealth);
+        }
+
+        protected virtual void Update()
+        {
+            CanAttack();
+        }
+
+        protected bool CanAttack()
+        {
+            if (FindObjectOfType<Hero>().WaitingForPlayerAction) return false;
+
+            _timeSinceLastAttack += Time.deltaTime;
+            aTBGauge.fillAmount = _timeSinceLastAttack / weapon.weaponAttackSpeed;
+            
+            if (!(_timeSinceLastAttack >= weapon.weaponAttackSpeed)) return false;
+            _timeSinceLastAttack -= weapon.weaponAttackSpeed;
+            return true;
+
         }
 
         protected void DealDamage()

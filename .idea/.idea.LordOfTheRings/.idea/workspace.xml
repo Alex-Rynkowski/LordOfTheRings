@@ -20,9 +20,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d41a565d-fe20-4d62-b58e-d94dc2c60b5e" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.LordOfTheRings/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.LordOfTheRings/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.LordOfTheRings/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.LordOfTheRings/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/HeroVS/Enemy.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/HeroVS/Enemy.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/HeroVS/Enemy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/HeroVS/Enemy.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/HeroVS/Hero.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/HeroVS/Hero.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/HeroVS/Unit.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/HeroVS/Unit.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/HeroVS/Weapons/ExeStoppedWorking.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/HeroVS/Weapons/ExeStoppedWorking.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/HeroVS/Weapons/Fister.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/HeroVS/Weapons/Fister.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,8 +62,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Scripts/Hud/PurchseProduct.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Hud/ProduceGold.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Hud/PurchaseAbleProducts.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Hud/PurchaseableProducts.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Hud/Product.cs" />
@@ -106,8 +109,10 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/HeroVS/EnemyHud.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/HeroVS/IWaitForPlayerAction.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/HeroVS/Unit.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/HeroVS/Hero.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/HeroVS/Enemy.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/HeroVS/HudHeroVS.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/HeroVS/LoadUpgrades.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/HeroVS/Hero.cs" />
       </list>
     </option>
   </component>
@@ -161,13 +166,7 @@
       <workItem from="1603445620668" duration="4479000" />
       <workItem from="1603451581303" duration="2968000" />
       <workItem from="1604249904914" duration="9641000" />
-      <workItem from="1604304752796" duration="8652000" />
-    </task>
-    <task id="LOCAL−00002" summary="Moved goldpress to a separate component">
-      <created>1603197684046</created>
-      <option name="number" value="LOCAL−00002" />
-      <option name="presentableId" value="LOCAL−00002" />
-      <updated>1603197684046</updated>
+      <workItem from="1604304752796" duration="16154000" />
     </task>
     <task id="LOCAL−00003" summary="adds saving for Gold presses">
       <created>1603198573404</created>
@@ -457,7 +456,13 @@
       <option name="presentableId" value="LOCAL−00050" />
       <updated>1604319034971</updated>
     </task>
-    <option name="localTasksCounter" value="51" />
+    <task id="LOCAL−00051" summary="more code cleanup">
+      <created>1604319355271</created>
+      <option name="number" value="LOCAL−00051" />
+      <option name="presentableId" value="LOCAL−00051" />
+      <updated>1604319355271</updated>
+    </task>
+    <option name="localTasksCounter" value="52" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -479,7 +484,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="adds higher wood press cost for each purchase." />
     <MESSAGE value="adds floating text for Gold" />
     <MESSAGE value="fixes smooth floating text" />
     <MESSAGE value="adds customizable floating text" />
@@ -504,7 +508,8 @@
     <MESSAGE value="adds an atb gauge" />
     <MESSAGE value="adds an attack button to the player and &quot;pauses&quot; the game until the player has pressed &quot;attack&quot;" />
     <MESSAGE value="code cleanup" />
-    <option name="LAST_COMMIT_MESSAGE" value="code cleanup" />
+    <MESSAGE value="more code cleanup" />
+    <option name="LAST_COMMIT_MESSAGE" value="more code cleanup" />
   </component>
   <component name="WindowStateProjectService">
     <state width="501" height="464" key="DebuggerActiveHint" timestamp="1603434727229">
@@ -600,6 +605,10 @@
     </state>
     <state x="100" y="125" width="1480" height="747" key="VCS.FileHistoryDialog/0.23.1680.947@0.23.1680.947" timestamp="1603206199010" />
     <state x="100" y="125" width="1480" height="749" key="VCS.FileHistoryDialog/0.23.1680.949@0.23.1680.949" timestamp="1603306173621" />
+    <state x="439" y="235" key="Vcs.Push.Dialog.v2" timestamp="1604332649243">
+      <screen x="0" y="23" width="1680" height="947" />
+    </state>
+    <state x="439" y="235" key="Vcs.Push.Dialog.v2/0.23.1680.947@0.23.1680.947" timestamp="1604332649243" />
     <state x="503" y="230" width="672" height="678" key="search.everywhere.popup" timestamp="1603306398172">
       <screen x="0" y="23" width="1680" height="949" />
     </state>

@@ -12,7 +12,7 @@ namespace HeroVS
             UpdateTarget();
         }
 
-        void Update()
+        protected override void Update()
         {
             UpdateHealthImage();
             if (IsDead)
@@ -21,9 +21,8 @@ namespace HeroVS
                 Destroy(gameObject);
             }
 
-            if (!CanAttack || IsDead || Target == null) return;
+            if (!CanAttack() || IsDead || Target == null) return;
             DealDamage();
-            LastAttack = Time.time;
         }
 
         void Reward()

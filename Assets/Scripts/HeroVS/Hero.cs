@@ -12,7 +12,7 @@ namespace HeroVS
             UnitSetup();
         }
 
-        void Update()
+        protected override void Update()
         {
             UpdateHealthImage();
             UpdateTarget();
@@ -21,12 +21,9 @@ namespace HeroVS
                 Destroy(gameObject);
             }
 
-            if (!CanAttack || IsDead || Target == null) return;
+            if (!CanAttack() || IsDead || Target == null) return;
+            print("here!");
             WaitingForPlayerAction = true;
-
-            //print($"{this.name} is dealing {Damage} damage");
-
-            //LastAttack = Time.time;
         }
 
         public void UpgradeHealth()
@@ -50,9 +47,9 @@ namespace HeroVS
 
         public void Attack()
         {
+            if (!WaitingForPlayerAction) return;
             WaitingForPlayerAction = false;
             DealDamage();
-            LastAttack = Time.time;
         }
 
         protected override void UpdateTarget()
