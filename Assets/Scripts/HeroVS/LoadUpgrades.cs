@@ -16,7 +16,7 @@ namespace HeroVS
         void Update()
         {
             if(!Input.GetMouseButtonDown(0)) return;
-            if (EventSystem.current.currentSelectedGameObject == this.gameObject) return;
+            if (EventSystem.current.currentSelectedGameObject) return;
             upgrades.SetActive(false);
         }
     }

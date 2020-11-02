@@ -20,14 +20,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d41a565d-fe20-4d62-b58e-d94dc2c60b5e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/HeroVS/IStats.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/HeroVS/IStats.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/HeroVS/Upgrades.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/HeroVS/Upgrades.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.LordOfTheRings/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.LordOfTheRings/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.LordOfTheRings/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.LordOfTheRings/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/HeroVS/Enemy.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/HeroVS/Enemy.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/HeroVS/Enemy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/HeroVS/Enemy.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/HeroVS/Hero.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/HeroVS/Hero.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/HeroVS/LoadUpgrades.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/HeroVS/LoadUpgrades.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/HeroVS/Unit.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/HeroVS/Unit.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/HeroVS/Weapons/ExeStoppedWorking.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/HeroVS/Weapons/ExeStoppedWorking.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/HeroVS/Weapons/Fister.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/HeroVS/Weapons/Fister.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/HeroVS/Weapons.meta" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,33 +40,36 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/../Mario Marcs Stuff/Assets/Scripts/Trap.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/../Mario Marcs Stuff/Assets/Scripts/TimeLimit.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/HeroVS/Hero.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/7CD321F2-2A98-4E1E-B513-F00B987C648C/d2/f8ac97cf/PlayerPrefs.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Hud/FloatingText.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/7CD321F2-2A98-4E1E-B513-F00B987C648C/17/88600250/Display.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Users/alexrynkowski/Documents/LordOfTheRings/Assets/Scripts/HeroVS/Hero.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/../Mario Marcs Stuff/Assets/Scripts/Health.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Hud/ShowProductInfo.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/4BE223AC-3748-4E44-B85A-077F9B461EF8/25/131d2707/SendMouseEvents.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/alexrynkowski/Documents/LordOfTheRings/Assets/Scripts/HeroVS/Weapons/Fister.asset" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/BE267507-AD83-46AD-B731-FFD760AB1C1C/6f/e51ccbf9/IPointerClickHandler.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/alexrynkowski/Documents/LordOfTheRings/Assets/Scripts/HeroVS/Weapons/ExeStoppedWorking.asset" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/8E889372-00DC-4962-B5C6-3133D2365761/44/7eba965b/NativeInputSystem.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/HeroVS/IWaitForPlayerAction.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Units/UnitName.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/IL/BE267507-AD83-46AD-B731-FFD760AB1C1C/60/071c0e07/02000057.il" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/7CD321F2-2A98-4E1E-B513-F00B987C648C/2d/6358ae84/Vector3.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../Mario Marcs Stuff/Assets/Scripts/PlayerServices.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/FB001E01-371B-4ADC-A200-13E0AC763896/c1/5afcf3c0/IntPtr.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/HeroVS/Weapon.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../Mario Marcs Stuff/Assets/Scripts/Enemy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../Mario Marcs Stuff/Assets/Scripts/Trap.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../Mario Marcs Stuff/Assets/Scripts/TimeLimit.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/alexrynkowski/Documents/LordOfTheRings/Assets/Scripts/HeroVS/Enemy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/7CD321F2-2A98-4E1E-B513-F00B987C648C/d2/f8ac97cf/PlayerPrefs.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Hud/FloatingText.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/7CD321F2-2A98-4E1E-B513-F00B987C648C/17/88600250/Display.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/alexrynkowski/Documents/LordOfTheRings/Assets/Scripts/HeroVS/Hero.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/alexrynkowski/Documents/LordOfTheRings/Assets/Scripts/HeroVS/Unit.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../Mario Marcs Stuff/Assets/Scripts/Health.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Hud/ShowProductInfo.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/4BE223AC-3748-4E44-B85A-077F9B461EF8/25/131d2707/SendMouseEvents.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/HeroVS/IWaitForPlayerAction.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock:///Users/alexrynkowski/Documents/LordOfTheRings/Assets/Scripts/HeroVS/Hero.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Units/UnitName.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/7CD321F2-2A98-4E1E-B513-F00B987C648C/2d/6358ae84/Vector3.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/alexrynkowski/Documents/LordOfTheRings/Assets/Prefabs/HeroVS/Enemy.prefab" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Scripts/Hud/PurchaseAbleProducts.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Hud/PurchaseableProducts.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Hud/Product.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Hud/ProductUnits.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Hud/PurchaseProduct.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Hud/AvailableProducts.cs" />
@@ -108,10 +113,13 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/HeroVS/Weapon.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/HeroVS/EnemyHud.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/HeroVS/IWaitForPlayerAction.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/HeroVS/Unit.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/HeroVS/Enemy.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/HeroVS/HudHeroVS.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/HeroVS/LoadUpgrades.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/HeroVS/Weapons/Upgrades.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/HeroVS/IStats.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/HeroVS/Unit.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/HeroVS/Upgrades.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/HeroVS/Hero.cs" />
       </list>
     </option>
@@ -166,13 +174,7 @@
       <workItem from="1603445620668" duration="4479000" />
       <workItem from="1603451581303" duration="2968000" />
       <workItem from="1604249904914" duration="9641000" />
-      <workItem from="1604304752796" duration="16154000" />
-    </task>
-    <task id="LOCAL−00003" summary="adds saving for Gold presses">
-      <created>1603198573404</created>
-      <option name="number" value="LOCAL−00003" />
-      <option name="presentableId" value="LOCAL−00003" />
-      <updated>1603198573404</updated>
+      <workItem from="1604304752796" duration="20090000" />
     </task>
     <task id="LOCAL−00004" summary="adds saving for Gold">
       <created>1603198767320</created>
@@ -462,7 +464,13 @@
       <option name="presentableId" value="LOCAL−00051" />
       <updated>1604319355271</updated>
     </task>
-    <option name="localTasksCounter" value="52" />
+    <task id="LOCAL−00052" summary="fixes atb gauge">
+      <created>1604334940136</created>
+      <option name="number" value="LOCAL−00052" />
+      <option name="presentableId" value="LOCAL−00052" />
+      <updated>1604334940136</updated>
+    </task>
+    <option name="localTasksCounter" value="53" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -484,7 +492,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="adds floating text for Gold" />
     <MESSAGE value="fixes smooth floating text" />
     <MESSAGE value="adds customizable floating text" />
     <MESSAGE value="fixes few bugs with customizable floating text" />
@@ -509,7 +516,8 @@
     <MESSAGE value="adds an attack button to the player and &quot;pauses&quot; the game until the player has pressed &quot;attack&quot;" />
     <MESSAGE value="code cleanup" />
     <MESSAGE value="more code cleanup" />
-    <option name="LAST_COMMIT_MESSAGE" value="more code cleanup" />
+    <MESSAGE value="fixes atb gauge" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixes atb gauge" />
   </component>
   <component name="WindowStateProjectService">
     <state width="501" height="464" key="DebuggerActiveHint" timestamp="1603434727229">
@@ -596,6 +604,10 @@
     </state>
     <state width="1638" height="341" key="GridCell.Tab.3.right/0.23.1680.947@0.23.1680.947" timestamp="1603437115244" />
     <state width="1638" height="341" key="GridCell.Tab.3.right/0.23.1680.949@0.23.1680.949" timestamp="1603376101677" />
+    <state x="651" y="187" key="RiderGenerateDialog" timestamp="1604336843926">
+      <screen x="0" y="23" width="1680" height="947" />
+    </state>
+    <state x="651" y="187" key="RiderGenerateDialog/0.23.1680.947@0.23.1680.947" timestamp="1604336843926" />
     <state x="568" y="216" key="RollbackChangesDialog" timestamp="1603381713122">
       <screen x="0" y="23" width="1680" height="947" />
     </state>

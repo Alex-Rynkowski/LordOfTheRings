@@ -11,7 +11,7 @@ namespace HeroVS
 
         [SerializeField] protected int damage = 5;
         [SerializeField] protected int maxHealth = 100;
-
+        
         [Header("UI")]
         [SerializeField] Image healthImage;
 
@@ -67,5 +67,6 @@ namespace HeroVS
         {
             healthImage.fillAmount = (float) Health / MaxHealth;
         }
+
     }
 }
