@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System.Linq;
+using UnityEngine;
 
 namespace HeroVS
 {
@@ -8,7 +9,7 @@ namespace HeroVS
         int _intelligence = 10;
         int _vitality = 10;
 
-        void Start()
+        protected override void Start()
         {
             UnitSetup();
         }
@@ -30,13 +31,17 @@ namespace HeroVS
         {
             if (!WaitingForPlayerAction) return;
             WaitingForPlayerAction = false;
-            DealDamage();
+            DealPhysicalDamage();
+            foreach (var enemy in FindObjectsOfType<MonoBehaviour>().OfType<IEnemy>())
+            {
+                enemy.Reward();
+            }
         }
 
         protected override void UpdateTarget()
         {
-            if (FindObjectOfType<Enemy>() == null) return;
-            Target = FindObjectOfType<Enemy>().gameObject;
+            if (FindObjectOfType<Goblin>() == null) return;
+            Target = FindObjectOfType<Goblin>().gameObject;
         }
 
         protected override void UnitSetup()
@@ -52,7 +57,7 @@ namespace HeroVS
 
         protected override int Damage => PlayerPrefs.GetInt("Damage", (Strength / 10) + weapon.weaponDamage);
 
-        protected override int SpellDamage => PlayerPrefs.GetInt("Intelligence", (_intelligence / 10) + weapon.weaponDamage);
+        protected override int SpellDamage => PlayerPrefs.GetInt("Intelligence", (Intelligence / 10) + weapon.weaponDamage);
 
         public int Strength
         {

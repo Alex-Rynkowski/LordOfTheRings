@@ -6,7 +6,6 @@ namespace HeroVS
     public class Weapon : ScriptableObject
     {
         public Type weaponType;
-        public string weaponName;
         public int weaponDamage;
         public int spellDamage;
         public float weaponAttackSpeed;

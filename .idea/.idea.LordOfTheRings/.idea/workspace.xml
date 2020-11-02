@@ -20,15 +20,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d41a565d-fe20-4d62-b58e-d94dc2c60b5e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/HeroVS/IEnemy.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/HeroVS/IEnemy.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/HeroVS/MageSkeleton.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/HeroVS/MageSkeleton.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.LordOfTheRings/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.LordOfTheRings/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.LordOfTheRings/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.LordOfTheRings/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/HeroVS.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/HeroVS.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/HeroVS/Enemy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/HeroVS/Goblin.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/HeroVS/Enemy.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/HeroVS/Goblin.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/HeroVS/Hero.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/HeroVS/Hero.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/HeroVS/LoadUpgrades.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/HeroVS/ShowUpgrades.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/HeroVS/LoadUpgrades.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/HeroVS/ShowUpgrades.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/HeroVS/Unit.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/HeroVS/Unit.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/HeroVS/Upgrades.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/HeroVS/Upgrades.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/HeroVS/Weapons/ExeStoppedWorking.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/HeroVS/Weapons/ExeStoppedWorking.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/HeroVS/Weapons/ShittySword.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/HeroVS/Weapons/ShittySword.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/HeroVS/Weapon.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/HeroVS/Weapon.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,10 +72,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Scripts/Hud/PurchaseProduct.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Hud/AvailableProducts.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Hud/Products.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Hud/gkgfdj.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Hud/UnitName.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Hud/RrrType.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Hud/RType.cs" />
@@ -109,18 +107,22 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Hud/Weapon.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/HeroVS/ClickingStuff.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/HeroVS/EmptyGraphic.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/HeroVS/Weapon.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/HeroVS/EnemyHud.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/HeroVS/IWaitForPlayerAction.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/HeroVS/Enemy.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/HeroVS/HudHeroVS.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/HeroVS/LoadUpgrades.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/HeroVS/Weapons/Upgrades.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/HeroVS/IStats.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/HeroVS/Upgrades.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/HeroVS/ShowUpgrades.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/HeroVS/Hero.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/HeroVS/Weapon.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/HeroVS/Enemy.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/HeroVS/Weapons/MageSkeleton.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/HeroVS/Unit.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/HeroVS/IEnemy.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/HeroVS/MageSkeleton.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/HeroVS/Goblin.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/HeroVS/Hero.cs" />
       </list>
     </option>
   </component>
@@ -174,13 +176,7 @@
       <workItem from="1603445620668" duration="4479000" />
       <workItem from="1603451581303" duration="2968000" />
       <workItem from="1604249904914" duration="9641000" />
-      <workItem from="1604304752796" duration="22038000" />
-    </task>
-    <task id="LOCAL−00005" summary="Hud now required gold and goldpress compomnents">
-      <created>1603198899585</created>
-      <option name="number" value="LOCAL−00005" />
-      <option name="presentableId" value="LOCAL−00005" />
-      <updated>1603198899585</updated>
+      <workItem from="1604304752796" duration="24318000" />
     </task>
     <task id="LOCAL−00006" summary="adds configurable Products">
       <created>1603199402989</created>
@@ -470,7 +466,13 @@
       <option name="presentableId" value="LOCAL−00053" />
       <updated>1604339738725</updated>
     </task>
-    <option name="localTasksCounter" value="54" />
+    <task id="LOCAL−00054" summary="code cleanup">
+      <created>1604341805776</created>
+      <option name="number" value="LOCAL−00054" />
+      <option name="presentableId" value="LOCAL−00054" />
+      <updated>1604341805776</updated>
+    </task>
+    <option name="localTasksCounter" value="55" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -513,11 +515,11 @@
     <MESSAGE value="adds unit name above the health bar" />
     <MESSAGE value="adds an atb gauge" />
     <MESSAGE value="adds an attack button to the player and &quot;pauses&quot; the game until the player has pressed &quot;attack&quot;" />
-    <MESSAGE value="code cleanup" />
     <MESSAGE value="more code cleanup" />
     <MESSAGE value="fixes atb gauge" />
     <MESSAGE value="adds various stats (vitality, strength, intelligence). Upgrades moved to a separate scripts and uses an interface to increase the stats on the hero" />
-    <option name="LAST_COMMIT_MESSAGE" value="adds various stats (vitality, strength, intelligence). Upgrades moved to a separate scripts and uses an interface to increase the stats on the hero" />
+    <MESSAGE value="code cleanup" />
+    <option name="LAST_COMMIT_MESSAGE" value="code cleanup" />
   </component>
   <component name="WindowStateProjectService">
     <state width="501" height="464" key="DebuggerActiveHint" timestamp="1603434727229">
@@ -604,10 +606,11 @@
     </state>
     <state width="1638" height="341" key="GridCell.Tab.3.right/0.23.1680.947@0.23.1680.947" timestamp="1603437115244" />
     <state width="1638" height="341" key="GridCell.Tab.3.right/0.23.1680.949@0.23.1680.949" timestamp="1603376101677" />
-    <state x="651" y="187" key="RiderGenerateDialog" timestamp="1604336843926">
-      <screen x="0" y="23" width="1680" height="947" />
+    <state x="651" y="187" key="RiderGenerateDialog" timestamp="1604342748163">
+      <screen x="0" y="23" width="1680" height="949" />
     </state>
     <state x="651" y="187" key="RiderGenerateDialog/0.23.1680.947@0.23.1680.947" timestamp="1604336843926" />
+    <state x="651" y="187" key="RiderGenerateDialog/0.23.1680.949@0.23.1680.949" timestamp="1604342748163" />
     <state x="568" y="216" key="RollbackChangesDialog" timestamp="1603381713122">
       <screen x="0" y="23" width="1680" height="947" />
     </state>

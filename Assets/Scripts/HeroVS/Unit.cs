@@ -10,6 +10,7 @@ namespace HeroVS
         [SerializeField] protected Weapon weapon;
 
         [SerializeField] protected int baseDamage = 5;
+        [SerializeField] protected int baseSpellDamage = 5;
         [SerializeField] protected int maxHealth = 100;
 
         [Header("UI")]
@@ -25,15 +26,18 @@ namespace HeroVS
 
         protected abstract void UpdateTarget();
         protected abstract GameObject Target { get; set; }
-
+        protected abstract int MaxHealth { get; }
+        protected abstract int Damage { get; }
+        protected abstract int SpellDamage { get; }
         protected abstract void UnitSetup();
 
+        protected virtual void Start()
+        {
+            UnitSetup();
+            UpdateTarget();
+        }
+
         protected bool IsDead => Health <= 0;
-
-        protected virtual int MaxHealth { get; set; }
-
-        protected virtual int Damage { get; set; }
-        protected virtual int SpellDamage { get; set; }
 
         protected int Health
         {
@@ -43,12 +47,20 @@ namespace HeroVS
 
         protected virtual void Update()
         {
-            CanAttack();
+            UpdateHealthImage();
+            if (IsDead)
+            {
+                //Reward();
+                Destroy(gameObject);
+            }
+
+            if (!CanAttack() || IsDead || Target == null) return;
+            DealPhysicalDamage();
         }
 
         protected bool CanAttack()
         {
-            if (FindObjectOfType<Hero>().WaitingForPlayerAction) return false;
+            if (FindObjectOfType<Hero>().WaitingForPlayerAction || Target == null) return false;
 
             _timeSinceLastAttack += Time.deltaTime;
             aTBGauge.fillAmount = _timeSinceLastAttack / weapon.weaponAttackSpeed;
@@ -58,9 +70,14 @@ namespace HeroVS
             return true;
         }
 
-        protected void DealDamage()
+        protected void DealPhysicalDamage()
         {
             Target.GetComponent<Unit>().Health -= Damage;
+        }
+
+        protected void DealMagicalDamage()
+        {
+            Target.GetComponent<Unit>().Health -= SpellDamage;
         }
 
         protected void UpdateHealthImage()
