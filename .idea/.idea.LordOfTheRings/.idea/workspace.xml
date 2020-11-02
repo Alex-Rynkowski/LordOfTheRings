@@ -19,12 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d41a565d-fe20-4d62-b58e-d94dc2c60b5e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.LordOfTheRings/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.LordOfTheRings/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/HeroVS/Hero.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/HeroVS/Hero.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/HeroVS/PlayerGold.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/HeroVS/PlayerGold.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/HeroVS/Upgrades.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/HeroVS/Upgrades.cs" afterDir="false" />
-    </list>
+    <list default="true" id="d41a565d-fe20-4d62-b58e-d94dc2c60b5e" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -53,8 +48,10 @@
     <setting file="mock:///Users/alexrynkowski/Documents/LordOfTheRings/Assets/Scripts/HeroVS/Enemy.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/7CD321F2-2A98-4E1E-B513-F00B987C648C/d2/f8ac97cf/PlayerPrefs.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Hud/FloatingText.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock:///Users/alexrynkowski/Documents/LordOfTheRings/Assets/Scripts/HeroVS/Upgrades.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/7CD321F2-2A98-4E1E-B513-F00B987C648C/17/88600250/Display.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock:///Users/alexrynkowski/Documents/LordOfTheRings/Assets/Scripts/HeroVS/Hero.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/alexrynkowski/Documents/LordOfTheRings/Assets/Scripts/HeroVS/PlayerGold.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock:///Users/alexrynkowski/Documents/LordOfTheRings/Assets/Scripts/HeroVS/Unit.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../Mario Marcs Stuff/Assets/Scripts/Health.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Hud/ShowProductInfo.cs" root0="FORCE_HIGHLIGHTING" />
@@ -64,6 +61,7 @@
     <setting file="mock:///Users/alexrynkowski/Documents/LordOfTheRings/Assets/Scripts/HeroVS/Hero.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock:///Users/alexrynkowski/Documents/LordOfTheRings/Assets/Scripts/HeroVS/Hero.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock:///Users/alexrynkowski/Documents/LordOfTheRings/Assets/Scripts/HeroVS/Goblin.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/alexrynkowski/Documents/LordOfTheRings/Assets/Scripts/HeroVS/Hero.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Units/UnitName.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/7CD321F2-2A98-4E1E-B513-F00B987C648C/2d/6358ae84/Vector3.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock:///Users/alexrynkowski/Documents/LordOfTheRings/Assets/Prefabs/HeroVS/Enemy.prefab" root0="SKIP_HIGHLIGHTING" />
@@ -176,13 +174,7 @@
       <workItem from="1603445620668" duration="4479000" />
       <workItem from="1603451581303" duration="2968000" />
       <workItem from="1604249904914" duration="9641000" />
-      <workItem from="1604304752796" duration="30702000" />
-    </task>
-    <task id="LOCAL−00011" summary="updates gold correctly when purchasing a gold press">
-      <created>1603207486950</created>
-      <option name="number" value="LOCAL−00011" />
-      <option name="presentableId" value="LOCAL−00011" />
-      <updated>1603207486950</updated>
+      <workItem from="1604304752796" duration="30868000" />
     </task>
     <task id="LOCAL−00012" summary="renames UpdateGold --&gt; CurrentGold">
       <created>1603207708004</created>
@@ -472,7 +464,13 @@
       <option name="presentableId" value="LOCAL−00059" />
       <updated>1604350853817</updated>
     </task>
-    <option name="localTasksCounter" value="60" />
+    <task id="LOCAL−00060" summary="fixes gold visuals">
+      <created>1604351976073</created>
+      <option name="number" value="LOCAL−00060" />
+      <option name="presentableId" value="LOCAL−00060" />
+      <updated>1604351976073</updated>
+    </task>
+    <option name="localTasksCounter" value="61" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -494,7 +492,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="fixes the price cost on the products is no increased correctly" />
     <MESSAGE value="adds a customizable unit type" />
     <MESSAGE value="adds more flexible productionunits system and some code cleanup" />
     <MESSAGE value="fixes saving issues for wood and gold. Should work correctly by now." />
@@ -519,7 +516,8 @@
     <MESSAGE value="correctly targets a new enemy upon enemy kill" />
     <MESSAGE value="adds skill type (magic &amp; physical), skill type is then used when dealing damage. Damage is calculated by skill type damage and your base stats.&#10;&#10;also adds Damage Taken text, whenever a Unit takes damage." />
     <MESSAGE value="adds new weapon type (Physical + magical)" />
-    <option name="LAST_COMMIT_MESSAGE" value="adds new weapon type (Physical + magical)" />
+    <MESSAGE value="fixes gold visuals" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixes gold visuals" />
   </component>
   <component name="WindowStateProjectService">
     <state width="501" height="464" key="DebuggerActiveHint" timestamp="1603434727229">

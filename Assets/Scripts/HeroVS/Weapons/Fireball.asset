@@ -12,8 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74d45750b80b543f0b1c980d46177a5f, type: 3}
   m_Name: Fireball
   m_EditorClassIdentifier: 
-  weaponType: 0
+  weaponType: 4
+  skillType: 1
   weaponDamage: 0
-  spellDamage: 0
-  weaponAttackSpeed: 0
-  description: 
+  spellDamage: 7
+  weaponAttackSpeed: 2
+  description: Huge ball of fire!
