@@ -13,6 +13,11 @@ namespace HeroVS
             upgrades.SetActive(!upgrades.activeInHierarchy);
         }
 
+        void Start()
+        {
+            upgrades.SetActive(false);
+        }
+
         void Update()
         {
             if(!Input.GetMouseButtonDown(0)) return;

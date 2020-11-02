@@ -31,7 +31,7 @@ namespace HeroVS
         {
             if (!WaitingForPlayerAction) return;
             WaitingForPlayerAction = false;
-            DealPhysicalDamage();
+            DealDamage();
             foreach (var enemy in FindObjectsOfType<MonoBehaviour>().OfType<IEnemy>())
             {
                 enemy.Reward();
@@ -58,12 +58,23 @@ namespace HeroVS
         }
 
         protected override GameObject Target { get; set; }
-        protected override int MaxHealth => PlayerPrefs.GetInt("MaxHealth", maxHealth + (Vitality / 2));
+        protected override int MaxHealth => maxHealth + (Vitality / 2);
 
-        protected override int Damage => PlayerPrefs.GetInt("Damage", (Strength / 10) + weapon.weaponDamage);
-
-        protected override int SpellDamage => PlayerPrefs.GetInt("Intelligence", (Intelligence / 10) + weapon.weaponDamage);
-
+        protected override int Damage
+        {
+            get
+            {
+                switch (weapon.skillType)
+                {
+                    case SkillType.Physical:
+                        return (Strength / 10) + weapon.weaponDamage;
+                    case SkillType.Magical:
+                        return (Intelligence / 10) + weapon.weaponDamage;
+                    default:
+                        return 0;
+                }
+            }
+        }
         public int Strength
         {
             get => PlayerPrefs.GetInt("Strength", _strength);

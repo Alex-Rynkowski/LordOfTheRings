@@ -11,8 +11,22 @@ namespace HeroVS
 
         protected override GameObject Target { get; set; }
         protected override int MaxHealth => maxHealth;
-        protected override int Damage => baseDamage + weapon.weaponDamage;
-        protected override int SpellDamage => baseSpellDamage + weapon.spellDamage;
+
+        protected override int Damage
+        {
+            get
+            {
+                switch (weapon.skillType)
+                {
+                    case SkillType.Physical:
+                        return baseDamage + weapon.weaponDamage;
+                    case SkillType.Magical:
+                        return baseSpellDamage + weapon.spellDamage;
+                    default:
+                        return 0;
+                }
+            }
+        }
         protected override void UnitSetup()
         {
             maxHealth = MaxHealth;
@@ -21,7 +35,7 @@ namespace HeroVS
 
         public void Reward()
         {
-            if(!IsDead) return;
+            if (!IsDead) return;
             FindObjectOfType<PlayerGold>().Gold += 10;
         }
     }

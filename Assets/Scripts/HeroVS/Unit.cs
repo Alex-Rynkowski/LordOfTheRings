@@ -18,7 +18,7 @@ namespace HeroVS
 
         [SerializeField] protected Text unitName;
         [SerializeField] protected Image aTBGauge;
-
+        [SerializeField] Text damageTakenText;
         int _health;
         float _timeSinceLastAttack;
 
@@ -28,7 +28,6 @@ namespace HeroVS
         protected abstract GameObject Target { get; set; }
         protected abstract int MaxHealth { get; }
         protected abstract int Damage { get; }
-        protected abstract int SpellDamage { get; }
         protected abstract void UnitSetup();
         protected bool IsDead => Health <= 0;
 
@@ -57,7 +56,15 @@ namespace HeroVS
             }
 
             if (!CanAttack() || IsDead || Target == null) return;
-            DealPhysicalDamage();
+            DealDamage();
+        }
+
+        void SpawnDamageText()
+        {
+            var dmgText = Instantiate(damageTakenText, new Vector3(Target.transform.position.x - 100, Target.transform.position.y, 0), Quaternion.identity);
+            dmgText.transform.parent = FindObjectOfType<Canvas>().transform;
+            dmgText.text = GetComponent<Unit>().Damage.ToString();
+            Destroy(dmgText.gameObject, 1f);
         }
 
         protected bool CanAttack()
@@ -72,14 +79,10 @@ namespace HeroVS
             return true;
         }
 
-        protected void DealPhysicalDamage()
+        protected void DealDamage()
         {
             Target.GetComponent<Unit>().Health -= Damage;
-        }
-
-        protected void DealMagicalDamage()
-        {
-            Target.GetComponent<Unit>().Health -= SpellDamage;
+            SpawnDamageText();
         }
 
         protected void UpdateHealthImage()
