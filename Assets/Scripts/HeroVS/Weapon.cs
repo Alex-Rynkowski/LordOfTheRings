@@ -8,6 +8,7 @@ namespace HeroVS
         public Type weaponType;
         public string weaponName;
         public int weaponDamage;
+        public int spellDamage;
         public float weaponAttackSpeed;
         public string description;
     }

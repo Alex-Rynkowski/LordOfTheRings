@@ -49,24 +49,8 @@ namespace HeroVS
             unitName.text = this.name;
         }
 
-        protected override int MaxHealth
-        {
-            get => PlayerPrefs.GetInt("EnemyMaxHealth", maxHealth);
-            set
-            {
-                PlayerPrefs.SetInt("EnemyMaxHealth", value);
-                maxHealth = value;
-            }
-        }
+        protected override int MaxHealth => maxHealth;
 
-        protected override int Damage
-        {
-            get => PlayerPrefs.GetInt("EnemyDamage", damage + weapon.weaponDamage);
-            set
-            {
-                PlayerPrefs.SetInt("EnemyDamage", value);
-                damage = value;
-            }
-        }
+        protected override int Damage => baseDamage + weapon.weaponDamage;
     }
 }

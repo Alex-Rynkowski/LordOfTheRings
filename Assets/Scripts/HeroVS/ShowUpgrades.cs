@@ -4,7 +4,7 @@ using UnityEngine.EventSystems;
 
 namespace HeroVS
 {
-    public class LoadUpgrades : MonoBehaviour, IPointerClickHandler
+    public class ShowUpgrades : MonoBehaviour, IPointerClickHandler
     {
         [SerializeField] GameObject upgrades;
 

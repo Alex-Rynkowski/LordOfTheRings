@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 74d45750b80b543f0b1c980d46177a5f, type: 3}
-  m_Name: Fister
+  m_Name: ShittySword
   m_EditorClassIdentifier: 
-  weaponType: 3
-  weaponName: Fister
-  weaponDamage: 2
-  weaponAttackSpeed: 1.2
-  description: Attack with fists!
+  weaponType: 0
+  weaponName: ShittSword
+  weaponDamage: 4
+  weaponAttackSpeed: 3
+  description: Attack with a crappy sword!

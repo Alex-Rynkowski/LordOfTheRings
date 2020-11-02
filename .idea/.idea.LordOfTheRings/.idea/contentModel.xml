@@ -11,8 +11,8 @@
             <e p="Hero.cs" t="Include" />
             <e p="IStats.cs" t="Include" />
             <e p="IWaitForPlayerAction.cs" t="Include" />
-            <e p="LoadUpgrades.cs" t="Include" />
             <e p="PlayerGold.cs" t="Include" />
+            <e p="ShowUpgrades.cs" t="Include" />
             <e p="Unit.cs" t="Include" />
             <e p="Upgrades.cs" t="Include" />
             <e p="Weapon.cs" t="Include" />

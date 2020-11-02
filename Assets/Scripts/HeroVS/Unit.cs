@@ -9,9 +9,9 @@ namespace HeroVS
         [Header("Stats")]
         [SerializeField] protected Weapon weapon;
 
-        [SerializeField] protected int damage = 5;
+        [SerializeField] protected int baseDamage = 5;
         [SerializeField] protected int maxHealth = 100;
-        
+
         [Header("UI")]
         [SerializeField] Image healthImage;
 
@@ -33,6 +33,7 @@ namespace HeroVS
         protected virtual int MaxHealth { get; set; }
 
         protected virtual int Damage { get; set; }
+        protected virtual int SpellDamage { get; set; }
 
         protected int Health
         {
@@ -51,11 +52,10 @@ namespace HeroVS
 
             _timeSinceLastAttack += Time.deltaTime;
             aTBGauge.fillAmount = _timeSinceLastAttack / weapon.weaponAttackSpeed;
-            
+
             if (!(_timeSinceLastAttack >= weapon.weaponAttackSpeed)) return false;
             _timeSinceLastAttack -= weapon.weaponAttackSpeed;
             return true;
-
         }
 
         protected void DealDamage()
@@ -67,6 +67,5 @@ namespace HeroVS
         {
             healthImage.fillAmount = (float) Health / MaxHealth;
         }
-
     }
 }

@@ -4,20 +4,17 @@ namespace HeroVS
 {
     public class Hero : Unit, IStats
     {
-        PlayerGold _playerGold;
         int _strength = 10;
         int _intelligence = 10;
         int _vitality = 10;
 
         void Start()
         {
-            _playerGold = FindObjectOfType<PlayerGold>();
             UnitSetup();
         }
 
         protected override void Update()
         {
-            print(Damage);
             UpdateHealthImage();
             UpdateTarget();
             if (IsDead)
@@ -46,7 +43,7 @@ namespace HeroVS
         {
             unitName.text = this.name;
             maxHealth = MaxHealth;
-            damage = Damage;
+            baseDamage = Damage;
             Health = MaxHealth;
         }
 
@@ -54,6 +51,8 @@ namespace HeroVS
         protected override int MaxHealth => PlayerPrefs.GetInt("MaxHealth", maxHealth + (Vitality / 2));
 
         protected override int Damage => PlayerPrefs.GetInt("Damage", (Strength / 10) + weapon.weaponDamage);
+
+        protected override int SpellDamage => PlayerPrefs.GetInt("Intelligence", (_intelligence / 10) + weapon.weaponDamage);
 
         public int Strength
         {
