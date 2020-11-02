@@ -35,16 +35,10 @@ namespace HeroVS
                 damage = value;
             }
         }
-
-        protected override Text UnitName
-        {
-            get => unitName;
-            set => unitName.text = value.ToString();
-        }
-
+        
         void Start()
         {
-            UnitName.text = this.name;
+            unitName.text = this.name;
             maxHealth = MaxHealth;
             damage = Damage;
             _playerGold = FindObjectOfType<PlayerGold>();
@@ -61,7 +55,7 @@ namespace HeroVS
             }
 
             if (!CanAttack || IsDead || Target == null) return;
-            _waitingForPlayerAction = true;
+            WaitingForPlayerAction = true;
 
             //print($"{this.name} is dealing {Damage} damage");
 
@@ -89,7 +83,7 @@ namespace HeroVS
 
         public void Attack()
         {
-            _waitingForPlayerAction = false;
+            WaitingForPlayerAction = false;
             DealDamage();
             LastAttack = Time.time;
         }

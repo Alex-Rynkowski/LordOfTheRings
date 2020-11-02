@@ -34,16 +34,12 @@ namespace HeroVS
                 damage = value;
             }
         }
-        protected override Text UnitName
-        {
-            get => unitName;
-            set => unitName.text = value.ToString();
-        }
 
         void Start()
         {
-            maxHealth = MaxHealth;
-            UnitName.text = this.name;
+            maxHealth = MaxHealth; //just for the visual aspect
+            
+            unitName.text = this.name;
             UpdateTarget();
             Health = MaxHealth;
         }
@@ -59,8 +55,6 @@ namespace HeroVS
 
             if (!CanAttack || IsDead || Target == null) return;
             DealDamage();
-            //print($"{this.name} is dealing {Damage} damage");
-
             LastAttack = Time.time;
         }
 
