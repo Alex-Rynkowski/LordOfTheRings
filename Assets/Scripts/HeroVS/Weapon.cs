@@ -25,6 +25,8 @@ namespace HeroVS
     public enum SkillType
     {
         Physical,
-        Magical
+        Magical,
+        PhysicalAndMagical
+        
     }
 }

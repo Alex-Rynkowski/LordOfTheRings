@@ -27,9 +27,26 @@ namespace HeroVS
         protected abstract void UpdateTarget();
         protected abstract GameObject Target { get; set; }
         protected abstract int MaxHealth { get; }
-        protected abstract int Damage { get; }
         protected abstract void UnitSetup();
         protected bool IsDead => Health <= 0;
+
+        protected virtual int Damage
+        {
+            get
+            {
+                switch (weapon.skillType)
+                {
+                    case SkillType.Physical:
+                        return baseDamage + weapon.weaponDamage;
+                    case SkillType.Magical:
+                        return baseSpellDamage + weapon.spellDamage;
+                    case SkillType.PhysicalAndMagical:
+                        return (baseSpellDamage + weapon.spellDamage) + (baseDamage + weapon.weaponDamage);
+                    default:
+                        return 0;
+                }
+            }
+        }
 
         protected int Health
         {

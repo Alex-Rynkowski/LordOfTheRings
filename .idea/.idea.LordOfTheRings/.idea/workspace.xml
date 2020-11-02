@@ -20,12 +20,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d41a565d-fe20-4d62-b58e-d94dc2c60b5e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.LordOfTheRings/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.LordOfTheRings/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.LordOfTheRings/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.LordOfTheRings/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/HeroVS/Goblin.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/HeroVS/Goblin.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/HeroVS/Hero.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/HeroVS/Hero.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/HeroVS/MageSkeleton.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/HeroVS/MageSkeleton.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/HeroVS/ShowUpgrades.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/HeroVS/ShowUpgrades.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/HeroVS/Unit.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/HeroVS/Unit.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/HeroVS/Weapon.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/HeroVS/Weapon.cs" afterDir="false" />
     </list>
@@ -41,6 +39,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/HeroVS/Hero.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="mock:///Users/alexrynkowski/Documents/LordOfTheRings/Assets/Scripts/HeroVS/Weapons/Fister.asset" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/BE267507-AD83-46AD-B731-FFD760AB1C1C/6f/e51ccbf9/IPointerClickHandler.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/alexrynkowski/Documents/LordOfTheRings/Assets/Scripts/HeroVS/Hero.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock:///Users/alexrynkowski/Documents/LordOfTheRings/Assets/Scripts/HeroVS/Weapons/ExeStoppedWorking.asset" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/8E889372-00DC-4962-B5C6-3133D2365761/44/7eba965b/NativeInputSystem.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/IL/BE267507-AD83-46AD-B731-FFD760AB1C1C/60/071c0e07/02000057.il" root0="SKIP_HIGHLIGHTING" />
@@ -49,6 +48,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/HeroVS/Weapon.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="mock:///Users/alexrynkowski/Documents/LordOfTheRings/Assets/Scripts/HeroVS/Hero.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../Mario Marcs Stuff/Assets/Scripts/Enemy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/alexrynkowski/Documents/LordOfTheRings/Assets/Scripts/HeroVS/Weapon.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../Mario Marcs Stuff/Assets/Scripts/Trap.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/HeroVS/DamageTaken.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../Mario Marcs Stuff/Assets/Scripts/TimeLimit.cs" root0="SKIP_HIGHLIGHTING" />
@@ -61,6 +61,7 @@
     <setting file="file://$PROJECT_DIR$/../Mario Marcs Stuff/Assets/Scripts/Health.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Hud/ShowProductInfo.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/4BE223AC-3748-4E44-B85A-077F9B461EF8/25/131d2707/SendMouseEvents.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/alexrynkowski/Documents/LordOfTheRings/Assets/Scripts/HeroVS/MageSkeleton.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/HeroVS/IWaitForPlayerAction.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="mock:///Users/alexrynkowski/Documents/LordOfTheRings/Assets/Scripts/HeroVS/Hero.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock:///Users/alexrynkowski/Documents/LordOfTheRings/Assets/Scripts/HeroVS/Hero.cs" root0="SKIP_HIGHLIGHTING" />
@@ -120,10 +121,10 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/HeroVS/ShowUpgrades.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/HeroVS/DamageTaken.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/HeroVS/Weapon.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/HeroVS/MageSkeleton.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/HeroVS/Goblin.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/HeroVS/Hero.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/HeroVS/Unit.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/HeroVS/Goblin.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/HeroVS/MageSkeleton.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/HeroVS/Hero.cs" />
       </list>
     </option>
   </component>
@@ -177,19 +178,7 @@
       <workItem from="1603445620668" duration="4479000" />
       <workItem from="1603451581303" duration="2968000" />
       <workItem from="1604249904914" duration="9641000" />
-      <workItem from="1604304752796" duration="29003000" />
-    </task>
-    <task id="LOCAL−00008" summary="adds show / hide product info">
-      <created>1603204782116</created>
-      <option name="number" value="LOCAL−00008" />
-      <option name="presentableId" value="LOCAL−00008" />
-      <updated>1603204782116</updated>
-    </task>
-    <task id="LOCAL−00009" summary="Adds product info based on input in the inspector">
-      <created>1603206190556</created>
-      <option name="number" value="LOCAL−00009" />
-      <option name="presentableId" value="LOCAL−00009" />
-      <updated>1603206190556</updated>
+      <workItem from="1604304752796" duration="29690000" />
     </task>
     <task id="LOCAL−00010" summary="adds an enum to the Product component">
       <created>1603206905467</created>
@@ -473,7 +462,19 @@
       <option name="presentableId" value="LOCAL−00056" />
       <updated>1604346022013</updated>
     </task>
-    <option name="localTasksCounter" value="57" />
+    <task id="LOCAL−00057" summary="adds skill type (magic &amp; physical), skill type is then used when dealing damage. Damage is calculated by skill type damage and your base stats.&#10;&#10;also adds Damage Taken text, whenever a Unit takes damage.">
+      <created>1604350444164</created>
+      <option name="number" value="LOCAL−00057" />
+      <option name="presentableId" value="LOCAL−00057" />
+      <updated>1604350444164</updated>
+    </task>
+    <task id="LOCAL−00058" summary="adds skill type (magic &amp; physical), skill type is then used when dealing damage. Damage is calculated by skill type damage and your base stats.&#10;&#10;also adds Damage Taken text, whenever a Unit takes damage.">
+      <created>1604350455671</created>
+      <option name="number" value="LOCAL−00058" />
+      <option name="presentableId" value="LOCAL−00058" />
+      <updated>1604350455671</updated>
+    </task>
+    <option name="localTasksCounter" value="59" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -495,7 +496,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="cleans up code and heirarchy" />
     <MESSAGE value="moves &quot;Available products&quot; to a separate component. Also alot of code cleanup" />
     <MESSAGE value="fixes the price cost on the products is no increased correctly" />
     <MESSAGE value="adds a customizable unit type" />
@@ -520,7 +520,8 @@
     <MESSAGE value="code cleanup" />
     <MESSAGE value="adds new enemy and moves reward to an interface. The interface is called each time the player attacks. Only when enemy dies the player is rewarded." />
     <MESSAGE value="correctly targets a new enemy upon enemy kill" />
-    <option name="LAST_COMMIT_MESSAGE" value="correctly targets a new enemy upon enemy kill" />
+    <MESSAGE value="adds skill type (magic &amp; physical), skill type is then used when dealing damage. Damage is calculated by skill type damage and your base stats.&#10;&#10;also adds Damage Taken text, whenever a Unit takes damage." />
+    <option name="LAST_COMMIT_MESSAGE" value="adds skill type (magic &amp; physical), skill type is then used when dealing damage. Damage is calculated by skill type damage and your base stats.&#10;&#10;also adds Damage Taken text, whenever a Unit takes damage." />
   </component>
   <component name="WindowStateProjectService">
     <state width="501" height="464" key="DebuggerActiveHint" timestamp="1603434727229">

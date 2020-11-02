@@ -70,11 +70,14 @@ namespace HeroVS
                         return (Strength / 10) + weapon.weaponDamage;
                     case SkillType.Magical:
                         return (Intelligence / 10) + weapon.weaponDamage;
+                    case SkillType.PhysicalAndMagical:
+                        return ((Strength / 10) + weapon.weaponDamage) + ((Intelligence / 10) + weapon.weaponDamage);
                     default:
                         return 0;
                 }
             }
         }
+
         public int Strength
         {
             get => PlayerPrefs.GetInt("Strength", _strength);
