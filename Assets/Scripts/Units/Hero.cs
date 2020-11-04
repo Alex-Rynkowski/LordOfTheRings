@@ -2,6 +2,7 @@
 using Equipment;
 using Player_Specific;
 using UnityEngine;
+using UnityEngine.UI;
 
 namespace Units
 {
@@ -12,6 +13,7 @@ namespace Units
         protected override void Start()
         {
             UnitSetup();
+            aTBGauge.GetComponentInChildren<Text>().text = weapon.attackText;
         }
 
         protected override void Update()
@@ -32,7 +34,7 @@ namespace Units
             if (!WaitingForPlayerAction) return;
             WaitingForPlayerAction = false;
             DealDamage();
-            foreach (var enemy in FindObjectsOfType<MonoBehaviour>().OfType<IEnemy>())
+            foreach (var enemy in FindObjectsOfType<MonoBehaviour>().OfType<IReward>())
             {
                 enemy.Reward();
             }
@@ -42,11 +44,9 @@ namespace Units
         {
             foreach (var enemy in FindObjectsOfType<MonoBehaviour>())
             {
-                if (enemy is IEnemy e)
-                {
-                    Target = enemy.gameObject;
-                    break;
-                }
+                if (!(enemy is IReward e)) continue;
+                Target = enemy.gameObject;
+                break;
             }
         }
 
@@ -74,10 +74,9 @@ namespace Units
                         return ((stats.Strength / 10) + weapon.weaponDamage) + ((stats.Intelligence / 10) + weapon.weaponDamage);
                     default:
                         return 0;
-                }
+                } 
             }
+            
         }
-
-        
     }
 }

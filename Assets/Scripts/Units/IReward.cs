@@ -1,6 +1,6 @@
 namespace Units
 {
-    public interface IEnemy
+    public interface IReward
     {
         void Reward();
     }

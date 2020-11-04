@@ -11,6 +11,7 @@ namespace Equipment
         public int spellDamage;
         public float weaponAttackSpeed;
         public string description;
+        public string attackText;
     }
 
     public enum WeaponType

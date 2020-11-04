@@ -62,11 +62,13 @@ namespace Units
         {
             UnitSetup();
             UpdateTarget();
+            aTBGauge.GetComponentInChildren<Text>().text = weapon.attackText;
         }
 
         protected virtual void Update()
         {
             UpdateHealthImage();
+            
             if (IsDead)
             {
                 Destroy(gameObject);

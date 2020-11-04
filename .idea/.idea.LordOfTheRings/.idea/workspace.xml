@@ -20,14 +20,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d41a565d-fe20-4d62-b58e-d94dc2c60b5e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Units/Necromancer.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Units/Necromancer.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.LordOfTheRings/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.LordOfTheRings/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.LordOfTheRings/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.LordOfTheRings/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/HeroVS.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/HeroVS.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/HeroVS/DamageTaken.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/HeroVS/DamageTaken.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/HeroVS/Hero.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/HeroVS/Hero.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/HeroVS/IStats.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/HeroVS/Stats.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/HeroVS/IStats.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/HeroVS/Stats.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/HeroVS/Upgrades.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/HeroVS/Upgrades.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Goblin.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Goblin.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Goblin.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Goblin.prefab.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Mage Skeleton.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Mage Skeleton.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Mage Skeleton.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Mage Skeleton.prefab.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Equipment/Weapon.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Equipment/Weapon.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player Specific/PlayerGold.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player Specific/PlayerGold.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Units/Goblin.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Units/Goblin.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Units/Hero.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Units/Hero.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Units/IEnemy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Units/IReward.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Units/IEnemy.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Units/IReward.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Units/MageSkeleton.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Units/MageSkeleton.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Units/Unit.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Units/Unit.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,43 +47,22 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/../Mario Marcs Stuff/Assets/Scripts/Trap.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/HeroVS/DamageTaken.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../Mario Marcs Stuff/Assets/Scripts/TimeLimit.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/HeroVS/Hero.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/7CD321F2-2A98-4E1E-B513-F00B987C648C/d2/f8ac97cf/PlayerPrefs.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Hud/FloatingText.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/7CD321F2-2A98-4E1E-B513-F00B987C648C/17/88600250/Display.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../Mario Marcs Stuff/Assets/Scripts/Health.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Hud/ShowProductInfo.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/4BE223AC-3748-4E44-B85A-077F9B461EF8/25/131d2707/SendMouseEvents.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/BE267507-AD83-46AD-B731-FFD760AB1C1C/6f/e51ccbf9/IPointerClickHandler.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/8E889372-00DC-4962-B5C6-3133D2365761/44/7eba965b/NativeInputSystem.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/HeroVS/IWaitForPlayerAction.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Units/UnitName.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/IL/BE267507-AD83-46AD-B731-FFD760AB1C1C/60/071c0e07/02000057.il" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/7CD321F2-2A98-4E1E-B513-F00B987C648C/2d/6358ae84/Vector3.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../Mario Marcs Stuff/Assets/Scripts/PlayerServices.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/FB001E01-371B-4ADC-A200-13E0AC763896/c1/5afcf3c0/IntPtr.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/HeroVS/Weapon.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../Mario Marcs Stuff/Assets/Scripts/Enemy.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Scripts/Hud/RType.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Hud/GoldPress.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Hud/Wood.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Hud/Gold.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Hud/Hud.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Hud/WoodPress.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Hud/ResourceType.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Hud/ProductionUnits.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Hud/ProduceResources.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Production/ResourceType.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Production/RType.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Production/UnitName.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Units/UnitName.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Units/WoodPress.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Hud/ShowProductInfo.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Misc/Cost.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Misc/ComponentNames.cs" />
@@ -113,6 +100,20 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/HeroVS/Hero.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/HeroVS/Stats.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/HeroVS/DamageTaken.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Hud/DamageTaken.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Hud/EmptyGraphic.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Hud/ShowUpgrades.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Player Specific/Stats.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Units/IEnemy.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Player Specific/PlayerGold.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Units/MageSkeleton.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Player Specific/Upgrades.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Equipment/Weapon.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Units/Hero.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Units/Goblin.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Units/Necromancer.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Units/Unit.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Units/IReward.cs" />
       </list>
     </option>
   </component>
@@ -169,6 +170,7 @@
       <workItem from="1604304752796" duration="30868000" />
       <workItem from="1604389775256" duration="2282000" />
       <workItem from="1604395956658" duration="1275000" />
+      <workItem from="1604478289837" duration="9291000" />
     </task>
     <task id="LOCAL−00012" summary="renames UpdateGold --&gt; CurrentGold">
       <created>1603207708004</created>
@@ -598,11 +600,12 @@
     </state>
     <state width="1638" height="341" key="GridCell.Tab.3.right/0.23.1680.947@0.23.1680.947" timestamp="1603437115244" />
     <state width="1638" height="341" key="GridCell.Tab.3.right/0.23.1680.949@0.23.1680.949" timestamp="1603376101677" />
-    <state x="651" y="187" key="RiderGenerateDialog" timestamp="1604342748163">
-      <screen x="0" y="23" width="1680" height="949" />
+    <state x="651" y="188" key="RiderGenerateDialog" timestamp="1604507646211">
+      <screen x="0" y="23" width="1680" height="952" />
     </state>
     <state x="651" y="187" key="RiderGenerateDialog/0.23.1680.947@0.23.1680.947" timestamp="1604336843926" />
     <state x="651" y="187" key="RiderGenerateDialog/0.23.1680.949@0.23.1680.949" timestamp="1604342748163" />
+    <state x="651" y="188" key="RiderGenerateDialog/0.23.1680.952@0.23.1680.952" timestamp="1604507646211" />
     <state x="568" y="216" key="RollbackChangesDialog" timestamp="1603381713122">
       <screen x="0" y="23" width="1680" height="947" />
     </state>

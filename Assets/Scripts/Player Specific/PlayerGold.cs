@@ -5,7 +5,6 @@ namespace Player_Specific
 {
     public class PlayerGold : MonoBehaviour
     {
-        [SerializeField] Text goldText;
         int _gold;
 
         public int Gold
@@ -14,13 +13,13 @@ namespace Player_Specific
             set
             {
                 PlayerPrefs.SetInt("Gold", value);
-                goldText.text = Gold.ToString();
+                GetComponent<Text>().text = Gold.ToString();
             }
         }
 
         void Start()
         {
-            goldText.text = Gold.ToString();
+            GetComponent<Text>().text = Gold.ToString();
         }
     }
 }

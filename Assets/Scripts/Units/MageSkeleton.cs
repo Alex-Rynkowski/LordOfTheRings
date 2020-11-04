@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace Units
 {
-    public class MageSkeleton : Unit, IEnemy
+    public class MageSkeleton : Unit, IReward
     {
         protected override void UpdateTarget()
         {
@@ -22,7 +22,7 @@ namespace Units
         public void Reward()
         {
             if (!IsDead) return;
-            FindObjectOfType<PlayerGold>().Gold += 10;
+            FindObjectOfType<PlayerGold>().Gold += 50;
         }
     }
 }

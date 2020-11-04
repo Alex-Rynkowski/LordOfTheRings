@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace Units
 {
-    public class Goblin : Unit, IEnemy
+    public class Goblin : Unit, IReward
     {
         public void DamageOnTap(int dmg)
         {
