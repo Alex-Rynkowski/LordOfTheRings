@@ -7,16 +7,18 @@ namespace Units
     {
         protected override void UpdateTarget()
         {
-            throw new System.NotImplementedException();
+            Target = FindObjectOfType<Hero>().gameObject;
         }
 
         protected override GameObject Target { get; set; }
-        protected override int MaxHealth { get; }
+        protected override int MaxHealth => maxHealth;
+
         protected override void UnitSetup()
         {
-            throw new System.NotImplementedException();
+            maxHealth = MaxHealth;
+            Health = MaxHealth;
         }
-        
+
         public void OnPointerClick(PointerEventData eventData)
         {
             FindObjectOfType<Target>().PlayerTarget = gameObject;

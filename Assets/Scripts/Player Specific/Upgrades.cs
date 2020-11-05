@@ -8,7 +8,7 @@ namespace Player_Specific
         [SerializeField] Text vitalityText;
         [SerializeField] Text strengthText;
         [SerializeField] Text intelligenceText;
-        Stats _stats;
+        readonly Stats _stats = new Stats();
         PlayerGold _playerGold;
 
         void Start()

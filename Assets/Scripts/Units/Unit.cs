@@ -67,10 +67,10 @@ namespace Units
 
         protected virtual void Update()
         {
+            if(Target == null) return;
             var target = FindObjectOfType<Target>();
             if (target.PlayerTarget != null && target.PlayerTarget == this.gameObject)
             {
-                print(target.PlayerTarget);
                 target.UpdateTargetInfo(UpdateHealthImage(), ATBGauge(), name, Damage.ToString(), weapon.attackText);
             }
 
@@ -78,6 +78,9 @@ namespace Units
 
             if (IsDead)
             {
+                var tar = FindObjectOfType<Target>();
+                tar.PlayerTarget = null;
+                tar.ShouldShowTarget(false);
                 Destroy(gameObject);
             }
 

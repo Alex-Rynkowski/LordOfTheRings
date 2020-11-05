@@ -1,4 +1,5 @@
-﻿using System.Linq;
+﻿using System;
+using System.Linq;
 using Equipment;
 using Player_Specific;
 using UnityEngine;
@@ -26,10 +27,10 @@ namespace Units
                 Destroy(gameObject);
             }
 
-
             if (!CanAttack() || IsDead) return;
             WaitingForPlayerAction = true;
         }
+
 
         public void Attack()
         {
@@ -37,6 +38,11 @@ namespace Units
             WaitingForPlayerAction = false;
             DealDamage();
             aTBGauge.fillAmount = 0f;
+            RewardPlayer();
+        }
+
+        static void RewardPlayer()
+        {
             foreach (var enemy in FindObjectsOfType<MonoBehaviour>().OfType<IReward>())
             {
                 enemy.Reward();

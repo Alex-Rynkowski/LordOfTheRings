@@ -27,25 +27,9 @@ namespace Units
 
         public GameObject PlayerTarget { get; set; }
 
-        bool HideTarget()
+        public void ShouldShowTarget(bool shouldShow)
         {
-            return health.fillAmount <= 0;
-        }
-
-        void ShouldShowTarget(bool shouldShow)
-        {
-            print(health.fillAmount);
-            if (HideTarget())
-            {
-                for (var i = 0; i < transform.childCount; i++)
-                {
-                    transform.GetChild(i).gameObject.SetActive(false);
-                }
-
-                return;
-            }
-
-            if (!shouldShow || HideTarget())
+            if (!shouldShow)
             {
                 for (var i = 0; i < transform.childCount; i++)
                 {
