@@ -1,8 +1,9 @@
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 namespace Units
 {
-    public class Necromancer : Unit
+    public class Necromancer : Unit, IPointerClickHandler
     {
         protected override void UpdateTarget()
         {
@@ -14,6 +15,11 @@ namespace Units
         protected override void UnitSetup()
         {
             throw new System.NotImplementedException();
+        }
+        
+        public void OnPointerClick(PointerEventData eventData)
+        {
+            FindObjectOfType<Target>().PlayerTarget = gameObject;
         }
     }
 }

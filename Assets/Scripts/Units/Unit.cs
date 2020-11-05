@@ -20,7 +20,7 @@ namespace Units
         [SerializeField] protected Image aTBGauge;
         [SerializeField] Text damageTakenText;
         int _health;
-        float _timeSinceLastAttack;
+        protected float _timeSinceLastAttack;
 
         protected bool WaitingForPlayerAction;
 
@@ -67,14 +67,21 @@ namespace Units
 
         protected virtual void Update()
         {
+            var target = FindObjectOfType<Target>();
+            if (target.PlayerTarget != null && target.PlayerTarget == this.gameObject)
+            {
+                print(target.PlayerTarget);
+                target.UpdateTargetInfo(UpdateHealthImage(), ATBGauge(), name, Damage.ToString(), weapon.attackText);
+            }
+
             UpdateHealthImage();
-            
+
             if (IsDead)
             {
                 Destroy(gameObject);
             }
 
-            if (!CanAttack() || IsDead || Target == null) return;
+            if (!CanAttack() || IsDead || Target == null || FindObjectOfType<Hero>().WaitingForPlayerAction) return;
             DealDamage();
         }
 
@@ -88,14 +95,19 @@ namespace Units
 
         protected bool CanAttack()
         {
-            if (FindObjectOfType<Hero>().WaitingForPlayerAction || Target == null) return false;
+            if (FindObjectOfType<Hero>().WaitingForPlayerAction) return false;
 
             _timeSinceLastAttack += Time.deltaTime;
-            aTBGauge.fillAmount = _timeSinceLastAttack / weapon.weaponAttackSpeed;
+            ATBGauge();
 
             if (!(_timeSinceLastAttack >= weapon.weaponAttackSpeed)) return false;
             _timeSinceLastAttack -= weapon.weaponAttackSpeed;
             return true;
+        }
+
+        protected virtual float ATBGauge()
+        {
+            return aTBGauge.fillAmount = _timeSinceLastAttack / weapon.weaponAttackSpeed;
         }
 
         protected void DealDamage()
@@ -104,9 +116,9 @@ namespace Units
             SpawnDamageText();
         }
 
-        protected void UpdateHealthImage()
+        protected float UpdateHealthImage()
         {
-            healthImage.fillAmount = (float) Health / MaxHealth;
+            return healthImage.fillAmount = (float) Health / MaxHealth;
         }
     }
 }

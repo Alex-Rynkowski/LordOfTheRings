@@ -16,6 +16,7 @@ namespace Units
             aTBGauge.GetComponentInChildren<Text>().text = weapon.attackText;
         }
 
+
         protected override void Update()
         {
             UpdateHealthImage();
@@ -25,15 +26,22 @@ namespace Units
                 Destroy(gameObject);
             }
 
-            if (!CanAttack() || IsDead || Target == null) return;
+
+            if (!CanAttack() || IsDead) return;
             WaitingForPlayerAction = true;
+        }
+
+        protected override float ATBGauge()
+        {
+            return aTBGauge.fillAmount = _timeSinceLastAttack / weapon.weaponAttackSpeed;
         }
 
         public void Attack()
         {
-            if (!WaitingForPlayerAction) return;
+            if (!WaitingForPlayerAction || Target == null) return;
             WaitingForPlayerAction = false;
             DealDamage();
+            aTBGauge.fillAmount = 0f;
             foreach (var enemy in FindObjectsOfType<MonoBehaviour>().OfType<IReward>())
             {
                 enemy.Reward();
@@ -42,12 +50,7 @@ namespace Units
 
         protected override void UpdateTarget()
         {
-            foreach (var enemy in FindObjectsOfType<MonoBehaviour>())
-            {
-                if (!(enemy is IReward e)) continue;
-                Target = enemy.gameObject;
-                break;
-            }
+            Target = FindObjectOfType<Target>().PlayerTarget;
         }
 
         protected override void UnitSetup()
@@ -74,9 +77,8 @@ namespace Units
                         return ((stats.Strength / 10) + weapon.weaponDamage) + ((stats.Intelligence / 10) + weapon.weaponDamage);
                     default:
                         return 0;
-                } 
+                }
             }
-            
         }
     }
 }

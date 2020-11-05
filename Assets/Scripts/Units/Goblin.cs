@@ -1,9 +1,11 @@
+using System;
 using Player_Specific;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 namespace Units
 {
-    public class Goblin : Unit, IReward
+    public class Goblin : Unit, IReward, IPointerClickHandler
     {
         public void DamageOnTap(int dmg)
         {
@@ -28,6 +30,11 @@ namespace Units
         {
             if (!IsDead) return;
             FindObjectOfType<PlayerGold>().Gold += 7;
+        }
+
+        public void OnPointerClick(PointerEventData eventData)
+        {
+            FindObjectOfType<Target>().PlayerTarget = gameObject;
         }
     }
 }
