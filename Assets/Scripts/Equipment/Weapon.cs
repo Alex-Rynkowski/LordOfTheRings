@@ -12,22 +12,21 @@ namespace Equipment
         public float weaponAttackSpeed;
         public string description;
         public string attackText;
-    }
 
-    public enum WeaponType
-    {
-        Sword,
-        Axe,
-        Hammer,
-        Fists,
-        Fireball
-    }
+        public enum WeaponType
+        {
+            Sword,
+            Axe,
+            Hammer,
+            Fists,
+            Fireball
+        }
 
-    public enum SkillType
-    {
-        Physical,
-        Magical,
-        PhysicalAndMagical
-        
+        public enum SkillType
+        {
+            Physical,
+            Magical,
+            PhysicalAndMagical
+        }
     }
 }

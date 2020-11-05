@@ -20,7 +20,7 @@ namespace Units
         [SerializeField] protected Image aTBGauge;
         [SerializeField] Text damageTakenText;
         int _health;
-        protected float _timeSinceLastAttack;
+        float _timeSinceLastAttack;
 
         protected bool WaitingForPlayerAction;
 
@@ -36,11 +36,11 @@ namespace Units
             {
                 switch (weapon.skillType)
                 {
-                    case SkillType.Physical:
+                    case Weapon.SkillType.Physical:
                         return baseDamage + weapon.weaponDamage;
-                    case SkillType.Magical:
+                    case Weapon.SkillType.Magical:
                         return baseSpellDamage + weapon.spellDamage;
-                    case SkillType.PhysicalAndMagical:
+                    case Weapon.SkillType.PhysicalAndMagical:
                         return (baseSpellDamage + weapon.spellDamage) + (baseDamage + weapon.weaponDamage);
                     default:
                         return 0;
@@ -105,7 +105,7 @@ namespace Units
             return true;
         }
 
-        protected virtual float ATBGauge()
+        float ATBGauge()
         {
             return aTBGauge.fillAmount = _timeSinceLastAttack / weapon.weaponAttackSpeed;
         }

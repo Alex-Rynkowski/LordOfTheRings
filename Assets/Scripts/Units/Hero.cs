@@ -31,11 +31,6 @@ namespace Units
             WaitingForPlayerAction = true;
         }
 
-        protected override float ATBGauge()
-        {
-            return aTBGauge.fillAmount = _timeSinceLastAttack / weapon.weaponAttackSpeed;
-        }
-
         public void Attack()
         {
             if (!WaitingForPlayerAction || Target == null) return;
@@ -69,11 +64,11 @@ namespace Units
             {
                 switch (weapon.skillType)
                 {
-                    case SkillType.Physical:
+                    case Weapon.SkillType.Physical:
                         return (stats.Strength / 10) + weapon.weaponDamage;
-                    case SkillType.Magical:
+                    case Weapon.SkillType.Magical:
                         return (stats.Intelligence / 10) + weapon.weaponDamage;
-                    case SkillType.PhysicalAndMagical:
+                    case Weapon.SkillType.PhysicalAndMagical:
                         return ((stats.Strength / 10) + weapon.weaponDamage) + ((stats.Intelligence / 10) + weapon.weaponDamage);
                     default:
                         return 0;
