@@ -18,12 +18,14 @@ namespace Units
 
         [SerializeField] protected Text unitName;
         [SerializeField] protected Image aTBGauge;
-        [SerializeField] Text damageTakenText;
         int _health;
         float _timeSinceLastAttack;
 
         protected bool WaitingForPlayerAction;
 
+        public delegate void UpdateDamageText(object value);
+        public UpdateDamageText UpdateUI;
+        
         protected abstract void UpdateTarget();
         protected abstract GameObject Target { get; set; }
         protected abstract int MaxHealth { get; }
@@ -67,7 +69,7 @@ namespace Units
 
         protected virtual void Update()
         {
-            if(Target == null) return;
+            if (Target == null) return;
             var target = FindObjectOfType<Target>();
             if (target.PlayerTarget != null && target.PlayerTarget == this.gameObject)
             {
@@ -88,13 +90,6 @@ namespace Units
             DealDamage();
         }
 
-        void SpawnDamageText()
-        {
-            var dmgText = Instantiate(damageTakenText, new Vector3(Target.transform.position.x - 100, Target.transform.position.y, 0), Quaternion.identity);
-            dmgText.transform.parent = FindObjectOfType<Canvas>().transform;
-            dmgText.text = GetComponent<Unit>().Damage.ToString();
-            Destroy(dmgText.gameObject, 1f);
-        }
 
         protected bool CanAttack()
         {
@@ -116,7 +111,7 @@ namespace Units
         protected void DealDamage()
         {
             Target.GetComponent<Unit>().Health -= Damage;
-            SpawnDamageText();
+            UpdateUI(Damage);
         }
 
         protected float UpdateHealthImage()

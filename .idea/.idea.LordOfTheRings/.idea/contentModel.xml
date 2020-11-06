@@ -12,6 +12,7 @@
             <e p="DamageTaken.cs" t="Include" />
             <e p="EmptyGraphic.cs" t="Include" />
             <e p="ShowUpgrades.cs" t="Include" />
+            <e p="UnitUI.cs" t="Include" />
           </e>
           <e p="Player Specific" t="Include">
             <e p="PlayerGold.cs" t="Include" />
