@@ -19,7 +19,6 @@ MonoBehaviour:
   healthImage: {fileID: 4858801783470808425}
   unitName: {fileID: 4858801783093065890}
   aTBGauge: {fileID: 4858801783955097957}
-  damageTakenText: {fileID: 7996779585969648953, guid: 871a82f3813d14df7a818a7a5f2638f2, type: 3}
 --- !u!1001 &4858801784800422451
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -27,6 +26,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2052838031, guid: c2637aa1c677943cca316756ae59ae65, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2992951992751932740, guid: c2637aa1c677943cca316756ae59ae65, type: 3}
       propertyPath: m_Name
       value: Mage Skeleton
@@ -130,6 +133,14 @@ PrefabInstance:
     - target: {fileID: 3226249074408929159, guid: c2637aa1c677943cca316756ae59ae65, type: 3}
       propertyPath: m_Pivot.y
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6790188935648343351, guid: c2637aa1c677943cca316756ae59ae65, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: bec4dc5fe188241ecafbb1019a2216eb, type: 3}
+    - target: {fileID: 6790188935648343351, guid: c2637aa1c677943cca316756ae59ae65, type: 3}
+      propertyPath: m_PreserveAspect
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 2992951992751932741, guid: c2637aa1c677943cca316756ae59ae65, type: 3}

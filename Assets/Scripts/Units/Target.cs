@@ -9,6 +9,7 @@ namespace Units
         [SerializeField] Image aTBGauge;
         [SerializeField] Text nameText;
         [SerializeField] Text damageTakenText;
+        [SerializeField] Image unitImage;
 
         void Start()
         {
@@ -23,6 +24,13 @@ namespace Units
             this.nameText.text = nameText;
             this.damageTakenText.text = damageTakenText;
             this.aTBGauge.GetComponentInChildren<Text>().text = atbText;
+            
+        }
+
+        public void UpdateTargetImage(Sprite unitImage)
+        {
+            ShouldShowTarget(true);
+            this.unitImage.sprite = unitImage;
         }
 
         public GameObject PlayerTarget { get; set; }

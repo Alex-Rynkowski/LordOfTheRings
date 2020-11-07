@@ -1,4 +1,5 @@
 using Equipment;
+using Hud;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -23,9 +24,6 @@ namespace Units
 
         protected bool WaitingForPlayerAction;
 
-        public delegate void UpdateDamageText(object value);
-        public UpdateDamageText UpdateUI;
-        
         protected abstract void UpdateTarget();
         protected abstract GameObject Target { get; set; }
         protected abstract int MaxHealth { get; }
@@ -74,6 +72,7 @@ namespace Units
             if (target.PlayerTarget != null && target.PlayerTarget == this.gameObject)
             {
                 target.UpdateTargetInfo(UpdateHealthImage(), ATBGauge(), name, Damage.ToString(), weapon.attackText);
+                target.UpdateTargetImage(GetComponentInChildren<UnitImageReference>().GetComponent<Image>().sprite);
             }
 
             UpdateHealthImage();
@@ -111,7 +110,7 @@ namespace Units
         protected void DealDamage()
         {
             Target.GetComponent<Unit>().Health -= Damage;
-            UpdateUI(Damage);
+            Target.GetComponent<DamageTakenUI>().SpawnDamageText(Damage);
         }
 
         protected float UpdateHealthImage()

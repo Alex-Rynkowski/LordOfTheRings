@@ -10,9 +10,10 @@
           </e>
           <e p="Hud" t="Include">
             <e p="DamageTaken.cs" t="Include" />
+            <e p="DamageTakenUI.cs" t="Include" />
             <e p="EmptyGraphic.cs" t="Include" />
+            <e p="HealthUI.cs" t="Include" />
             <e p="ShowUpgrades.cs" t="Include" />
-            <e p="UnitUI.cs" t="Include" />
           </e>
           <e p="Player Specific" t="Include">
             <e p="PlayerGold.cs" t="Include" />
