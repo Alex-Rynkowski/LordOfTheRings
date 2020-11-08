@@ -20,15 +20,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d41a565d-fe20-4d62-b58e-d94dc2c60b5e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Units/IUnitDeath.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Units/IUnitDeath.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.LordOfTheRings/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.LordOfTheRings/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.LordOfTheRings/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.LordOfTheRings/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Unit.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Unit.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Weapons/BigBangPlusUltra.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Weapons/BigBangPlusUltra.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Weapons/ExeStoppedWorking.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Weapons/ExeStoppedWorking.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Weapons/Fireball.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Weapons/Fireball.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Weapons/Fister.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Weapons/Fister.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/HeroVS.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/HeroVS.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Hud/DamageTakenUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Hud/DamageTakenUI.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Hud/HealthUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Hud/HealthUI.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player Specific/PlayerGold.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player Specific/PlayerGold.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Hud/FloatingGoldText.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Hud/FloatingGoldText.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Units/Goblin.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Units/Goblin.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Units/Hero.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Units/Hero.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Units/MageSkeleton.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Units/MageSkeleton.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Units/Necromancer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Units/Necromancer.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Units/Unit.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Units/Unit.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,6 +56,7 @@
     <setting file="file://$PROJECT_DIR$/../Mario Marcs Stuff/Assets/Scripts/Health.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/4BE223AC-3748-4E44-B85A-077F9B461EF8/25/131d2707/SendMouseEvents.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Units/IReward.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Units/DestroyUnit.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/BE267507-AD83-46AD-B731-FFD760AB1C1C/6f/e51ccbf9/IPointerClickHandler.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/8E889372-00DC-4962-B5C6-3133D2365761/44/7eba965b/NativeInputSystem.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/IL/BE267507-AD83-46AD-B731-FFD760AB1C1C/60/071c0e07/02000057.il" root0="SKIP_HIGHLIGHTING" />
@@ -59,9 +69,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Scripts/tseting/inst.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Production/ProduceResources.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Hud/FloatingText.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Production/Products.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Hud/HudServices.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Hud/ScriptableStuff.cs" />
@@ -99,17 +106,20 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Units/Reward.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player Specific/Upgrades.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Hud/UnitUI.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Units/Hero.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Units/UnitImageReference.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Units/Target.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Hud/HealthUI.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Hud/DamageTakenUI.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Units/Unit.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player Specific/PlayerGold.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Units/Goblin.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Hud/DamageTakenUI.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Hud/FloatingGoldText.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Units/IOnUnitDeath.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Units/IUnitDeath.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Units/Goblin.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Units/MageSkeleton.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Units/Necromancer.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Units/Hero.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Units/DestroyUnit.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Units/Unit.cs" />
       </list>
     </option>
   </component>
@@ -175,13 +185,8 @@
       <workItem from="1604395956658" duration="1275000" />
       <workItem from="1604478289837" duration="9291000" />
       <workItem from="1604526458276" duration="26729000" />
-      <workItem from="1604662788766" duration="18154000" />
-    </task>
-    <task id="LOCAL−00018" summary="fixes hide info bug">
-      <created>1603223510510</created>
-      <option name="number" value="LOCAL−00018" />
-      <option name="presentableId" value="LOCAL−00018" />
-      <updated>1603223510510</updated>
+      <workItem from="1604662788766" duration="22779000" />
+      <workItem from="1604853664799" duration="336000" />
     </task>
     <task id="LOCAL−00019" summary="adds wood press component">
       <created>1603224246793</created>
@@ -471,7 +476,13 @@
       <option name="presentableId" value="LOCAL−00066" />
       <updated>1604774470120</updated>
     </task>
-    <option name="localTasksCounter" value="67" />
+    <task id="LOCAL−00067" summary="adds floating gold text upon defeating an enemy">
+      <created>1604827842248</created>
+      <option name="number" value="LOCAL−00067" />
+      <option name="presentableId" value="LOCAL−00067" />
+      <updated>1604827842249</updated>
+    </task>
+    <option name="localTasksCounter" value="68" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -493,7 +504,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="mostly code cleanup" />
     <MESSAGE value="Created an abstract class &quot;Unit&quot; which Hero and Enemy inherits from." />
     <MESSAGE value="adds target and DealDamage.cs" />
     <MESSAGE value="adds gold to player whenever the enemy dies" />
@@ -518,7 +528,8 @@
     <MESSAGE value="adds Necromancer.cs. Also fixes null reference bug whenever the Hero dies." />
     <MESSAGE value="adds a delegate to instantiate damage text" />
     <MESSAGE value="adds unit images and UI overhaul" />
-    <option name="LAST_COMMIT_MESSAGE" value="adds unit images and UI overhaul" />
+    <MESSAGE value="adds floating gold text upon defeating an enemy" />
+    <option name="LAST_COMMIT_MESSAGE" value="adds floating gold text upon defeating an enemy" />
   </component>
   <component name="WindowStateProjectService">
     <state width="501" height="464" key="DebuggerActiveHint" timestamp="1603434727229">

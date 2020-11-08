@@ -3,7 +3,7 @@ using UnityEngine.EventSystems;
 
 namespace Units
 {
-    public class Necromancer : Unit, IPointerClickHandler
+    public class Necromancer : Unit, IPointerClickHandler, IUnitDeath
     {
         protected override void UpdateTarget()
         {
@@ -22,6 +22,11 @@ namespace Units
         public void OnPointerClick(PointerEventData eventData)
         {
             FindObjectOfType<Target>().PlayerTarget = this.gameObject;
+        }
+        public void OnDeath()
+        {
+            if (!this.IsDead) return;
+            this.SendMessage("Fader", SendMessageOptions.DontRequireReceiver);
         }
     }
 }

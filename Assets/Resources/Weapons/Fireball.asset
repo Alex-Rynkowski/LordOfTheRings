@@ -18,3 +18,4 @@ MonoBehaviour:
   spellDamage: 7
   weaponAttackSpeed: 2
   description: Huge ball of fire!
+  attackText: Casting Fireball

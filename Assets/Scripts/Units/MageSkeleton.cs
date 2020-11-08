@@ -5,7 +5,7 @@ using UnityEngine.EventSystems;
 
 namespace Units
 {
-    public class MageSkeleton : Unit, IReward, IPointerClickHandler
+    public class MageSkeleton : Unit, IReward, IPointerClickHandler, IUnitDeath
     {
         protected override void UpdateTarget()
         {
@@ -31,6 +31,13 @@ namespace Units
         public void OnPointerClick(PointerEventData eventData)
         {
             FindObjectOfType<Target>().PlayerTarget = gameObject;
+        }
+
+        public void OnDeath()
+        {
+            if (!this.IsDead) return;
+            this.Reward();
+            this.SendMessage("Fader", SendMessageOptions.DontRequireReceiver);
         }
     }
 }

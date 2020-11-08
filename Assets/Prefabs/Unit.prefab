@@ -58,7 +58,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 0.990566, g: 0.40650588, b: 0.40650588, a: 0.5372549}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -296,6 +296,7 @@ GameObject:
   - component: {fileID: 2052838034}
   - component: {fileID: 2052838033}
   - component: {fileID: 2052838032}
+  - component: {fileID: 514178668468314487}
   m_Layer: 0
   m_Name: Name Text
   m_TagString: Untagged
@@ -378,6 +379,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_HorizontalFit: 2
   m_VerticalFit: 0
+--- !u!114 &514178668468314487
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2052838030}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e19747de3f5aca642ab2be37e372fb86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 0, g: 0, b: 0, a: 0.5}
+  m_EffectDistance: {x: 2, y: -2}
+  m_UseGraphicAlpha: 1
 --- !u!1 &216110224916098732
 GameObject:
   m_ObjectHideFlags: 0
@@ -467,6 +483,8 @@ GameObject:
   m_Component:
   - component: {fileID: 3226249074408929159}
   - component: {fileID: 2992951992751932741}
+  - component: {fileID: 8629376708485694103}
+  - component: {fileID: 2992654690970789781}
   m_Layer: 0
   m_Name: Unit
   m_TagString: Untagged
@@ -516,6 +534,31 @@ MonoBehaviour:
   healthImage: {fileID: 6069579233364640949}
   unitName: {fileID: 2052838033}
   aTBGauge: {fileID: 1337828182}
+--- !u!114 &8629376708485694103
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2992951992751932740}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c887581029ea4c60922f25f0bab7e38, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fadeOutDuration: 0
+--- !u!225 &2992654690970789781
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2992951992751932740}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1 &3346629177335915234
 GameObject:
   m_ObjectHideFlags: 0
@@ -770,6 +813,10 @@ PrefabInstance:
     - target: {fileID: 814100768173833306, guid: ef540f410a14241f79e4c085197008e8, type: 3}
       propertyPath: m_Pivot.y
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2185726744295604248, guid: ef540f410a14241f79e4c085197008e8, type: 3}
+      propertyPath: m_FillAmount
+      value: 0.466
       objectReference: {fileID: 0}
     - target: {fileID: 6605690253676357043, guid: ef540f410a14241f79e4c085197008e8, type: 3}
       propertyPath: m_Name

@@ -29,7 +29,7 @@ namespace Units
         protected abstract GameObject Target { get; set; }
         protected abstract int MaxHealth { get; }
         protected abstract void UnitSetup();
-        protected bool IsDead => Health <= 0;
+        protected bool IsDead => this.Health <= 0;
 
         protected virtual int Damage
         {
@@ -61,8 +61,8 @@ namespace Units
 
         protected virtual void Start()
         {
-            UnitSetup();
-            UpdateTarget();
+            this.UnitSetup();
+            this.UpdateTarget();
             this.aTBGauge.GetComponentInChildren<Text>().text = this.weapon.attackText;
         }
 
@@ -72,18 +72,17 @@ namespace Units
             var target = FindObjectOfType<Target>();
             if (target.PlayerTarget != null && target.PlayerTarget == this.gameObject)
             {
-                target.UpdateTargetInfo(UpdateHealthImage(), ATBGauge(), this.name, this.Damage.ToString(), this.weapon.attackText);
-                target.UpdateTargetImage(GetComponentInChildren<UnitImageReference>().GetComponent<Image>().sprite);
+                target.UpdateTargetInfo(this.UpdateHealthImage(), ATBGauge(), this.name, this.Damage.ToString(), this.weapon.attackText);
+                target.UpdateTargetImage(this.GetComponentInChildren<UnitImageReference>().GetComponent<Image>().sprite);
             }
 
-            UpdateHealthImage();
+            this.UpdateHealthImage();
 
             if (this.IsDead)
             {
                 var tar = FindObjectOfType<Target>();
                 tar.PlayerTarget = null;
                 tar.ShouldShowTarget(false);
-                Destroy(gameObject);
             }
 
             if (!this.CanAttack() || this.IsDead || this.Target == null || FindObjectOfType<Hero>().WaitingForPlayerAction) return;
@@ -110,7 +109,7 @@ namespace Units
 
         protected void DealDamage()
         {
-            this.Target.GetComponent<Unit>().Health -= Damage;
+            this.Target.GetComponent<Unit>().Health -= this.Damage;
 
             if (this.Target.name != "Hero")
             {
@@ -118,7 +117,7 @@ namespace Units
                 return;
             }
 
-            Target.GetComponent<DamageTakenUI>().SpawnDamageText(this.Damage);
+            this.Target.GetComponent<DamageTakenUI>().SpawnDamageText(this.Damage);
         }
 
         protected float UpdateHealthImage()

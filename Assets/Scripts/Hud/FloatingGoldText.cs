@@ -21,13 +21,7 @@ namespace Hud
             this._resetDuration = this.duration;
         }
 
-        void Update()
-        {
-            if (Input.GetKeyDown(KeyCode.K))
-            {
-                this.SpawnGoldText(1f);
-            }
-        }
+
 
         public void SpawnGoldText(float goldValue)
         {

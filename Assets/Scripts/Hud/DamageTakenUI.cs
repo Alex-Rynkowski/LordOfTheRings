@@ -9,14 +9,9 @@ namespace Hud
     {
         public Text damageTakenText;
 
-        void OnEnable()
-        {
-            FindObjectOfType<Unit>().SpawnText += SpawnDamageText;
-        }
-
         public void SpawnDamageText(float value)
         {
-            var dmgText = Instantiate(damageTakenText, new Vector3(transform.position.x - 300,transform.position.y, 0), Quaternion.identity);
+            var dmgText = Instantiate(damageTakenText, new Vector3(transform.position.x - 300, transform.position.y, 0), Quaternion.identity);
             dmgText.transform.parent = FindObjectOfType<Canvas>().transform;
             dmgText.text = value.ToString();
             Destroy(dmgText.gameObject, 1f);

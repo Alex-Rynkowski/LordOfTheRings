@@ -13,7 +13,9 @@ MonoBehaviour:
   m_Name: ExeStoppedWorking
   m_EditorClassIdentifier: 
   weaponType: 1
-  weaponName: Exe Stopped Working
+  skillType: 0
   weaponDamage: 10
+  spellDamage: 0
   weaponAttackSpeed: 1
   description: Bad axe
+  attackText: Charging axe attack

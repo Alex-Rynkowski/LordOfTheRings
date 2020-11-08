@@ -20,8 +20,8 @@ namespace Units
 
         protected override void Update()
         {
-            UpdateHealthImage();
-            UpdateTarget();
+            this.UpdateHealthImage();
+            this.UpdateTarget();
             if (IsDead)
             {
                 Destroy(gameObject);
@@ -34,18 +34,18 @@ namespace Units
 
         public void Attack()
         {
-            if (!WaitingForPlayerAction || Target == null) return;
-            WaitingForPlayerAction = false;
-            DealDamage();
-            aTBGauge.fillAmount = 0f;
-            RewardPlayer();
+            if (!this.WaitingForPlayerAction || this.Target == null) return;
+            this.WaitingForPlayerAction = false;
+            this.DealDamage();
+            this.aTBGauge.fillAmount = 0f;
+            OnTargetDeath();
         }
 
-        static void RewardPlayer()
+        static void OnTargetDeath()
         {
-            foreach (var enemy in FindObjectsOfType<MonoBehaviour>().OfType<IReward>())
+            foreach (var enemy in FindObjectsOfType<MonoBehaviour>().OfType<IUnitDeath>())
             {
-                enemy.Reward();
+                enemy.OnDeath();
             }
         }
 

@@ -6,7 +6,7 @@ using UnityEngine.EventSystems;
 
 namespace Units
 {
-    public class Goblin : Unit, IReward, IPointerClickHandler
+    public class Goblin : Unit, IReward, IPointerClickHandler, IUnitDeath
     {
         public void DamageOnTap(int dmg)
         {
@@ -37,6 +37,13 @@ namespace Units
         public void OnPointerClick(PointerEventData eventData)
         {
             FindObjectOfType<Target>().PlayerTarget = gameObject;
+            
+        }
+        public void OnDeath()
+        {
+            if (!this.IsDead) return;
+            this.Reward();
+            this.SendMessage("Fader", SendMessageOptions.DontRequireReceiver);
         }
     }
 }

@@ -13,7 +13,9 @@ MonoBehaviour:
   m_Name: Fister
   m_EditorClassIdentifier: 
   weaponType: 3
-  weaponName: Fister
+  skillType: 0
   weaponDamage: 2
+  spellDamage: 0
   weaponAttackSpeed: 1.2
   description: Attack with fists!
+  attackText: Attacking with weak fists
