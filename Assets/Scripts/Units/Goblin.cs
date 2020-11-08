@@ -1,4 +1,5 @@
 using System;
+using Hud;
 using Player_Specific;
 using UnityEngine;
 using UnityEngine.EventSystems;
@@ -14,22 +15,23 @@ namespace Units
 
         protected override void UpdateTarget()
         {
-            Target = FindObjectOfType<Hero>().gameObject;
+            this.Target = FindObjectOfType<Hero>().gameObject;
         }
 
         protected override void UnitSetup()
         {
-            maxHealth = MaxHealth;
-            Health = MaxHealth;
+            this.maxHealth = this.MaxHealth;
+            this.Health = this.MaxHealth;
         }
 
         protected override GameObject Target { get; set; }
-        protected override int MaxHealth => maxHealth;
+        protected override int MaxHealth => this.maxHealth;
 
         public void Reward()
         {
-            if (!IsDead) return;
+            if (!this.IsDead) return;
             FindObjectOfType<PlayerGold>().Gold += 7;
+            FindObjectOfType<FloatingGoldText>().SpawnGoldText(7);
         }
 
         public void OnPointerClick(PointerEventData eventData)

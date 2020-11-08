@@ -1,5 +1,7 @@
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.UIElements;
 
 namespace Player_Specific
 {
@@ -13,13 +15,18 @@ namespace Player_Specific
             set
             {
                 PlayerPrefs.SetInt("Gold", value);
-                GetComponent<Text>().text = Gold.ToString();
+                GetComponent<TextMeshProUGUI>().text = ToString();
             }
         }
 
         void Start()
         {
-            GetComponent<Text>().text = Gold.ToString();
+            GetComponent<TextMeshProUGUI>().text = ToString();
+        }
+
+        public override string ToString()
+        {
+            return $"Gold: {Gold}";
         }
     }
 }

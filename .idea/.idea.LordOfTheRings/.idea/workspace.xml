@@ -20,12 +20,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d41a565d-fe20-4d62-b58e-d94dc2c60b5e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Hud/HealthUI.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Hud/HealthUI.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.LordOfTheRings/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.LordOfTheRings/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.LordOfTheRings/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.LordOfTheRings/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Hud/UnitUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Hud/DamageTakenUI.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Hud/UnitUI.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Hud/DamageTakenUI.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Hud/DamageTakenUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Hud/DamageTakenUI.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Hud/HealthUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Hud/HealthUI.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player Specific/PlayerGold.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player Specific/PlayerGold.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Units/Goblin.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Units/Goblin.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Units/MageSkeleton.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Units/MageSkeleton.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Units/Necromancer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Units/Necromancer.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Units/Unit.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Units/Unit.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -57,8 +59,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Scripts/Unique.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/tseting/UID.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/tseting/inst.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Production/ProduceResources.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Hud/FloatingText.cs" />
@@ -92,22 +92,24 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Hud/ShowUpgrades.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player Specific/Stats.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Units/IEnemy.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Player Specific/PlayerGold.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Units/IReward.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Units/Enemy.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Units/ITarget.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Units/MageSkeleton.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Equipment/Weapon.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Units/Reward.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Units/Goblin.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Units/Target.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Units/Hero.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Units/Necromancer.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player Specific/Upgrades.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Hud/UnitUI.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Hud/DamageTakenUI.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Units/Hero.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Units/UnitImageReference.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Units/Target.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Hud/HealthUI.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Hud/DamageTakenUI.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Units/Unit.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Player Specific/PlayerGold.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Units/Goblin.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Hud/FloatingGoldText.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Units/MageSkeleton.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Units/Necromancer.cs" />
       </list>
     </option>
   </component>
@@ -130,7 +132,7 @@
     <property name="Discover.Launch.Via.Unity" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.General" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.C#" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
@@ -173,13 +175,7 @@
       <workItem from="1604395956658" duration="1275000" />
       <workItem from="1604478289837" duration="9291000" />
       <workItem from="1604526458276" duration="26729000" />
-      <workItem from="1604662788766" duration="3870000" />
-    </task>
-    <task id="LOCAL−00017" summary="adds static helper class to the hud. To hide product information">
-      <created>1603223262871</created>
-      <option name="number" value="LOCAL−00017" />
-      <option name="presentableId" value="LOCAL−00017" />
-      <updated>1603223262871</updated>
+      <workItem from="1604662788766" duration="18154000" />
     </task>
     <task id="LOCAL−00018" summary="fixes hide info bug">
       <created>1603223510510</created>
@@ -469,7 +465,13 @@
       <option name="presentableId" value="LOCAL−00065" />
       <updated>1604655952430</updated>
     </task>
-    <option name="localTasksCounter" value="66" />
+    <task id="LOCAL−00066" summary="adds unit images and UI overhaul">
+      <created>1604774470119</created>
+      <option name="number" value="LOCAL−00066" />
+      <option name="presentableId" value="LOCAL−00066" />
+      <updated>1604774470120</updated>
+    </task>
+    <option name="localTasksCounter" value="67" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -491,7 +493,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="reverses a lot of code. Mainly removes the automatic instantiation. The designer modifies the UI in the editor instead." />
     <MESSAGE value="mostly code cleanup" />
     <MESSAGE value="Created an abstract class &quot;Unit&quot; which Hero and Enemy inherits from." />
     <MESSAGE value="adds target and DealDamage.cs" />
@@ -516,7 +517,8 @@
     <MESSAGE value="code clean up" />
     <MESSAGE value="adds Necromancer.cs. Also fixes null reference bug whenever the Hero dies." />
     <MESSAGE value="adds a delegate to instantiate damage text" />
-    <option name="LAST_COMMIT_MESSAGE" value="adds a delegate to instantiate damage text" />
+    <MESSAGE value="adds unit images and UI overhaul" />
+    <option name="LAST_COMMIT_MESSAGE" value="adds unit images and UI overhaul" />
   </component>
   <component name="WindowStateProjectService">
     <state width="501" height="464" key="DebuggerActiveHint" timestamp="1603434727229">
@@ -629,9 +631,10 @@
       <screen x="0" y="23" width="1680" height="947" />
     </state>
     <state x="568" y="216" key="RollbackChangesDialog/0.23.1680.947@0.23.1680.947" timestamp="1603381713122" />
-    <state x="341" y="136" key="SettingsEditor" timestamp="1604661614557">
-      <screen x="0" y="23" width="1680" height="954" />
+    <state x="341" y="136" key="SettingsEditor" timestamp="1604787159343">
+      <screen x="0" y="23" width="1680" height="952" />
     </state>
+    <state x="341" y="136" key="SettingsEditor/0.23.1680.952@0.23.1680.952" timestamp="1604787159343" />
     <state x="341" y="136" key="SettingsEditor/0.23.1680.954@0.23.1680.954" timestamp="1604661614557" />
     <state x="100" y="126" width="1480" height="753" key="VCS.FileHistoryDialog" timestamp="1604654872806">
       <screen x="0" y="23" width="1680" height="954" />

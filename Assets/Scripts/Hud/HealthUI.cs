@@ -8,12 +8,6 @@ namespace Hud
     public class HealthUI : MonoBehaviour
     {
         public Image health;
-
-
-        void Start()
-        {
-        }
-
         public void UpdateHealthImage(float value)
         {
             health.fillAmount = value;

@@ -1,3 +1,4 @@
+using System;
 using Units;
 using UnityEngine;
 using UnityEngine.UI;
@@ -7,6 +8,11 @@ namespace Hud
     public class DamageTakenUI : MonoBehaviour
     {
         public Text damageTakenText;
+
+        void OnEnable()
+        {
+            FindObjectOfType<Unit>().SpawnText += SpawnDamageText;
+        }
 
         public void SpawnDamageText(float value)
         {

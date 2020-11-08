@@ -7,21 +7,21 @@ namespace Units
     {
         protected override void UpdateTarget()
         {
-            Target = FindObjectOfType<Hero>().gameObject;
+            this.Target = FindObjectOfType<Hero>().gameObject;
         }
 
         protected override GameObject Target { get; set; }
-        protected override int MaxHealth => maxHealth;
+        protected override int MaxHealth => this.maxHealth;
 
         protected override void UnitSetup()
         {
-            maxHealth = MaxHealth;
-            Health = MaxHealth;
+            this.maxHealth = this.MaxHealth;
+            this.Health = this.MaxHealth;
         }
 
         public void OnPointerClick(PointerEventData eventData)
         {
-            FindObjectOfType<Target>().PlayerTarget = gameObject;
+            FindObjectOfType<Target>().PlayerTarget = this.gameObject;
         }
     }
 }

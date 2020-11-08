@@ -1,3 +1,4 @@
+using System;
 using Equipment;
 using Hud;
 using UnityEngine;
@@ -34,14 +35,14 @@ namespace Units
         {
             get
             {
-                switch (weapon.skillType)
+                switch (this.weapon.skillType)
                 {
                     case Weapon.SkillType.Physical:
-                        return baseDamage + weapon.weaponDamage;
+                        return this.baseDamage + this.weapon.weaponDamage;
                     case Weapon.SkillType.Magical:
-                        return baseSpellDamage + weapon.spellDamage;
+                        return this.baseSpellDamage + this.weapon.spellDamage;
                     case Weapon.SkillType.PhysicalAndMagical:
-                        return (baseSpellDamage + weapon.spellDamage) + (baseDamage + weapon.weaponDamage);
+                        return (this.baseSpellDamage + this.weapon.spellDamage) + (this.baseDamage + this.weapon.weaponDamage);
                     default:
                         return 0;
                 }
@@ -50,11 +51,11 @@ namespace Units
 
         protected int Health
         {
-            get => _health;
+            get => this._health;
             set
             {
-                _health = Mathf.Clamp(value, 0, MaxHealth);
-                unitName.text = $"{name} {Health}/{MaxHealth}";
+                this._health = Mathf.Clamp(value, 0, this.MaxHealth);
+                this.unitName.text = $"{this.name} {this.Health}/{this.MaxHealth}";
             }
         }
 
@@ -62,22 +63,22 @@ namespace Units
         {
             UnitSetup();
             UpdateTarget();
-            aTBGauge.GetComponentInChildren<Text>().text = weapon.attackText;
+            this.aTBGauge.GetComponentInChildren<Text>().text = this.weapon.attackText;
         }
 
         protected virtual void Update()
         {
-            if (Target == null) return;
+            if (this.Target == null) return;
             var target = FindObjectOfType<Target>();
             if (target.PlayerTarget != null && target.PlayerTarget == this.gameObject)
             {
-                target.UpdateTargetInfo(UpdateHealthImage(), ATBGauge(), name, Damage.ToString(), weapon.attackText);
+                target.UpdateTargetInfo(UpdateHealthImage(), ATBGauge(), this.name, this.Damage.ToString(), this.weapon.attackText);
                 target.UpdateTargetImage(GetComponentInChildren<UnitImageReference>().GetComponent<Image>().sprite);
             }
 
             UpdateHealthImage();
 
-            if (IsDead)
+            if (this.IsDead)
             {
                 var tar = FindObjectOfType<Target>();
                 tar.PlayerTarget = null;
@@ -85,8 +86,8 @@ namespace Units
                 Destroy(gameObject);
             }
 
-            if (!CanAttack() || IsDead || Target == null || FindObjectOfType<Hero>().WaitingForPlayerAction) return;
-            DealDamage();
+            if (!this.CanAttack() || this.IsDead || this.Target == null || FindObjectOfType<Hero>().WaitingForPlayerAction) return;
+            this.DealDamage();
         }
 
 
@@ -94,28 +95,35 @@ namespace Units
         {
             if (FindObjectOfType<Hero>().WaitingForPlayerAction) return false;
 
-            _timeSinceLastAttack += Time.deltaTime;
+            this._timeSinceLastAttack += Time.deltaTime;
             ATBGauge();
 
-            if (!(_timeSinceLastAttack >= weapon.weaponAttackSpeed)) return false;
-            _timeSinceLastAttack -= weapon.weaponAttackSpeed;
+            if (!(_timeSinceLastAttack >= this.weapon.weaponAttackSpeed)) return false;
+            this._timeSinceLastAttack -= this.weapon.weaponAttackSpeed;
             return true;
         }
 
         float ATBGauge()
         {
-            return aTBGauge.fillAmount = _timeSinceLastAttack / weapon.weaponAttackSpeed;
+            return this.aTBGauge.fillAmount = this._timeSinceLastAttack / this.weapon.weaponAttackSpeed;
         }
 
         protected void DealDamage()
         {
-            Target.GetComponent<Unit>().Health -= Damage;
-            Target.GetComponent<DamageTakenUI>().SpawnDamageText(Damage);
+            this.Target.GetComponent<Unit>().Health -= Damage;
+
+            if (this.Target.name != "Hero")
+            {
+                FindObjectOfType<Target>().GetComponent<DamageTakenUI>().SpawnDamageText(this.Damage);
+                return;
+            }
+
+            Target.GetComponent<DamageTakenUI>().SpawnDamageText(this.Damage);
         }
 
         protected float UpdateHealthImage()
         {
-            return healthImage.fillAmount = (float) Health / MaxHealth;
+            return this.healthImage.fillAmount = (float) this.Health / this.MaxHealth;
         }
     }
 }

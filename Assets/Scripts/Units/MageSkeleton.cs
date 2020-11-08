@@ -1,3 +1,4 @@
+using Hud;
 using Player_Specific;
 using UnityEngine;
 using UnityEngine.EventSystems;
@@ -24,6 +25,7 @@ namespace Units
         {
             if (!IsDead) return;
             FindObjectOfType<PlayerGold>().Gold += 50;
+            FindObjectOfType<FloatingGoldText>().SpawnGoldText(50);
         }
 
         public void OnPointerClick(PointerEventData eventData)
